@@ -1,0 +1,30 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Pages\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Remove="Pages\RestaurantListPage.xaml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="Pages\BusinessListPage.xaml.cs">
+      <DependentUpon>BusinessListPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\BusinessReviewsPage.xaml.cs">
+      <DependentUpon>BusinessReviewsPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\EditReviewPage.xaml.cs">
+      <DependentUpon>EditReviewPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Update="Pages\AccountPage.xaml.cs">
+      <DependentUpon>AccountPage.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
