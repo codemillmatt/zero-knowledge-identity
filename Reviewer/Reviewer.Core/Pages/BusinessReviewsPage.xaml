@@ -17,7 +17,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate> 
             </ListView>
-            <Button Text="Add Review" Grid.Row="1" />
+            <Button Text="Add Review" Grid.Row="1" Style="{StaticResource ButtonOutline}" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

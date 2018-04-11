@@ -1,5 +1,44 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="Reviewer.Core.EditReviewPage">
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage 
+    xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    x:Class="Reviewer.Core.EditReviewPage"
+    Title="Review">
     <ContentPage.Content>
+        <Grid>
+           <Grid.RowDefinitions>
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions> 
+            <TableView Intent="Form" HasUnevenRows="true" >
+                <TableView.Root>
+                    <TableSection Title="Author">
+                        <EntryCell Label="Your Name:" Text="{Binding Review.Author}" />
+                    </TableSection>
+                    <TableSection Title="When Did You Go Here?">
+                        <ViewCell>
+                            <StackLayout Margin="15, 7" Orientation="Horizontal">
+                               <Label Text="Date:" VerticalTextAlignment="Center" />
+                               <DatePicker Date="{Binding Review.Date}" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" /> 
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Give It A Rating!!">
+                        <ViewCell>
+                            <StackLayout Margin="15,7" Orientation="Horizontal">
+                                <Label Text="Stars:" VerticalTextAlignment="Center" />
+                                <Picker HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                            </StackLayout>
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Finally - Review It!">
+                        <ViewCell Height="200">
+                            <Editor Text="{Binding Review.ReviewText}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+                        </ViewCell>
+                    </TableSection>
+                </TableView.Root>
+            </TableView>
+            <Button Text="Save" Grid.Row="1" Style="{StaticResource ButtonOutline}" Margin="15,0,15,5" />
+        </Grid>
     </ContentPage.Content>
 </ContentPage>
