@@ -9,6 +9,9 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\" />
+    <Folder Include="Services\" />
+    <Folder Include="Cells\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Remove="Pages\RestaurantListPage.xaml" />
@@ -26,5 +29,9 @@
     <Compile Update="Pages\AccountPage.xaml.cs">
       <DependentUpon>AccountPage.xaml</DependentUpon>
     </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Reviewer.SharedModels\Reviewer.SharedModels.csproj" />
+    <ProjectReference Include="..\Reviewer.Services\Reviewer.Services.csproj" />
   </ItemGroup>
 </Project>
