@@ -14,7 +14,8 @@ namespace Reviewer.Core
         {
             InitializeComponent();
 
-            DependencyService.Register<IDataService, MockDataService>();
+            //DependencyService.Register<IDataService, MockDataService>();
+            DependencyService.Register<IDataService, CosmosDataService>();
             DependencyService.Register<IAPIService, MockAPIService>();
 
             var tabbedPage = new TabbedPage();
