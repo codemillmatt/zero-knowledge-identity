@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 
 using Xamarin.Forms;
+using Reviewer.SharedModels;
 
 namespace Reviewer.Core
 {
@@ -14,13 +15,26 @@ namespace Reviewer.Core
 
             vm = new AccountViewModel();
             BindingContext = vm;
+
+            authorReviewList.ItemTapped += (sender, e) => authorReviewList.SelectedItem = null;
+            authorReviewList.ItemSelected += listItemSelected;
         }
 
-        //protected async override void OnAppearing()
-        //{
-        //    base.OnAppearing();
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
-        //    await vm.CheckLoginStatus();
-        //}
+            vm.RefreshCommand.Execute(null);
+        }
+
+        protected async void listItemSelected(object sender, SelectedItemChangedEventArgs args)
+        {
+            var review = args.SelectedItem as Review;
+
+            if (review == null)
+                return;
+
+            await Navigation.PushAsync(new EditReviewPage(review.BusinessId, review.BusinessName, review));
+        }
     }
 }

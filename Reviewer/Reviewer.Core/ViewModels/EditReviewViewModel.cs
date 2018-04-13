@@ -10,8 +10,14 @@ namespace Reviewer.Core
         Review review;
         public Review Review { get => review; set => SetProperty(ref review, value); }
 
-        Business business;
-        public Business Business { get => business; set => SetProperty(ref business, value); }
+        //Business business;
+        //public Business Business { get => business; set => SetProperty(ref business, value); }
+
+        //string businessId;
+        //public string BusinessId { get => businessId; set => SetProperty(ref businessId, value); }
+
+        //string businessName;
+        //public string BusinessName { get => businessName; set => SetProperty(ref businessName, value); }
 
         bool isNew;
         public bool IsNew { get => isNew; set => SetProperty(ref isNew, value); }
@@ -22,10 +28,9 @@ namespace Reviewer.Core
 
         IIdentityService idService;
 
-        public EditReviewViewModel(Review theReview, Business theBusiness)
+        public EditReviewViewModel(Review theReview, string businessId, string businessName)
         {
             Review = theReview;
-            Business = theBusiness;
 
             SaveCommand = new Command(async () => await ExecuteSaveCommand()); ;
 
@@ -38,8 +43,8 @@ namespace Reviewer.Core
             Review.Author = idService.DisplayName;
         }
 
-        public EditReviewViewModel(Business theBusiness) :
-            this(new Review { Id = Guid.NewGuid().ToString(), BusinessId = theBusiness.Id, BusinessName = theBusiness.Name }, theBusiness)
+        public EditReviewViewModel(string businessId, string businessName) :
+            this(new Review { Id = Guid.NewGuid().ToString(), BusinessId = businessId, BusinessName = businessName }, businessId, businessName)
         {
             IsNew = true;
         }

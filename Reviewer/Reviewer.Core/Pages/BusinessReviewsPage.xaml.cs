@@ -23,7 +23,7 @@ namespace Reviewer.Core
 
             addNewReview.Clicked += async (sender, e) =>
             {
-                var editPage = new EditReviewPage(vm.Business);
+                var editPage = new EditReviewPage(business.Id, business.Name);
 
                 await Navigation.PushModalAsync(new NavigationPage(editPage));
             };

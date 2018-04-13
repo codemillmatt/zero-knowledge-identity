@@ -17,7 +17,7 @@ namespace Reviewer.Core
         public event EventHandler UnsuccessfulSignIn;
 
         List<Review> reviews;
-        List<Review> Reviews { get => reviews; set => SetProperty(ref reviews, value); }
+        public List<Review> Reviews { get => reviews; set => SetProperty(ref reviews, value); }
 
         bool loggedIn = false;
         public bool LoggedIn { get => loggedIn; set => SetProperty(ref loggedIn, value); }
@@ -30,6 +30,8 @@ namespace Reviewer.Core
 
         string notLoggedInInfo = "Sign in to unlock the wonderful world of reviews!";
         string loggedInInfo = "Hiya {user}! Here are your reviews so far!";
+
+        AuthenticationResult authResult;
 
         IIdentityService identityService;
 
@@ -91,8 +93,6 @@ namespace Reviewer.Core
                 IsBusy = true;
 
                 var apiService = DependencyService.Get<IAPIService>();
-
-                var authResult = await identityService.GetCachedSignInToken();
                 Reviews = await apiService.GetReviewsForAuthor(authResult.UniqueId, authResult.AccessToken);
             }
             finally
@@ -109,9 +109,9 @@ namespace Reviewer.Core
             try
             {
                 IsBusy = true;
-                var result = await identityService.GetCachedSignInToken();
+                authResult = await identityService.GetCachedSignInToken();
 
-                if (result?.User != null)
+                if (authResult?.User != null)
                 {
                     LoggedIn = true;
                     NotLoggedIn = false;
