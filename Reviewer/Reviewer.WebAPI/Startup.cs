@@ -15,6 +15,8 @@ namespace Reviewer.WebAPI
 {
     public class Startup
     {
+        public static string AdminScope;
+
         public Startup(IConfiguration configuration)
         {
             Configuration = configuration;
@@ -25,11 +27,13 @@ namespace Reviewer.WebAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            //services.AddAuthentication(sharedOptions =>
-            //{
-            //    sharedOptions.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
-            //})
-            //.AddAzureAdB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
+            services.AddAuthentication(sharedOptions =>
+            {
+                sharedOptions.DefaultScheme = JwtBearerDefaults.AuthenticationScheme;
+            })
+            .AddAzureAdB2CBearer(options => Configuration.Bind("AzureAdB2C", options));
+
+            AdminScope = Configuration["AzureAdB2C:AllAccessScope"];
 
             services.AddMvc();
         }
@@ -42,7 +46,7 @@ namespace Reviewer.WebAPI
                 app.UseDeveloperExceptionPage();
             }
 
-            //app.UseAuthentication();
+            app.UseAuthentication();
             app.UseMvc();
         }
     }
