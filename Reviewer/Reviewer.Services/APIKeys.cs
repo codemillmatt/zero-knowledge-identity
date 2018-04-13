@@ -5,5 +5,7 @@ namespace Reviewer.Services
     {
         public static readonly string CosmosEndpointUrl = "";
         public static readonly string CosmosAuthKey = "";
+
+        public static readonly string WebAPIUrl = "";
     }
 }

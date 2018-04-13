@@ -16,7 +16,18 @@ namespace Reviewer.Core
         public bool IsBusy
         {
             get => isBusy;
-            set => SetProperty(ref isBusy, value);
+            set
+            {
+                SetProperty(ref isBusy, value);
+                IsNotBusy = !IsBusy;
+            }
+        }
+
+        bool isNotBusy = true;
+        public bool IsNotBusy
+        {
+            get => isNotBusy;
+            private set => SetProperty(ref isNotBusy, value);
         }
 
     }

@@ -6,6 +6,9 @@
 
   <ItemGroup>
     <PackageReference Include="Xamarin.Forms" Version="2.5.1.444934" />
+    <PackageReference Include="System.Net.Http" Version="4.3.3" />
+    <PackageReference Include="Microsoft.Identity.Client" Version="1.1.2-preview0008" />
+    <PackageReference Include="Newtonsoft.Json" Version="11.0.2" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Pages\" />

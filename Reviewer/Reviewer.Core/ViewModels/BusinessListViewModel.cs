@@ -33,6 +33,7 @@ namespace Reviewer.Core
 
             try
             {
+                IsBusy = true;
                 Businesses = await dataService.GetBusinesses();
             }
             finally

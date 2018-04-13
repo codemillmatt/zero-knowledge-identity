@@ -6,11 +6,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reviewer.iOS", "iOS\Reviewe
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reviewer.Droid", "Droid\Reviewer.Droid.csproj", "{C17CF1B4-3A66-4F31-85B2-122EC9828A13}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reviewer.Core", "Reviewer.Core\Reviewer.Core.csproj", "{6A53F432-C6E2-47C7-BB82-7980AD41F49B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reviewer.Core", "Reviewer.Core\Reviewer.Core.csproj", "{6A53F432-C6E2-47C7-BB82-7980AD41F49B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reviewer.Services", "Reviewer.Services\Reviewer.Services.csproj", "{5435D4CE-35DE-4465-948A-37D456E12530}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reviewer.Services", "Reviewer.Services\Reviewer.Services.csproj", "{5435D4CE-35DE-4465-948A-37D456E12530}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reviewer.SharedModels", "Reviewer.SharedModels\Reviewer.SharedModels.csproj", "{5E3A5DAA-BB41-48D4-80A0-A1F394176E38}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reviewer.SharedModels", "Reviewer.SharedModels\Reviewer.SharedModels.csproj", "{5E3A5DAA-BB41-48D4-80A0-A1F394176E38}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{D9AB1F95-CAFD-43C6-A4E3-A47FCFF31252}"
 EndProject

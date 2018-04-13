@@ -21,7 +21,7 @@
                 </ListView.ItemTemplate>
             </ListView>
 
-            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}"
+            <ActivityIndicator IsRunning="{Binding IsBusy}" IsVisible="{Binding IsBusy}" 
                                HorizontalOptions="Center" VerticalOptions="Center" />
         </Grid>
     </ContentPage.Content>

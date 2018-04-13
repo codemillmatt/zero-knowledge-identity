@@ -17,7 +17,17 @@
                     </DataTemplate>
                 </ListView.ItemTemplate> 
             </ListView>
-            <Button Text="Add Review" Grid.Row="1" Style="{StaticResource ButtonOutline}" />
+            <Button 
+                Text="Add Review" 
+                IsEnabled="{Binding IsNotBusy}"
+                IsVisible="{Binding IsLoggedIn}"
+                Grid.Row="1" 
+                Style="{StaticResource ButtonOutline}" 
+                Margin="10,0" 
+                x:Name="addNewReview" />
+            <ActivityIndicator IsVisible="{Binding IsBusy}" IsRunning="{Binding IsBusy}"
+                               HorizontalOptions="Center" VerticalOptions="Center"
+                               Grid.RowSpan="2" />
         </Grid>
     </ContentPage.Content>
 </ContentPage>

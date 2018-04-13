@@ -9,6 +9,8 @@ using Android.Widget;
 using Android.OS;
 
 using Reviewer.Core;
+using Xamarin.Forms;
+using Microsoft.Identity.Client;
 
 namespace Reviewer.Droid
 {
@@ -24,7 +26,17 @@ namespace Reviewer.Droid
 
             global::Xamarin.Forms.Forms.Init(this, bundle);
 
+            var identity = DependencyService.Get<IIdentityService>(DependencyFetchTarget.GlobalInstance);
+            identity.UIParent = new UIParent(this);
+
             LoadApplication(new App());
+        }
+
+        protected override void OnActivityResult(int requestCode, Result resultCode, Intent data)
+        {
+            base.OnActivityResult(requestCode, resultCode, data);
+
+            AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs(requestCode, resultCode, data);
         }
     }
 }

@@ -4,16 +4,21 @@ using System.Collections.Generic;
 using System.Windows.Input;
 using Xamarin.Forms;
 using System.Threading.Tasks;
+
 namespace Reviewer.Core
 {
     public class BusinessReviewViewModel : BaseViewModel
     {
         IAPIService apiService;
+
         Business business;
         public Business Business { get => business; set => SetProperty(ref business, value); }
 
         List<Review> reviews;
         public List<Review> Reviews { get => reviews; set => SetProperty(ref reviews, value); }
+
+        bool isLoggedIn = false;
+        public bool IsLoggedIn { get => isLoggedIn; set => SetProperty(ref isLoggedIn, value); }
 
         public ICommand RefreshCommand { get; }
 
@@ -27,6 +32,17 @@ namespace Reviewer.Core
             RefreshCommand = new Command(async () => await ExecuteRefreshCommand());
 
             Title = Business.Name;
+
+            Task.Run(async () => await CheckLoginStatus());
+        }
+
+        public async Task CheckLoginStatus()
+        {
+            var idService = DependencyService.Get<IIdentityService>();
+
+            var authResult = await idService.GetCachedSignInToken();
+
+            IsLoggedIn = authResult?.User != null;
         }
 
         async Task ExecuteRefreshCommand()

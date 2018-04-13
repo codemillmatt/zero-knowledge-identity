@@ -16,11 +16,13 @@ namespace Reviewer.Core
 
             //DependencyService.Register<IDataService, MockDataService>();
             DependencyService.Register<IDataService, CosmosDataService>();
-            DependencyService.Register<IAPIService, MockAPIService>();
+            //DependencyService.Register<IAPIService, MockAPIService>();
+            DependencyService.Register<IAPIService, WebAPIService>();
 
             var tabbedPage = new TabbedPage();
 
             tabbedPage.Children.Add(new NavigationPage(new BusinessListPage()) { Title = "Reviews" });
+            //tabbedPage.Children.Add(new NavigationPage(new SignInPage()) { Title = "Me" });
             tabbedPage.Children.Add(new NavigationPage(new AccountPage()) { Title = "Me" });
 
             MainPage = tabbedPage;

@@ -7,5 +7,11 @@ namespace Reviewer.Core
     public interface IAPIService
     {
         Task<List<Review>> GetReviewsForBusiness(string businessId);
+
+        Task InsertReview(Review review, string token);
+
+        Task UpdateReview(Review review, string token);
+
+        Task<List<Review>> GetReviewsForAuthor(string authorId, string token);
     }
 }

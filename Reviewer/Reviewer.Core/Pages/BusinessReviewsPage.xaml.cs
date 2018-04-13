@@ -20,6 +20,13 @@ namespace Reviewer.Core
 
             reviewList.ItemTapped += (sender, args) => reviewList.SelectedItem = null;
             reviewList.ItemSelected += ReviewList_ItemSelected;
+
+            addNewReview.Clicked += async (sender, e) =>
+            {
+                var editPage = new EditReviewPage(vm.Business);
+
+                await Navigation.PushModalAsync(new NavigationPage(editPage));
+            };
         }
 
         protected override void OnAppearing()

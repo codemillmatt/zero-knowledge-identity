@@ -26,6 +26,1437 @@ namespace Reviewer.Droid
 		
 		public static void UpdateIdValues()
 		{
+			global::Microsoft.Identity.Client.Resource.Animation.abc_fade_in = global::Reviewer.Droid.Resource.Animation.abc_fade_in;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_fade_out = global::Reviewer.Droid.Resource.Animation.abc_fade_out;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_grow_fade_in_from_bottom = global::Reviewer.Droid.Resource.Animation.abc_grow_fade_in_from_bottom;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_popup_enter = global::Reviewer.Droid.Resource.Animation.abc_popup_enter;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_popup_exit = global::Reviewer.Droid.Resource.Animation.abc_popup_exit;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_shrink_fade_out_from_bottom = global::Reviewer.Droid.Resource.Animation.abc_shrink_fade_out_from_bottom;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_slide_in_bottom = global::Reviewer.Droid.Resource.Animation.abc_slide_in_bottom;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_slide_in_top = global::Reviewer.Droid.Resource.Animation.abc_slide_in_top;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_slide_out_bottom = global::Reviewer.Droid.Resource.Animation.abc_slide_out_bottom;
+			global::Microsoft.Identity.Client.Resource.Animation.abc_slide_out_top = global::Reviewer.Droid.Resource.Animation.abc_slide_out_top;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarDivider = global::Reviewer.Droid.Resource.Attribute.actionBarDivider;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarItemBackground = global::Reviewer.Droid.Resource.Attribute.actionBarItemBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarPopupTheme = global::Reviewer.Droid.Resource.Attribute.actionBarPopupTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarSize = global::Reviewer.Droid.Resource.Attribute.actionBarSize;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarSplitStyle = global::Reviewer.Droid.Resource.Attribute.actionBarSplitStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarStyle = global::Reviewer.Droid.Resource.Attribute.actionBarStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarTabBarStyle = global::Reviewer.Droid.Resource.Attribute.actionBarTabBarStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarTabStyle = global::Reviewer.Droid.Resource.Attribute.actionBarTabStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarTabTextStyle = global::Reviewer.Droid.Resource.Attribute.actionBarTabTextStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarTheme = global::Reviewer.Droid.Resource.Attribute.actionBarTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionBarWidgetTheme = global::Reviewer.Droid.Resource.Attribute.actionBarWidgetTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionButtonStyle = global::Reviewer.Droid.Resource.Attribute.actionButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionDropDownStyle = global::Reviewer.Droid.Resource.Attribute.actionDropDownStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionLayout = global::Reviewer.Droid.Resource.Attribute.actionLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionMenuTextAppearance = global::Reviewer.Droid.Resource.Attribute.actionMenuTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionMenuTextColor = global::Reviewer.Droid.Resource.Attribute.actionMenuTextColor;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeBackground = global::Reviewer.Droid.Resource.Attribute.actionModeBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeCloseButtonStyle = global::Reviewer.Droid.Resource.Attribute.actionModeCloseButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeCloseDrawable = global::Reviewer.Droid.Resource.Attribute.actionModeCloseDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeCopyDrawable = global::Reviewer.Droid.Resource.Attribute.actionModeCopyDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeCutDrawable = global::Reviewer.Droid.Resource.Attribute.actionModeCutDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeFindDrawable = global::Reviewer.Droid.Resource.Attribute.actionModeFindDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModePasteDrawable = global::Reviewer.Droid.Resource.Attribute.actionModePasteDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModePopupWindowStyle = global::Reviewer.Droid.Resource.Attribute.actionModePopupWindowStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeSelectAllDrawable = global::Reviewer.Droid.Resource.Attribute.actionModeSelectAllDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeShareDrawable = global::Reviewer.Droid.Resource.Attribute.actionModeShareDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeSplitBackground = global::Reviewer.Droid.Resource.Attribute.actionModeSplitBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeStyle = global::Reviewer.Droid.Resource.Attribute.actionModeStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionModeWebSearchDrawable = global::Reviewer.Droid.Resource.Attribute.actionModeWebSearchDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionOverflowButtonStyle = global::Reviewer.Droid.Resource.Attribute.actionOverflowButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionOverflowMenuStyle = global::Reviewer.Droid.Resource.Attribute.actionOverflowMenuStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionProviderClass = global::Reviewer.Droid.Resource.Attribute.actionProviderClass;
+			global::Microsoft.Identity.Client.Resource.Attribute.actionViewClass = global::Reviewer.Droid.Resource.Attribute.actionViewClass;
+			global::Microsoft.Identity.Client.Resource.Attribute.activityChooserViewStyle = global::Reviewer.Droid.Resource.Attribute.activityChooserViewStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.alertDialogButtonGroupStyle = global::Reviewer.Droid.Resource.Attribute.alertDialogButtonGroupStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.alertDialogCenterButtons = global::Reviewer.Droid.Resource.Attribute.alertDialogCenterButtons;
+			global::Microsoft.Identity.Client.Resource.Attribute.alertDialogStyle = global::Reviewer.Droid.Resource.Attribute.alertDialogStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.alertDialogTheme = global::Reviewer.Droid.Resource.Attribute.alertDialogTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.allowStacking = global::Reviewer.Droid.Resource.Attribute.allowStacking;
+			global::Microsoft.Identity.Client.Resource.Attribute.alpha = global::Reviewer.Droid.Resource.Attribute.alpha;
+			global::Microsoft.Identity.Client.Resource.Attribute.arrowHeadLength = global::Reviewer.Droid.Resource.Attribute.arrowHeadLength;
+			global::Microsoft.Identity.Client.Resource.Attribute.arrowShaftLength = global::Reviewer.Droid.Resource.Attribute.arrowShaftLength;
+			global::Microsoft.Identity.Client.Resource.Attribute.autoCompleteTextViewStyle = global::Reviewer.Droid.Resource.Attribute.autoCompleteTextViewStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.background = global::Reviewer.Droid.Resource.Attribute.background;
+			global::Microsoft.Identity.Client.Resource.Attribute.backgroundSplit = global::Reviewer.Droid.Resource.Attribute.backgroundSplit;
+			global::Microsoft.Identity.Client.Resource.Attribute.backgroundStacked = global::Reviewer.Droid.Resource.Attribute.backgroundStacked;
+			global::Microsoft.Identity.Client.Resource.Attribute.backgroundTint = global::Reviewer.Droid.Resource.Attribute.backgroundTint;
+			global::Microsoft.Identity.Client.Resource.Attribute.backgroundTintMode = global::Reviewer.Droid.Resource.Attribute.backgroundTintMode;
+			global::Microsoft.Identity.Client.Resource.Attribute.barLength = global::Reviewer.Droid.Resource.Attribute.barLength;
+			global::Microsoft.Identity.Client.Resource.Attribute.borderlessButtonStyle = global::Reviewer.Droid.Resource.Attribute.borderlessButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonBarButtonStyle = global::Reviewer.Droid.Resource.Attribute.buttonBarButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonBarNegativeButtonStyle = global::Reviewer.Droid.Resource.Attribute.buttonBarNegativeButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonBarNeutralButtonStyle = global::Reviewer.Droid.Resource.Attribute.buttonBarNeutralButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonBarPositiveButtonStyle = global::Reviewer.Droid.Resource.Attribute.buttonBarPositiveButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonBarStyle = global::Reviewer.Droid.Resource.Attribute.buttonBarStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonGravity = global::Reviewer.Droid.Resource.Attribute.buttonGravity;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonPanelSideLayout = global::Reviewer.Droid.Resource.Attribute.buttonPanelSideLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonStyle = global::Reviewer.Droid.Resource.Attribute.buttonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonStyleSmall = global::Reviewer.Droid.Resource.Attribute.buttonStyleSmall;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonTint = global::Reviewer.Droid.Resource.Attribute.buttonTint;
+			global::Microsoft.Identity.Client.Resource.Attribute.buttonTintMode = global::Reviewer.Droid.Resource.Attribute.buttonTintMode;
+			global::Microsoft.Identity.Client.Resource.Attribute.checkboxStyle = global::Reviewer.Droid.Resource.Attribute.checkboxStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.checkedTextViewStyle = global::Reviewer.Droid.Resource.Attribute.checkedTextViewStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.closeIcon = global::Reviewer.Droid.Resource.Attribute.closeIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.closeItemLayout = global::Reviewer.Droid.Resource.Attribute.closeItemLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.collapseContentDescription = global::Reviewer.Droid.Resource.Attribute.collapseContentDescription;
+			global::Microsoft.Identity.Client.Resource.Attribute.collapseIcon = global::Reviewer.Droid.Resource.Attribute.collapseIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.color = global::Reviewer.Droid.Resource.Attribute.color;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorAccent = global::Reviewer.Droid.Resource.Attribute.colorAccent;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorBackgroundFloating = global::Reviewer.Droid.Resource.Attribute.colorBackgroundFloating;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorButtonNormal = global::Reviewer.Droid.Resource.Attribute.colorButtonNormal;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorControlActivated = global::Reviewer.Droid.Resource.Attribute.colorControlActivated;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorControlHighlight = global::Reviewer.Droid.Resource.Attribute.colorControlHighlight;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorControlNormal = global::Reviewer.Droid.Resource.Attribute.colorControlNormal;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorPrimary = global::Reviewer.Droid.Resource.Attribute.colorPrimary;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorPrimaryDark = global::Reviewer.Droid.Resource.Attribute.colorPrimaryDark;
+			global::Microsoft.Identity.Client.Resource.Attribute.colorSwitchThumbNormal = global::Reviewer.Droid.Resource.Attribute.colorSwitchThumbNormal;
+			global::Microsoft.Identity.Client.Resource.Attribute.commitIcon = global::Reviewer.Droid.Resource.Attribute.commitIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.contentInsetEnd = global::Reviewer.Droid.Resource.Attribute.contentInsetEnd;
+			global::Microsoft.Identity.Client.Resource.Attribute.contentInsetEndWithActions = global::Reviewer.Droid.Resource.Attribute.contentInsetEndWithActions;
+			global::Microsoft.Identity.Client.Resource.Attribute.contentInsetLeft = global::Reviewer.Droid.Resource.Attribute.contentInsetLeft;
+			global::Microsoft.Identity.Client.Resource.Attribute.contentInsetRight = global::Reviewer.Droid.Resource.Attribute.contentInsetRight;
+			global::Microsoft.Identity.Client.Resource.Attribute.contentInsetStart = global::Reviewer.Droid.Resource.Attribute.contentInsetStart;
+			global::Microsoft.Identity.Client.Resource.Attribute.contentInsetStartWithNavigation = global::Reviewer.Droid.Resource.Attribute.contentInsetStartWithNavigation;
+			global::Microsoft.Identity.Client.Resource.Attribute.controlBackground = global::Reviewer.Droid.Resource.Attribute.controlBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.customNavigationLayout = global::Reviewer.Droid.Resource.Attribute.customNavigationLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.defaultQueryHint = global::Reviewer.Droid.Resource.Attribute.defaultQueryHint;
+			global::Microsoft.Identity.Client.Resource.Attribute.dialogPreferredPadding = global::Reviewer.Droid.Resource.Attribute.dialogPreferredPadding;
+			global::Microsoft.Identity.Client.Resource.Attribute.dialogTheme = global::Reviewer.Droid.Resource.Attribute.dialogTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.displayOptions = global::Reviewer.Droid.Resource.Attribute.displayOptions;
+			global::Microsoft.Identity.Client.Resource.Attribute.divider = global::Reviewer.Droid.Resource.Attribute.divider;
+			global::Microsoft.Identity.Client.Resource.Attribute.dividerHorizontal = global::Reviewer.Droid.Resource.Attribute.dividerHorizontal;
+			global::Microsoft.Identity.Client.Resource.Attribute.dividerPadding = global::Reviewer.Droid.Resource.Attribute.dividerPadding;
+			global::Microsoft.Identity.Client.Resource.Attribute.dividerVertical = global::Reviewer.Droid.Resource.Attribute.dividerVertical;
+			global::Microsoft.Identity.Client.Resource.Attribute.drawableSize = global::Reviewer.Droid.Resource.Attribute.drawableSize;
+			global::Microsoft.Identity.Client.Resource.Attribute.drawerArrowStyle = global::Reviewer.Droid.Resource.Attribute.drawerArrowStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.dropDownListViewStyle = global::Reviewer.Droid.Resource.Attribute.dropDownListViewStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.dropdownListPreferredItemHeight = global::Reviewer.Droid.Resource.Attribute.dropdownListPreferredItemHeight;
+			global::Microsoft.Identity.Client.Resource.Attribute.editTextBackground = global::Reviewer.Droid.Resource.Attribute.editTextBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.editTextColor = global::Reviewer.Droid.Resource.Attribute.editTextColor;
+			global::Microsoft.Identity.Client.Resource.Attribute.editTextStyle = global::Reviewer.Droid.Resource.Attribute.editTextStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.elevation = global::Reviewer.Droid.Resource.Attribute.elevation;
+			global::Microsoft.Identity.Client.Resource.Attribute.expandActivityOverflowButtonDrawable = global::Reviewer.Droid.Resource.Attribute.expandActivityOverflowButtonDrawable;
+			global::Microsoft.Identity.Client.Resource.Attribute.gapBetweenBars = global::Reviewer.Droid.Resource.Attribute.gapBetweenBars;
+			global::Microsoft.Identity.Client.Resource.Attribute.goIcon = global::Reviewer.Droid.Resource.Attribute.goIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.height = global::Reviewer.Droid.Resource.Attribute.height;
+			global::Microsoft.Identity.Client.Resource.Attribute.hideOnContentScroll = global::Reviewer.Droid.Resource.Attribute.hideOnContentScroll;
+			global::Microsoft.Identity.Client.Resource.Attribute.homeAsUpIndicator = global::Reviewer.Droid.Resource.Attribute.homeAsUpIndicator;
+			global::Microsoft.Identity.Client.Resource.Attribute.homeLayout = global::Reviewer.Droid.Resource.Attribute.homeLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.icon = global::Reviewer.Droid.Resource.Attribute.icon;
+			global::Microsoft.Identity.Client.Resource.Attribute.iconifiedByDefault = global::Reviewer.Droid.Resource.Attribute.iconifiedByDefault;
+			global::Microsoft.Identity.Client.Resource.Attribute.imageButtonStyle = global::Reviewer.Droid.Resource.Attribute.imageButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.indeterminateProgressStyle = global::Reviewer.Droid.Resource.Attribute.indeterminateProgressStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.initialActivityCount = global::Reviewer.Droid.Resource.Attribute.initialActivityCount;
+			global::Microsoft.Identity.Client.Resource.Attribute.isLightTheme = global::Reviewer.Droid.Resource.Attribute.isLightTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.itemPadding = global::Reviewer.Droid.Resource.Attribute.itemPadding;
+			global::Microsoft.Identity.Client.Resource.Attribute.layout = global::Reviewer.Droid.Resource.Attribute.layout;
+			global::Microsoft.Identity.Client.Resource.Attribute.listChoiceBackgroundIndicator = global::Reviewer.Droid.Resource.Attribute.listChoiceBackgroundIndicator;
+			global::Microsoft.Identity.Client.Resource.Attribute.listDividerAlertDialog = global::Reviewer.Droid.Resource.Attribute.listDividerAlertDialog;
+			global::Microsoft.Identity.Client.Resource.Attribute.listItemLayout = global::Reviewer.Droid.Resource.Attribute.listItemLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.listLayout = global::Reviewer.Droid.Resource.Attribute.listLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.listMenuViewStyle = global::Reviewer.Droid.Resource.Attribute.listMenuViewStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.listPopupWindowStyle = global::Reviewer.Droid.Resource.Attribute.listPopupWindowStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.listPreferredItemHeight = global::Reviewer.Droid.Resource.Attribute.listPreferredItemHeight;
+			global::Microsoft.Identity.Client.Resource.Attribute.listPreferredItemHeightLarge = global::Reviewer.Droid.Resource.Attribute.listPreferredItemHeightLarge;
+			global::Microsoft.Identity.Client.Resource.Attribute.listPreferredItemHeightSmall = global::Reviewer.Droid.Resource.Attribute.listPreferredItemHeightSmall;
+			global::Microsoft.Identity.Client.Resource.Attribute.listPreferredItemPaddingLeft = global::Reviewer.Droid.Resource.Attribute.listPreferredItemPaddingLeft;
+			global::Microsoft.Identity.Client.Resource.Attribute.listPreferredItemPaddingRight = global::Reviewer.Droid.Resource.Attribute.listPreferredItemPaddingRight;
+			global::Microsoft.Identity.Client.Resource.Attribute.logo = global::Reviewer.Droid.Resource.Attribute.logo;
+			global::Microsoft.Identity.Client.Resource.Attribute.logoDescription = global::Reviewer.Droid.Resource.Attribute.logoDescription;
+			global::Microsoft.Identity.Client.Resource.Attribute.maxButtonHeight = global::Reviewer.Droid.Resource.Attribute.maxButtonHeight;
+			global::Microsoft.Identity.Client.Resource.Attribute.measureWithLargestChild = global::Reviewer.Droid.Resource.Attribute.measureWithLargestChild;
+			global::Microsoft.Identity.Client.Resource.Attribute.multiChoiceItemLayout = global::Reviewer.Droid.Resource.Attribute.multiChoiceItemLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.navigationContentDescription = global::Reviewer.Droid.Resource.Attribute.navigationContentDescription;
+			global::Microsoft.Identity.Client.Resource.Attribute.navigationIcon = global::Reviewer.Droid.Resource.Attribute.navigationIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.navigationMode = global::Reviewer.Droid.Resource.Attribute.navigationMode;
+			global::Microsoft.Identity.Client.Resource.Attribute.overlapAnchor = global::Reviewer.Droid.Resource.Attribute.overlapAnchor;
+			global::Microsoft.Identity.Client.Resource.Attribute.paddingBottomNoButtons = global::Reviewer.Droid.Resource.Attribute.paddingBottomNoButtons;
+			global::Microsoft.Identity.Client.Resource.Attribute.paddingEnd = global::Reviewer.Droid.Resource.Attribute.paddingEnd;
+			global::Microsoft.Identity.Client.Resource.Attribute.paddingStart = global::Reviewer.Droid.Resource.Attribute.paddingStart;
+			global::Microsoft.Identity.Client.Resource.Attribute.paddingTopNoTitle = global::Reviewer.Droid.Resource.Attribute.paddingTopNoTitle;
+			global::Microsoft.Identity.Client.Resource.Attribute.panelBackground = global::Reviewer.Droid.Resource.Attribute.panelBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.panelMenuListTheme = global::Reviewer.Droid.Resource.Attribute.panelMenuListTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.panelMenuListWidth = global::Reviewer.Droid.Resource.Attribute.panelMenuListWidth;
+			global::Microsoft.Identity.Client.Resource.Attribute.popupMenuStyle = global::Reviewer.Droid.Resource.Attribute.popupMenuStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.popupTheme = global::Reviewer.Droid.Resource.Attribute.popupTheme;
+			global::Microsoft.Identity.Client.Resource.Attribute.popupWindowStyle = global::Reviewer.Droid.Resource.Attribute.popupWindowStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.preserveIconSpacing = global::Reviewer.Droid.Resource.Attribute.preserveIconSpacing;
+			global::Microsoft.Identity.Client.Resource.Attribute.progressBarPadding = global::Reviewer.Droid.Resource.Attribute.progressBarPadding;
+			global::Microsoft.Identity.Client.Resource.Attribute.progressBarStyle = global::Reviewer.Droid.Resource.Attribute.progressBarStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.queryBackground = global::Reviewer.Droid.Resource.Attribute.queryBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.queryHint = global::Reviewer.Droid.Resource.Attribute.queryHint;
+			global::Microsoft.Identity.Client.Resource.Attribute.radioButtonStyle = global::Reviewer.Droid.Resource.Attribute.radioButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.ratingBarStyle = global::Reviewer.Droid.Resource.Attribute.ratingBarStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.ratingBarStyleIndicator = global::Reviewer.Droid.Resource.Attribute.ratingBarStyleIndicator;
+			global::Microsoft.Identity.Client.Resource.Attribute.ratingBarStyleSmall = global::Reviewer.Droid.Resource.Attribute.ratingBarStyleSmall;
+			global::Microsoft.Identity.Client.Resource.Attribute.searchHintIcon = global::Reviewer.Droid.Resource.Attribute.searchHintIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.searchIcon = global::Reviewer.Droid.Resource.Attribute.searchIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.searchViewStyle = global::Reviewer.Droid.Resource.Attribute.searchViewStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.seekBarStyle = global::Reviewer.Droid.Resource.Attribute.seekBarStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.selectableItemBackground = global::Reviewer.Droid.Resource.Attribute.selectableItemBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.selectableItemBackgroundBorderless = global::Reviewer.Droid.Resource.Attribute.selectableItemBackgroundBorderless;
+			global::Microsoft.Identity.Client.Resource.Attribute.showAsAction = global::Reviewer.Droid.Resource.Attribute.showAsAction;
+			global::Microsoft.Identity.Client.Resource.Attribute.showDividers = global::Reviewer.Droid.Resource.Attribute.showDividers;
+			global::Microsoft.Identity.Client.Resource.Attribute.showText = global::Reviewer.Droid.Resource.Attribute.showText;
+			global::Microsoft.Identity.Client.Resource.Attribute.showTitle = global::Reviewer.Droid.Resource.Attribute.showTitle;
+			global::Microsoft.Identity.Client.Resource.Attribute.singleChoiceItemLayout = global::Reviewer.Droid.Resource.Attribute.singleChoiceItemLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.spinBars = global::Reviewer.Droid.Resource.Attribute.spinBars;
+			global::Microsoft.Identity.Client.Resource.Attribute.spinnerDropDownItemStyle = global::Reviewer.Droid.Resource.Attribute.spinnerDropDownItemStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.spinnerStyle = global::Reviewer.Droid.Resource.Attribute.spinnerStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.splitTrack = global::Reviewer.Droid.Resource.Attribute.splitTrack;
+			global::Microsoft.Identity.Client.Resource.Attribute.srcCompat = global::Reviewer.Droid.Resource.Attribute.srcCompat;
+			global::Microsoft.Identity.Client.Resource.Attribute.state_above_anchor = global::Reviewer.Droid.Resource.Attribute.state_above_anchor;
+			global::Microsoft.Identity.Client.Resource.Attribute.subMenuArrow = global::Reviewer.Droid.Resource.Attribute.subMenuArrow;
+			global::Microsoft.Identity.Client.Resource.Attribute.submitBackground = global::Reviewer.Droid.Resource.Attribute.submitBackground;
+			global::Microsoft.Identity.Client.Resource.Attribute.subtitle = global::Reviewer.Droid.Resource.Attribute.subtitle;
+			global::Microsoft.Identity.Client.Resource.Attribute.subtitleTextAppearance = global::Reviewer.Droid.Resource.Attribute.subtitleTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Attribute.subtitleTextColor = global::Reviewer.Droid.Resource.Attribute.subtitleTextColor;
+			global::Microsoft.Identity.Client.Resource.Attribute.subtitleTextStyle = global::Reviewer.Droid.Resource.Attribute.subtitleTextStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.suggestionRowLayout = global::Reviewer.Droid.Resource.Attribute.suggestionRowLayout;
+			global::Microsoft.Identity.Client.Resource.Attribute.switchMinWidth = global::Reviewer.Droid.Resource.Attribute.switchMinWidth;
+			global::Microsoft.Identity.Client.Resource.Attribute.switchPadding = global::Reviewer.Droid.Resource.Attribute.switchPadding;
+			global::Microsoft.Identity.Client.Resource.Attribute.switchStyle = global::Reviewer.Droid.Resource.Attribute.switchStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.switchTextAppearance = global::Reviewer.Droid.Resource.Attribute.switchTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAllCaps = global::Reviewer.Droid.Resource.Attribute.textAllCaps;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearanceLargePopupMenu = global::Reviewer.Droid.Resource.Attribute.textAppearanceLargePopupMenu;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearanceListItem = global::Reviewer.Droid.Resource.Attribute.textAppearanceListItem;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearanceListItemSecondary = global::Reviewer.Droid.Resource.Attribute.textAppearanceListItemSecondary;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearanceListItemSmall = global::Reviewer.Droid.Resource.Attribute.textAppearanceListItemSmall;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearancePopupMenuHeader = global::Reviewer.Droid.Resource.Attribute.textAppearancePopupMenuHeader;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearanceSearchResultSubtitle = global::Reviewer.Droid.Resource.Attribute.textAppearanceSearchResultSubtitle;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearanceSearchResultTitle = global::Reviewer.Droid.Resource.Attribute.textAppearanceSearchResultTitle;
+			global::Microsoft.Identity.Client.Resource.Attribute.textAppearanceSmallPopupMenu = global::Reviewer.Droid.Resource.Attribute.textAppearanceSmallPopupMenu;
+			global::Microsoft.Identity.Client.Resource.Attribute.textColorAlertDialogListItem = global::Reviewer.Droid.Resource.Attribute.textColorAlertDialogListItem;
+			global::Microsoft.Identity.Client.Resource.Attribute.textColorSearchUrl = global::Reviewer.Droid.Resource.Attribute.textColorSearchUrl;
+			global::Microsoft.Identity.Client.Resource.Attribute.theme = global::Reviewer.Droid.Resource.Attribute.theme;
+			global::Microsoft.Identity.Client.Resource.Attribute.thickness = global::Reviewer.Droid.Resource.Attribute.thickness;
+			global::Microsoft.Identity.Client.Resource.Attribute.thumbTextPadding = global::Reviewer.Droid.Resource.Attribute.thumbTextPadding;
+			global::Microsoft.Identity.Client.Resource.Attribute.thumbTint = global::Reviewer.Droid.Resource.Attribute.thumbTint;
+			global::Microsoft.Identity.Client.Resource.Attribute.thumbTintMode = global::Reviewer.Droid.Resource.Attribute.thumbTintMode;
+			global::Microsoft.Identity.Client.Resource.Attribute.tickMark = global::Reviewer.Droid.Resource.Attribute.tickMark;
+			global::Microsoft.Identity.Client.Resource.Attribute.tickMarkTint = global::Reviewer.Droid.Resource.Attribute.tickMarkTint;
+			global::Microsoft.Identity.Client.Resource.Attribute.tickMarkTintMode = global::Reviewer.Droid.Resource.Attribute.tickMarkTintMode;
+			global::Microsoft.Identity.Client.Resource.Attribute.tint = global::Reviewer.Droid.Resource.Attribute.tint;
+			global::Microsoft.Identity.Client.Resource.Attribute.tintMode = global::Reviewer.Droid.Resource.Attribute.tintMode;
+			global::Microsoft.Identity.Client.Resource.Attribute.title = global::Reviewer.Droid.Resource.Attribute.title;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleMargin = global::Reviewer.Droid.Resource.Attribute.titleMargin;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleMarginBottom = global::Reviewer.Droid.Resource.Attribute.titleMarginBottom;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleMarginEnd = global::Reviewer.Droid.Resource.Attribute.titleMarginEnd;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleMarginStart = global::Reviewer.Droid.Resource.Attribute.titleMarginStart;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleMarginTop = global::Reviewer.Droid.Resource.Attribute.titleMarginTop;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleMargins = global::Reviewer.Droid.Resource.Attribute.titleMargins;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleTextAppearance = global::Reviewer.Droid.Resource.Attribute.titleTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleTextColor = global::Reviewer.Droid.Resource.Attribute.titleTextColor;
+			global::Microsoft.Identity.Client.Resource.Attribute.titleTextStyle = global::Reviewer.Droid.Resource.Attribute.titleTextStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.toolbarNavigationButtonStyle = global::Reviewer.Droid.Resource.Attribute.toolbarNavigationButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.toolbarStyle = global::Reviewer.Droid.Resource.Attribute.toolbarStyle;
+			global::Microsoft.Identity.Client.Resource.Attribute.track = global::Reviewer.Droid.Resource.Attribute.track;
+			global::Microsoft.Identity.Client.Resource.Attribute.trackTint = global::Reviewer.Droid.Resource.Attribute.trackTint;
+			global::Microsoft.Identity.Client.Resource.Attribute.trackTintMode = global::Reviewer.Droid.Resource.Attribute.trackTintMode;
+			global::Microsoft.Identity.Client.Resource.Attribute.voiceIcon = global::Reviewer.Droid.Resource.Attribute.voiceIcon;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowActionBar = global::Reviewer.Droid.Resource.Attribute.windowActionBar;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowActionBarOverlay = global::Reviewer.Droid.Resource.Attribute.windowActionBarOverlay;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowActionModeOverlay = global::Reviewer.Droid.Resource.Attribute.windowActionModeOverlay;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowFixedHeightMajor = global::Reviewer.Droid.Resource.Attribute.windowFixedHeightMajor;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowFixedHeightMinor = global::Reviewer.Droid.Resource.Attribute.windowFixedHeightMinor;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowFixedWidthMajor = global::Reviewer.Droid.Resource.Attribute.windowFixedWidthMajor;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowFixedWidthMinor = global::Reviewer.Droid.Resource.Attribute.windowFixedWidthMinor;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowMinWidthMajor = global::Reviewer.Droid.Resource.Attribute.windowMinWidthMajor;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowMinWidthMinor = global::Reviewer.Droid.Resource.Attribute.windowMinWidthMinor;
+			global::Microsoft.Identity.Client.Resource.Attribute.windowNoTitle = global::Reviewer.Droid.Resource.Attribute.windowNoTitle;
+			global::Microsoft.Identity.Client.Resource.Boolean.abc_action_bar_embed_tabs = global::Reviewer.Droid.Resource.Boolean.abc_action_bar_embed_tabs;
+			global::Microsoft.Identity.Client.Resource.Boolean.abc_allow_stacked_button_bar = global::Reviewer.Droid.Resource.Boolean.abc_allow_stacked_button_bar;
+			global::Microsoft.Identity.Client.Resource.Boolean.abc_config_actionMenuItemAllCaps = global::Reviewer.Droid.Resource.Boolean.abc_config_actionMenuItemAllCaps;
+			global::Microsoft.Identity.Client.Resource.Boolean.abc_config_closeDialogWhenTouchOutside = global::Reviewer.Droid.Resource.Boolean.abc_config_closeDialogWhenTouchOutside;
+			global::Microsoft.Identity.Client.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent = global::Reviewer.Droid.Resource.Boolean.abc_config_showMenuShortcutsWhenKeyboardPresent;
+			global::Microsoft.Identity.Client.Resource.Color.abc_background_cache_hint_selector_material_dark = global::Reviewer.Droid.Resource.Color.abc_background_cache_hint_selector_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.abc_background_cache_hint_selector_material_light = global::Reviewer.Droid.Resource.Color.abc_background_cache_hint_selector_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.abc_btn_colored_borderless_text_material = global::Reviewer.Droid.Resource.Color.abc_btn_colored_borderless_text_material;
+			global::Microsoft.Identity.Client.Resource.Color.abc_btn_colored_text_material = global::Reviewer.Droid.Resource.Color.abc_btn_colored_text_material;
+			global::Microsoft.Identity.Client.Resource.Color.abc_color_highlight_material = global::Reviewer.Droid.Resource.Color.abc_color_highlight_material;
+			global::Microsoft.Identity.Client.Resource.Color.abc_hint_foreground_material_dark = global::Reviewer.Droid.Resource.Color.abc_hint_foreground_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.abc_hint_foreground_material_light = global::Reviewer.Droid.Resource.Color.abc_hint_foreground_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.abc_input_method_navigation_guard = global::Reviewer.Droid.Resource.Color.abc_input_method_navigation_guard;
+			global::Microsoft.Identity.Client.Resource.Color.abc_primary_text_disable_only_material_dark = global::Reviewer.Droid.Resource.Color.abc_primary_text_disable_only_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.abc_primary_text_disable_only_material_light = global::Reviewer.Droid.Resource.Color.abc_primary_text_disable_only_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.abc_primary_text_material_dark = global::Reviewer.Droid.Resource.Color.abc_primary_text_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.abc_primary_text_material_light = global::Reviewer.Droid.Resource.Color.abc_primary_text_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.abc_search_url_text = global::Reviewer.Droid.Resource.Color.abc_search_url_text;
+			global::Microsoft.Identity.Client.Resource.Color.abc_search_url_text_normal = global::Reviewer.Droid.Resource.Color.abc_search_url_text_normal;
+			global::Microsoft.Identity.Client.Resource.Color.abc_search_url_text_pressed = global::Reviewer.Droid.Resource.Color.abc_search_url_text_pressed;
+			global::Microsoft.Identity.Client.Resource.Color.abc_search_url_text_selected = global::Reviewer.Droid.Resource.Color.abc_search_url_text_selected;
+			global::Microsoft.Identity.Client.Resource.Color.abc_secondary_text_material_dark = global::Reviewer.Droid.Resource.Color.abc_secondary_text_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.abc_secondary_text_material_light = global::Reviewer.Droid.Resource.Color.abc_secondary_text_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.abc_tint_btn_checkable = global::Reviewer.Droid.Resource.Color.abc_tint_btn_checkable;
+			global::Microsoft.Identity.Client.Resource.Color.abc_tint_default = global::Reviewer.Droid.Resource.Color.abc_tint_default;
+			global::Microsoft.Identity.Client.Resource.Color.abc_tint_edittext = global::Reviewer.Droid.Resource.Color.abc_tint_edittext;
+			global::Microsoft.Identity.Client.Resource.Color.abc_tint_seek_thumb = global::Reviewer.Droid.Resource.Color.abc_tint_seek_thumb;
+			global::Microsoft.Identity.Client.Resource.Color.abc_tint_spinner = global::Reviewer.Droid.Resource.Color.abc_tint_spinner;
+			global::Microsoft.Identity.Client.Resource.Color.abc_tint_switch_thumb = global::Reviewer.Droid.Resource.Color.abc_tint_switch_thumb;
+			global::Microsoft.Identity.Client.Resource.Color.abc_tint_switch_track = global::Reviewer.Droid.Resource.Color.abc_tint_switch_track;
+			global::Microsoft.Identity.Client.Resource.Color.accent_material_dark = global::Reviewer.Droid.Resource.Color.accent_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.accent_material_light = global::Reviewer.Droid.Resource.Color.accent_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.background_floating_material_dark = global::Reviewer.Droid.Resource.Color.background_floating_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.background_floating_material_light = global::Reviewer.Droid.Resource.Color.background_floating_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.background_material_dark = global::Reviewer.Droid.Resource.Color.background_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.background_material_light = global::Reviewer.Droid.Resource.Color.background_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.bright_foreground_disabled_material_dark = global::Reviewer.Droid.Resource.Color.bright_foreground_disabled_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.bright_foreground_disabled_material_light = global::Reviewer.Droid.Resource.Color.bright_foreground_disabled_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.bright_foreground_inverse_material_dark = global::Reviewer.Droid.Resource.Color.bright_foreground_inverse_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.bright_foreground_inverse_material_light = global::Reviewer.Droid.Resource.Color.bright_foreground_inverse_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.bright_foreground_material_dark = global::Reviewer.Droid.Resource.Color.bright_foreground_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.bright_foreground_material_light = global::Reviewer.Droid.Resource.Color.bright_foreground_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.button_material_dark = global::Reviewer.Droid.Resource.Color.button_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.button_material_light = global::Reviewer.Droid.Resource.Color.button_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.dim_foreground_disabled_material_dark = global::Reviewer.Droid.Resource.Color.dim_foreground_disabled_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.dim_foreground_disabled_material_light = global::Reviewer.Droid.Resource.Color.dim_foreground_disabled_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.dim_foreground_material_dark = global::Reviewer.Droid.Resource.Color.dim_foreground_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.dim_foreground_material_light = global::Reviewer.Droid.Resource.Color.dim_foreground_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.foreground_material_dark = global::Reviewer.Droid.Resource.Color.foreground_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.foreground_material_light = global::Reviewer.Droid.Resource.Color.foreground_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.highlighted_text_material_dark = global::Reviewer.Droid.Resource.Color.highlighted_text_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.highlighted_text_material_light = global::Reviewer.Droid.Resource.Color.highlighted_text_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.material_blue_grey_800 = global::Reviewer.Droid.Resource.Color.material_blue_grey_800;
+			global::Microsoft.Identity.Client.Resource.Color.material_blue_grey_900 = global::Reviewer.Droid.Resource.Color.material_blue_grey_900;
+			global::Microsoft.Identity.Client.Resource.Color.material_blue_grey_950 = global::Reviewer.Droid.Resource.Color.material_blue_grey_950;
+			global::Microsoft.Identity.Client.Resource.Color.material_deep_teal_200 = global::Reviewer.Droid.Resource.Color.material_deep_teal_200;
+			global::Microsoft.Identity.Client.Resource.Color.material_deep_teal_500 = global::Reviewer.Droid.Resource.Color.material_deep_teal_500;
+			global::Microsoft.Identity.Client.Resource.Color.material_grey_100 = global::Reviewer.Droid.Resource.Color.material_grey_100;
+			global::Microsoft.Identity.Client.Resource.Color.material_grey_300 = global::Reviewer.Droid.Resource.Color.material_grey_300;
+			global::Microsoft.Identity.Client.Resource.Color.material_grey_50 = global::Reviewer.Droid.Resource.Color.material_grey_50;
+			global::Microsoft.Identity.Client.Resource.Color.material_grey_600 = global::Reviewer.Droid.Resource.Color.material_grey_600;
+			global::Microsoft.Identity.Client.Resource.Color.material_grey_800 = global::Reviewer.Droid.Resource.Color.material_grey_800;
+			global::Microsoft.Identity.Client.Resource.Color.material_grey_850 = global::Reviewer.Droid.Resource.Color.material_grey_850;
+			global::Microsoft.Identity.Client.Resource.Color.material_grey_900 = global::Reviewer.Droid.Resource.Color.material_grey_900;
+			global::Microsoft.Identity.Client.Resource.Color.notification_action_color_filter = global::Reviewer.Droid.Resource.Color.notification_action_color_filter;
+			global::Microsoft.Identity.Client.Resource.Color.notification_icon_bg_color = global::Reviewer.Droid.Resource.Color.notification_icon_bg_color;
+			global::Microsoft.Identity.Client.Resource.Color.notification_material_background_media_default_color = global::Reviewer.Droid.Resource.Color.notification_material_background_media_default_color;
+			global::Microsoft.Identity.Client.Resource.Color.primary_dark_material_dark = global::Reviewer.Droid.Resource.Color.primary_dark_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.primary_dark_material_light = global::Reviewer.Droid.Resource.Color.primary_dark_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.primary_material_dark = global::Reviewer.Droid.Resource.Color.primary_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.primary_material_light = global::Reviewer.Droid.Resource.Color.primary_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.primary_text_default_material_dark = global::Reviewer.Droid.Resource.Color.primary_text_default_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.primary_text_default_material_light = global::Reviewer.Droid.Resource.Color.primary_text_default_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.primary_text_disabled_material_dark = global::Reviewer.Droid.Resource.Color.primary_text_disabled_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.primary_text_disabled_material_light = global::Reviewer.Droid.Resource.Color.primary_text_disabled_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.ripple_material_dark = global::Reviewer.Droid.Resource.Color.ripple_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.ripple_material_light = global::Reviewer.Droid.Resource.Color.ripple_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.secondary_text_default_material_dark = global::Reviewer.Droid.Resource.Color.secondary_text_default_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.secondary_text_default_material_light = global::Reviewer.Droid.Resource.Color.secondary_text_default_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.secondary_text_disabled_material_dark = global::Reviewer.Droid.Resource.Color.secondary_text_disabled_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.secondary_text_disabled_material_light = global::Reviewer.Droid.Resource.Color.secondary_text_disabled_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.switch_thumb_disabled_material_dark = global::Reviewer.Droid.Resource.Color.switch_thumb_disabled_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.switch_thumb_disabled_material_light = global::Reviewer.Droid.Resource.Color.switch_thumb_disabled_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.switch_thumb_material_dark = global::Reviewer.Droid.Resource.Color.switch_thumb_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.switch_thumb_material_light = global::Reviewer.Droid.Resource.Color.switch_thumb_material_light;
+			global::Microsoft.Identity.Client.Resource.Color.switch_thumb_normal_material_dark = global::Reviewer.Droid.Resource.Color.switch_thumb_normal_material_dark;
+			global::Microsoft.Identity.Client.Resource.Color.switch_thumb_normal_material_light = global::Reviewer.Droid.Resource.Color.switch_thumb_normal_material_light;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_content_inset_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_content_inset_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_content_inset_with_nav = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_content_inset_with_nav;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_default_height_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_default_height_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_default_padding_end_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_default_padding_end_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_default_padding_start_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_default_padding_start_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_elevation_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_elevation_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_icon_vertical_padding_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_icon_vertical_padding_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_overflow_padding_end_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_end_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_overflow_padding_start_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_overflow_padding_start_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_progress_bar_size = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_progress_bar_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_stacked_max_height = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_stacked_max_height;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_stacked_tab_max_width = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_stacked_tab_max_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_subtitle_bottom_margin_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_bar_subtitle_top_margin_material = global::Reviewer.Droid.Resource.Dimension.abc_action_bar_subtitle_top_margin_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_button_min_height_material = global::Reviewer.Droid.Resource.Dimension.abc_action_button_min_height_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_button_min_width_material = global::Reviewer.Droid.Resource.Dimension.abc_action_button_min_width_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_action_button_min_width_overflow_material = global::Reviewer.Droid.Resource.Dimension.abc_action_button_min_width_overflow_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_alert_dialog_button_bar_height = global::Reviewer.Droid.Resource.Dimension.abc_alert_dialog_button_bar_height;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_button_inset_horizontal_material = global::Reviewer.Droid.Resource.Dimension.abc_button_inset_horizontal_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_button_inset_vertical_material = global::Reviewer.Droid.Resource.Dimension.abc_button_inset_vertical_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_button_padding_horizontal_material = global::Reviewer.Droid.Resource.Dimension.abc_button_padding_horizontal_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_button_padding_vertical_material = global::Reviewer.Droid.Resource.Dimension.abc_button_padding_vertical_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_cascading_menus_min_smallest_width = global::Reviewer.Droid.Resource.Dimension.abc_cascading_menus_min_smallest_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_config_prefDialogWidth = global::Reviewer.Droid.Resource.Dimension.abc_config_prefDialogWidth;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_control_corner_material = global::Reviewer.Droid.Resource.Dimension.abc_control_corner_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_control_inset_material = global::Reviewer.Droid.Resource.Dimension.abc_control_inset_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_control_padding_material = global::Reviewer.Droid.Resource.Dimension.abc_control_padding_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_fixed_height_major = global::Reviewer.Droid.Resource.Dimension.abc_dialog_fixed_height_major;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_fixed_height_minor = global::Reviewer.Droid.Resource.Dimension.abc_dialog_fixed_height_minor;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_fixed_width_major = global::Reviewer.Droid.Resource.Dimension.abc_dialog_fixed_width_major;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_fixed_width_minor = global::Reviewer.Droid.Resource.Dimension.abc_dialog_fixed_width_minor;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons = global::Reviewer.Droid.Resource.Dimension.abc_dialog_list_padding_bottom_no_buttons;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_list_padding_top_no_title = global::Reviewer.Droid.Resource.Dimension.abc_dialog_list_padding_top_no_title;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_min_width_major = global::Reviewer.Droid.Resource.Dimension.abc_dialog_min_width_major;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_min_width_minor = global::Reviewer.Droid.Resource.Dimension.abc_dialog_min_width_minor;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_padding_material = global::Reviewer.Droid.Resource.Dimension.abc_dialog_padding_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_padding_top_material = global::Reviewer.Droid.Resource.Dimension.abc_dialog_padding_top_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dialog_title_divider_material = global::Reviewer.Droid.Resource.Dimension.abc_dialog_title_divider_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_disabled_alpha_material_dark = global::Reviewer.Droid.Resource.Dimension.abc_disabled_alpha_material_dark;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_disabled_alpha_material_light = global::Reviewer.Droid.Resource.Dimension.abc_disabled_alpha_material_light;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dropdownitem_icon_width = global::Reviewer.Droid.Resource.Dimension.abc_dropdownitem_icon_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dropdownitem_text_padding_left = global::Reviewer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_left;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_dropdownitem_text_padding_right = global::Reviewer.Droid.Resource.Dimension.abc_dropdownitem_text_padding_right;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_edit_text_inset_bottom_material = global::Reviewer.Droid.Resource.Dimension.abc_edit_text_inset_bottom_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_edit_text_inset_horizontal_material = global::Reviewer.Droid.Resource.Dimension.abc_edit_text_inset_horizontal_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_edit_text_inset_top_material = global::Reviewer.Droid.Resource.Dimension.abc_edit_text_inset_top_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_floating_window_z = global::Reviewer.Droid.Resource.Dimension.abc_floating_window_z;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_list_item_padding_horizontal_material = global::Reviewer.Droid.Resource.Dimension.abc_list_item_padding_horizontal_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_panel_menu_list_width = global::Reviewer.Droid.Resource.Dimension.abc_panel_menu_list_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_progress_bar_height_material = global::Reviewer.Droid.Resource.Dimension.abc_progress_bar_height_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_search_view_preferred_height = global::Reviewer.Droid.Resource.Dimension.abc_search_view_preferred_height;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_search_view_preferred_width = global::Reviewer.Droid.Resource.Dimension.abc_search_view_preferred_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_seekbar_track_background_height_material = global::Reviewer.Droid.Resource.Dimension.abc_seekbar_track_background_height_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_seekbar_track_progress_height_material = global::Reviewer.Droid.Resource.Dimension.abc_seekbar_track_progress_height_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_select_dialog_padding_start_material = global::Reviewer.Droid.Resource.Dimension.abc_select_dialog_padding_start_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_switch_padding = global::Reviewer.Droid.Resource.Dimension.abc_switch_padding;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_body_1_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_body_1_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_body_2_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_body_2_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_button_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_button_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_caption_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_caption_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_display_1_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_display_1_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_display_2_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_display_2_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_display_3_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_display_3_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_display_4_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_display_4_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_headline_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_headline_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_large_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_large_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_medium_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_medium_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_menu_header_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_menu_header_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_menu_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_menu_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_small_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_small_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_subhead_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_subhead_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_subtitle_material_toolbar = global::Reviewer.Droid.Resource.Dimension.abc_text_size_subtitle_material_toolbar;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_title_material = global::Reviewer.Droid.Resource.Dimension.abc_text_size_title_material;
+			global::Microsoft.Identity.Client.Resource.Dimension.abc_text_size_title_material_toolbar = global::Reviewer.Droid.Resource.Dimension.abc_text_size_title_material_toolbar;
+			global::Microsoft.Identity.Client.Resource.Dimension.disabled_alpha_material_dark = global::Reviewer.Droid.Resource.Dimension.disabled_alpha_material_dark;
+			global::Microsoft.Identity.Client.Resource.Dimension.disabled_alpha_material_light = global::Reviewer.Droid.Resource.Dimension.disabled_alpha_material_light;
+			global::Microsoft.Identity.Client.Resource.Dimension.highlight_alpha_material_colored = global::Reviewer.Droid.Resource.Dimension.highlight_alpha_material_colored;
+			global::Microsoft.Identity.Client.Resource.Dimension.highlight_alpha_material_dark = global::Reviewer.Droid.Resource.Dimension.highlight_alpha_material_dark;
+			global::Microsoft.Identity.Client.Resource.Dimension.highlight_alpha_material_light = global::Reviewer.Droid.Resource.Dimension.highlight_alpha_material_light;
+			global::Microsoft.Identity.Client.Resource.Dimension.hint_alpha_material_dark = global::Reviewer.Droid.Resource.Dimension.hint_alpha_material_dark;
+			global::Microsoft.Identity.Client.Resource.Dimension.hint_alpha_material_light = global::Reviewer.Droid.Resource.Dimension.hint_alpha_material_light;
+			global::Microsoft.Identity.Client.Resource.Dimension.hint_pressed_alpha_material_dark = global::Reviewer.Droid.Resource.Dimension.hint_pressed_alpha_material_dark;
+			global::Microsoft.Identity.Client.Resource.Dimension.hint_pressed_alpha_material_light = global::Reviewer.Droid.Resource.Dimension.hint_pressed_alpha_material_light;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_action_icon_size = global::Reviewer.Droid.Resource.Dimension.notification_action_icon_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_action_text_size = global::Reviewer.Droid.Resource.Dimension.notification_action_text_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_big_circle_margin = global::Reviewer.Droid.Resource.Dimension.notification_big_circle_margin;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_content_margin_start = global::Reviewer.Droid.Resource.Dimension.notification_content_margin_start;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_large_icon_height = global::Reviewer.Droid.Resource.Dimension.notification_large_icon_height;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_large_icon_width = global::Reviewer.Droid.Resource.Dimension.notification_large_icon_width;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_main_column_padding_top = global::Reviewer.Droid.Resource.Dimension.notification_main_column_padding_top;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_media_narrow_margin = global::Reviewer.Droid.Resource.Dimension.notification_media_narrow_margin;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_right_icon_size = global::Reviewer.Droid.Resource.Dimension.notification_right_icon_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_right_side_padding_top = global::Reviewer.Droid.Resource.Dimension.notification_right_side_padding_top;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_small_icon_background_padding = global::Reviewer.Droid.Resource.Dimension.notification_small_icon_background_padding;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_small_icon_size_as_large = global::Reviewer.Droid.Resource.Dimension.notification_small_icon_size_as_large;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_subtext_size = global::Reviewer.Droid.Resource.Dimension.notification_subtext_size;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_top_pad = global::Reviewer.Droid.Resource.Dimension.notification_top_pad;
+			global::Microsoft.Identity.Client.Resource.Dimension.notification_top_pad_large_text = global::Reviewer.Droid.Resource.Dimension.notification_top_pad_large_text;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ab_share_pack_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_ab_share_pack_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_action_bar_item_background_material = global::Reviewer.Droid.Resource.Drawable.abc_action_bar_item_background_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_borderless_material = global::Reviewer.Droid.Resource.Drawable.abc_btn_borderless_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_check_material = global::Reviewer.Droid.Resource.Drawable.abc_btn_check_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_check_to_on_mtrl_000 = global::Reviewer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_000;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_check_to_on_mtrl_015 = global::Reviewer.Droid.Resource.Drawable.abc_btn_check_to_on_mtrl_015;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_colored_material = global::Reviewer.Droid.Resource.Drawable.abc_btn_colored_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_default_mtrl_shape = global::Reviewer.Droid.Resource.Drawable.abc_btn_default_mtrl_shape;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_radio_material = global::Reviewer.Droid.Resource.Drawable.abc_btn_radio_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_radio_to_on_mtrl_000 = global::Reviewer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_000;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_radio_to_on_mtrl_015 = global::Reviewer.Droid.Resource.Drawable.abc_btn_radio_to_on_mtrl_015;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001 = global::Reviewer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00001;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012 = global::Reviewer.Droid.Resource.Drawable.abc_btn_switch_to_on_mtrl_00012;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_cab_background_internal_bg = global::Reviewer.Droid.Resource.Drawable.abc_cab_background_internal_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_cab_background_top_material = global::Reviewer.Droid.Resource.Drawable.abc_cab_background_top_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_cab_background_top_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_cab_background_top_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_control_background_material = global::Reviewer.Droid.Resource.Drawable.abc_control_background_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_dialog_material_background = global::Reviewer.Droid.Resource.Drawable.abc_dialog_material_background;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_edit_text_material = global::Reviewer.Droid.Resource.Drawable.abc_edit_text_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_ab_back_material = global::Reviewer.Droid.Resource.Drawable.abc_ic_ab_back_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp = global::Reviewer.Droid.Resource.Drawable.abc_ic_arrow_drop_right_black_24dp;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_clear_material = global::Reviewer.Droid.Resource.Drawable.abc_ic_clear_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_ic_commit_search_api_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_go_search_api_material = global::Reviewer.Droid.Resource.Drawable.abc_ic_go_search_api_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha = global::Reviewer.Droid.Resource.Drawable.abc_ic_menu_copy_mtrl_am_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_ic_menu_cut_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_menu_overflow_material = global::Reviewer.Droid.Resource.Drawable.abc_ic_menu_overflow_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha = global::Reviewer.Droid.Resource.Drawable.abc_ic_menu_paste_mtrl_am_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_ic_menu_selectall_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_menu_share_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_ic_menu_share_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_search_api_material = global::Reviewer.Droid.Resource.Drawable.abc_ic_search_api_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_star_black_16dp = global::Reviewer.Droid.Resource.Drawable.abc_ic_star_black_16dp;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_star_black_36dp = global::Reviewer.Droid.Resource.Drawable.abc_ic_star_black_36dp;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_star_black_48dp = global::Reviewer.Droid.Resource.Drawable.abc_ic_star_black_48dp;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_star_half_black_16dp = global::Reviewer.Droid.Resource.Drawable.abc_ic_star_half_black_16dp;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_star_half_black_36dp = global::Reviewer.Droid.Resource.Drawable.abc_ic_star_half_black_36dp;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_star_half_black_48dp = global::Reviewer.Droid.Resource.Drawable.abc_ic_star_half_black_48dp;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ic_voice_search_api_material = global::Reviewer.Droid.Resource.Drawable.abc_ic_voice_search_api_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_item_background_holo_dark = global::Reviewer.Droid.Resource.Drawable.abc_item_background_holo_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_item_background_holo_light = global::Reviewer.Droid.Resource.Drawable.abc_item_background_holo_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_divider_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_list_divider_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_focused_holo = global::Reviewer.Droid.Resource.Drawable.abc_list_focused_holo;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_longpressed_holo = global::Reviewer.Droid.Resource.Drawable.abc_list_longpressed_holo;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_pressed_holo_dark = global::Reviewer.Droid.Resource.Drawable.abc_list_pressed_holo_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_pressed_holo_light = global::Reviewer.Droid.Resource.Drawable.abc_list_pressed_holo_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_selector_background_transition_holo_dark = global::Reviewer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_selector_background_transition_holo_light = global::Reviewer.Droid.Resource.Drawable.abc_list_selector_background_transition_holo_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_selector_disabled_holo_dark = global::Reviewer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_selector_disabled_holo_light = global::Reviewer.Droid.Resource.Drawable.abc_list_selector_disabled_holo_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_selector_holo_dark = global::Reviewer.Droid.Resource.Drawable.abc_list_selector_holo_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_list_selector_holo_light = global::Reviewer.Droid.Resource.Drawable.abc_list_selector_holo_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult = global::Reviewer.Droid.Resource.Drawable.abc_menu_hardkey_panel_mtrl_mult;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_popup_background_mtrl_mult = global::Reviewer.Droid.Resource.Drawable.abc_popup_background_mtrl_mult;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ratingbar_indicator_material = global::Reviewer.Droid.Resource.Drawable.abc_ratingbar_indicator_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ratingbar_material = global::Reviewer.Droid.Resource.Drawable.abc_ratingbar_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_ratingbar_small_material = global::Reviewer.Droid.Resource.Drawable.abc_ratingbar_small_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_scrubber_control_off_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000 = global::Reviewer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_000;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005 = global::Reviewer.Droid.Resource.Drawable.abc_scrubber_control_to_pressed_mtrl_005;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_scrubber_primary_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_scrubber_primary_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_scrubber_track_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_scrubber_track_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_seekbar_thumb_material = global::Reviewer.Droid.Resource.Drawable.abc_seekbar_thumb_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_seekbar_tick_mark_material = global::Reviewer.Droid.Resource.Drawable.abc_seekbar_tick_mark_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_seekbar_track_material = global::Reviewer.Droid.Resource.Drawable.abc_seekbar_track_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_spinner_mtrl_am_alpha = global::Reviewer.Droid.Resource.Drawable.abc_spinner_mtrl_am_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_spinner_textfield_background_material = global::Reviewer.Droid.Resource.Drawable.abc_spinner_textfield_background_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_switch_thumb_material = global::Reviewer.Droid.Resource.Drawable.abc_switch_thumb_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_switch_track_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_switch_track_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_tab_indicator_material = global::Reviewer.Droid.Resource.Drawable.abc_tab_indicator_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_tab_indicator_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_tab_indicator_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_text_cursor_material = global::Reviewer.Droid.Resource.Drawable.abc_text_cursor_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_text_select_handle_left_mtrl_dark = global::Reviewer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_text_select_handle_left_mtrl_light = global::Reviewer.Droid.Resource.Drawable.abc_text_select_handle_left_mtrl_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark = global::Reviewer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_text_select_handle_middle_mtrl_light = global::Reviewer.Droid.Resource.Drawable.abc_text_select_handle_middle_mtrl_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_text_select_handle_right_mtrl_dark = global::Reviewer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_dark;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_text_select_handle_right_mtrl_light = global::Reviewer.Droid.Resource.Drawable.abc_text_select_handle_right_mtrl_light;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_textfield_activated_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_textfield_activated_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_textfield_default_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_textfield_default_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_textfield_search_activated_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_textfield_search_default_mtrl_alpha = global::Reviewer.Droid.Resource.Drawable.abc_textfield_search_default_mtrl_alpha;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_textfield_search_material = global::Reviewer.Droid.Resource.Drawable.abc_textfield_search_material;
+			global::Microsoft.Identity.Client.Resource.Drawable.abc_vector_test = global::Reviewer.Droid.Resource.Drawable.abc_vector_test;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_action_background = global::Reviewer.Droid.Resource.Drawable.notification_action_background;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg = global::Reviewer.Droid.Resource.Drawable.notification_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_low = global::Reviewer.Droid.Resource.Drawable.notification_bg_low;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_low_normal = global::Reviewer.Droid.Resource.Drawable.notification_bg_low_normal;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_low_pressed = global::Reviewer.Droid.Resource.Drawable.notification_bg_low_pressed;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_normal = global::Reviewer.Droid.Resource.Drawable.notification_bg_normal;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_bg_normal_pressed = global::Reviewer.Droid.Resource.Drawable.notification_bg_normal_pressed;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_icon_background = global::Reviewer.Droid.Resource.Drawable.notification_icon_background;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_template_icon_bg = global::Reviewer.Droid.Resource.Drawable.notification_template_icon_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_template_icon_low_bg = global::Reviewer.Droid.Resource.Drawable.notification_template_icon_low_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notification_tile_bg = global::Reviewer.Droid.Resource.Drawable.notification_tile_bg;
+			global::Microsoft.Identity.Client.Resource.Drawable.notify_panel_notification_icon_bg = global::Reviewer.Droid.Resource.Drawable.notify_panel_notification_icon_bg;
+			global::Microsoft.Identity.Client.Resource.Id.action0 = global::Reviewer.Droid.Resource.Id.action0;
+			global::Microsoft.Identity.Client.Resource.Id.action_bar = global::Reviewer.Droid.Resource.Id.action_bar;
+			global::Microsoft.Identity.Client.Resource.Id.action_bar_activity_content = global::Reviewer.Droid.Resource.Id.action_bar_activity_content;
+			global::Microsoft.Identity.Client.Resource.Id.action_bar_container = global::Reviewer.Droid.Resource.Id.action_bar_container;
+			global::Microsoft.Identity.Client.Resource.Id.action_bar_root = global::Reviewer.Droid.Resource.Id.action_bar_root;
+			global::Microsoft.Identity.Client.Resource.Id.action_bar_spinner = global::Reviewer.Droid.Resource.Id.action_bar_spinner;
+			global::Microsoft.Identity.Client.Resource.Id.action_bar_subtitle = global::Reviewer.Droid.Resource.Id.action_bar_subtitle;
+			global::Microsoft.Identity.Client.Resource.Id.action_bar_title = global::Reviewer.Droid.Resource.Id.action_bar_title;
+			global::Microsoft.Identity.Client.Resource.Id.action_container = global::Reviewer.Droid.Resource.Id.action_container;
+			global::Microsoft.Identity.Client.Resource.Id.action_context_bar = global::Reviewer.Droid.Resource.Id.action_context_bar;
+			global::Microsoft.Identity.Client.Resource.Id.action_divider = global::Reviewer.Droid.Resource.Id.action_divider;
+			global::Microsoft.Identity.Client.Resource.Id.action_image = global::Reviewer.Droid.Resource.Id.action_image;
+			global::Microsoft.Identity.Client.Resource.Id.action_menu_divider = global::Reviewer.Droid.Resource.Id.action_menu_divider;
+			global::Microsoft.Identity.Client.Resource.Id.action_menu_presenter = global::Reviewer.Droid.Resource.Id.action_menu_presenter;
+			global::Microsoft.Identity.Client.Resource.Id.action_mode_bar = global::Reviewer.Droid.Resource.Id.action_mode_bar;
+			global::Microsoft.Identity.Client.Resource.Id.action_mode_bar_stub = global::Reviewer.Droid.Resource.Id.action_mode_bar_stub;
+			global::Microsoft.Identity.Client.Resource.Id.action_mode_close_button = global::Reviewer.Droid.Resource.Id.action_mode_close_button;
+			global::Microsoft.Identity.Client.Resource.Id.action_text = global::Reviewer.Droid.Resource.Id.action_text;
+			global::Microsoft.Identity.Client.Resource.Id.actions = global::Reviewer.Droid.Resource.Id.actions;
+			global::Microsoft.Identity.Client.Resource.Id.activity_chooser_view_content = global::Reviewer.Droid.Resource.Id.activity_chooser_view_content;
+			global::Microsoft.Identity.Client.Resource.Id.add = global::Reviewer.Droid.Resource.Id.add;
+			global::Microsoft.Identity.Client.Resource.Id.agentWebView = global::Reviewer.Droid.Resource.Id.agentWebView;
+			global::Microsoft.Identity.Client.Resource.Id.alertTitle = global::Reviewer.Droid.Resource.Id.alertTitle;
+			global::Microsoft.Identity.Client.Resource.Id.always = global::Reviewer.Droid.Resource.Id.always;
+			global::Microsoft.Identity.Client.Resource.Id.beginning = global::Reviewer.Droid.Resource.Id.beginning;
+			global::Microsoft.Identity.Client.Resource.Id.bottom = global::Reviewer.Droid.Resource.Id.bottom;
+			global::Microsoft.Identity.Client.Resource.Id.buttonPanel = global::Reviewer.Droid.Resource.Id.buttonPanel;
+			global::Microsoft.Identity.Client.Resource.Id.cancel_action = global::Reviewer.Droid.Resource.Id.cancel_action;
+			global::Microsoft.Identity.Client.Resource.Id.checkbox = global::Reviewer.Droid.Resource.Id.checkbox;
+			global::Microsoft.Identity.Client.Resource.Id.chronometer = global::Reviewer.Droid.Resource.Id.chronometer;
+			global::Microsoft.Identity.Client.Resource.Id.collapseActionView = global::Reviewer.Droid.Resource.Id.collapseActionView;
+			global::Microsoft.Identity.Client.Resource.Id.contentPanel = global::Reviewer.Droid.Resource.Id.contentPanel;
+			global::Microsoft.Identity.Client.Resource.Id.custom = global::Reviewer.Droid.Resource.Id.custom;
+			global::Microsoft.Identity.Client.Resource.Id.customPanel = global::Reviewer.Droid.Resource.Id.customPanel;
+			global::Microsoft.Identity.Client.Resource.Id.decor_content_parent = global::Reviewer.Droid.Resource.Id.decor_content_parent;
+			global::Microsoft.Identity.Client.Resource.Id.default_activity_button = global::Reviewer.Droid.Resource.Id.default_activity_button;
+			global::Microsoft.Identity.Client.Resource.Id.disableHome = global::Reviewer.Droid.Resource.Id.disableHome;
+			global::Microsoft.Identity.Client.Resource.Id.edit_query = global::Reviewer.Droid.Resource.Id.edit_query;
+			global::Microsoft.Identity.Client.Resource.Id.end = global::Reviewer.Droid.Resource.Id.end;
+			global::Microsoft.Identity.Client.Resource.Id.end_padder = global::Reviewer.Droid.Resource.Id.end_padder;
+			global::Microsoft.Identity.Client.Resource.Id.expand_activities_button = global::Reviewer.Droid.Resource.Id.expand_activities_button;
+			global::Microsoft.Identity.Client.Resource.Id.expanded_menu = global::Reviewer.Droid.Resource.Id.expanded_menu;
+			global::Microsoft.Identity.Client.Resource.Id.home = global::Reviewer.Droid.Resource.Id.home;
+			global::Microsoft.Identity.Client.Resource.Id.homeAsUp = global::Reviewer.Droid.Resource.Id.homeAsUp;
+			global::Microsoft.Identity.Client.Resource.Id.icon = global::Reviewer.Droid.Resource.Id.icon;
+			global::Microsoft.Identity.Client.Resource.Id.icon_group = global::Reviewer.Droid.Resource.Id.icon_group;
+			global::Microsoft.Identity.Client.Resource.Id.ifRoom = global::Reviewer.Droid.Resource.Id.ifRoom;
+			global::Microsoft.Identity.Client.Resource.Id.image = global::Reviewer.Droid.Resource.Id.image;
+			global::Microsoft.Identity.Client.Resource.Id.info = global::Reviewer.Droid.Resource.Id.info;
+			global::Microsoft.Identity.Client.Resource.Id.line1 = global::Reviewer.Droid.Resource.Id.line1;
+			global::Microsoft.Identity.Client.Resource.Id.line3 = global::Reviewer.Droid.Resource.Id.line3;
+			global::Microsoft.Identity.Client.Resource.Id.listMode = global::Reviewer.Droid.Resource.Id.listMode;
+			global::Microsoft.Identity.Client.Resource.Id.list_item = global::Reviewer.Droid.Resource.Id.list_item;
+			global::Microsoft.Identity.Client.Resource.Id.media_actions = global::Reviewer.Droid.Resource.Id.media_actions;
+			global::Microsoft.Identity.Client.Resource.Id.middle = global::Reviewer.Droid.Resource.Id.middle;
+			global::Microsoft.Identity.Client.Resource.Id.multiply = global::Reviewer.Droid.Resource.Id.multiply;
+			global::Microsoft.Identity.Client.Resource.Id.never = global::Reviewer.Droid.Resource.Id.never;
+			global::Microsoft.Identity.Client.Resource.Id.none = global::Reviewer.Droid.Resource.Id.none;
+			global::Microsoft.Identity.Client.Resource.Id.normal = global::Reviewer.Droid.Resource.Id.normal;
+			global::Microsoft.Identity.Client.Resource.Id.notification_background = global::Reviewer.Droid.Resource.Id.notification_background;
+			global::Microsoft.Identity.Client.Resource.Id.notification_main_column = global::Reviewer.Droid.Resource.Id.notification_main_column;
+			global::Microsoft.Identity.Client.Resource.Id.notification_main_column_container = global::Reviewer.Droid.Resource.Id.notification_main_column_container;
+			global::Microsoft.Identity.Client.Resource.Id.parentPanel = global::Reviewer.Droid.Resource.Id.parentPanel;
+			global::Microsoft.Identity.Client.Resource.Id.progress_circular = global::Reviewer.Droid.Resource.Id.progress_circular;
+			global::Microsoft.Identity.Client.Resource.Id.progress_horizontal = global::Reviewer.Droid.Resource.Id.progress_horizontal;
+			global::Microsoft.Identity.Client.Resource.Id.radio = global::Reviewer.Droid.Resource.Id.radio;
+			global::Microsoft.Identity.Client.Resource.Id.right_icon = global::Reviewer.Droid.Resource.Id.right_icon;
+			global::Microsoft.Identity.Client.Resource.Id.right_side = global::Reviewer.Droid.Resource.Id.right_side;
+			global::Microsoft.Identity.Client.Resource.Id.screen = global::Reviewer.Droid.Resource.Id.screen;
+			global::Microsoft.Identity.Client.Resource.Id.scrollIndicatorDown = global::Reviewer.Droid.Resource.Id.scrollIndicatorDown;
+			global::Microsoft.Identity.Client.Resource.Id.scrollIndicatorUp = global::Reviewer.Droid.Resource.Id.scrollIndicatorUp;
+			global::Microsoft.Identity.Client.Resource.Id.scrollView = global::Reviewer.Droid.Resource.Id.scrollView;
+			global::Microsoft.Identity.Client.Resource.Id.search_badge = global::Reviewer.Droid.Resource.Id.search_badge;
+			global::Microsoft.Identity.Client.Resource.Id.search_bar = global::Reviewer.Droid.Resource.Id.search_bar;
+			global::Microsoft.Identity.Client.Resource.Id.search_button = global::Reviewer.Droid.Resource.Id.search_button;
+			global::Microsoft.Identity.Client.Resource.Id.search_close_btn = global::Reviewer.Droid.Resource.Id.search_close_btn;
+			global::Microsoft.Identity.Client.Resource.Id.search_edit_frame = global::Reviewer.Droid.Resource.Id.search_edit_frame;
+			global::Microsoft.Identity.Client.Resource.Id.search_go_btn = global::Reviewer.Droid.Resource.Id.search_go_btn;
+			global::Microsoft.Identity.Client.Resource.Id.search_mag_icon = global::Reviewer.Droid.Resource.Id.search_mag_icon;
+			global::Microsoft.Identity.Client.Resource.Id.search_plate = global::Reviewer.Droid.Resource.Id.search_plate;
+			global::Microsoft.Identity.Client.Resource.Id.search_src_text = global::Reviewer.Droid.Resource.Id.search_src_text;
+			global::Microsoft.Identity.Client.Resource.Id.search_voice_btn = global::Reviewer.Droid.Resource.Id.search_voice_btn;
+			global::Microsoft.Identity.Client.Resource.Id.select_dialog_listview = global::Reviewer.Droid.Resource.Id.select_dialog_listview;
+			global::Microsoft.Identity.Client.Resource.Id.shortcut = global::Reviewer.Droid.Resource.Id.shortcut;
+			global::Microsoft.Identity.Client.Resource.Id.showCustom = global::Reviewer.Droid.Resource.Id.showCustom;
+			global::Microsoft.Identity.Client.Resource.Id.showHome = global::Reviewer.Droid.Resource.Id.showHome;
+			global::Microsoft.Identity.Client.Resource.Id.showTitle = global::Reviewer.Droid.Resource.Id.showTitle;
+			global::Microsoft.Identity.Client.Resource.Id.spacer = global::Reviewer.Droid.Resource.Id.spacer;
+			global::Microsoft.Identity.Client.Resource.Id.split_action_bar = global::Reviewer.Droid.Resource.Id.split_action_bar;
+			global::Microsoft.Identity.Client.Resource.Id.src_atop = global::Reviewer.Droid.Resource.Id.src_atop;
+			global::Microsoft.Identity.Client.Resource.Id.src_in = global::Reviewer.Droid.Resource.Id.src_in;
+			global::Microsoft.Identity.Client.Resource.Id.src_over = global::Reviewer.Droid.Resource.Id.src_over;
+			global::Microsoft.Identity.Client.Resource.Id.status_bar_latest_event_content = global::Reviewer.Droid.Resource.Id.status_bar_latest_event_content;
+			global::Microsoft.Identity.Client.Resource.Id.submenuarrow = global::Reviewer.Droid.Resource.Id.submenuarrow;
+			global::Microsoft.Identity.Client.Resource.Id.submit_area = global::Reviewer.Droid.Resource.Id.submit_area;
+			global::Microsoft.Identity.Client.Resource.Id.tabMode = global::Reviewer.Droid.Resource.Id.tabMode;
+			global::Microsoft.Identity.Client.Resource.Id.text = global::Reviewer.Droid.Resource.Id.text;
+			global::Microsoft.Identity.Client.Resource.Id.text2 = global::Reviewer.Droid.Resource.Id.text2;
+			global::Microsoft.Identity.Client.Resource.Id.textSpacerNoButtons = global::Reviewer.Droid.Resource.Id.textSpacerNoButtons;
+			global::Microsoft.Identity.Client.Resource.Id.textSpacerNoTitle = global::Reviewer.Droid.Resource.Id.textSpacerNoTitle;
+			global::Microsoft.Identity.Client.Resource.Id.time = global::Reviewer.Droid.Resource.Id.time;
+			global::Microsoft.Identity.Client.Resource.Id.title = global::Reviewer.Droid.Resource.Id.title;
+			global::Microsoft.Identity.Client.Resource.Id.titleDividerNoCustom = global::Reviewer.Droid.Resource.Id.titleDividerNoCustom;
+			global::Microsoft.Identity.Client.Resource.Id.title_template = global::Reviewer.Droid.Resource.Id.title_template;
+			global::Microsoft.Identity.Client.Resource.Id.top = global::Reviewer.Droid.Resource.Id.top;
+			global::Microsoft.Identity.Client.Resource.Id.topPanel = global::Reviewer.Droid.Resource.Id.topPanel;
+			global::Microsoft.Identity.Client.Resource.Id.up = global::Reviewer.Droid.Resource.Id.up;
+			global::Microsoft.Identity.Client.Resource.Id.useLogo = global::Reviewer.Droid.Resource.Id.useLogo;
+			global::Microsoft.Identity.Client.Resource.Id.withText = global::Reviewer.Droid.Resource.Id.withText;
+			global::Microsoft.Identity.Client.Resource.Id.wrap_content = global::Reviewer.Droid.Resource.Id.wrap_content;
+			global::Microsoft.Identity.Client.Resource.Integer.abc_config_activityDefaultDur = global::Reviewer.Droid.Resource.Integer.abc_config_activityDefaultDur;
+			global::Microsoft.Identity.Client.Resource.Integer.abc_config_activityShortDur = global::Reviewer.Droid.Resource.Integer.abc_config_activityShortDur;
+			global::Microsoft.Identity.Client.Resource.Integer.cancel_button_image_alpha = global::Reviewer.Droid.Resource.Integer.cancel_button_image_alpha;
+			global::Microsoft.Identity.Client.Resource.Integer.status_bar_notification_info_maxnum = global::Reviewer.Droid.Resource.Integer.status_bar_notification_info_maxnum;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_action_bar_title_item = global::Reviewer.Droid.Resource.Layout.abc_action_bar_title_item;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_action_bar_up_container = global::Reviewer.Droid.Resource.Layout.abc_action_bar_up_container;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_action_bar_view_list_nav_layout = global::Reviewer.Droid.Resource.Layout.abc_action_bar_view_list_nav_layout;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_action_menu_item_layout = global::Reviewer.Droid.Resource.Layout.abc_action_menu_item_layout;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_action_menu_layout = global::Reviewer.Droid.Resource.Layout.abc_action_menu_layout;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_action_mode_bar = global::Reviewer.Droid.Resource.Layout.abc_action_mode_bar;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_action_mode_close_item_material = global::Reviewer.Droid.Resource.Layout.abc_action_mode_close_item_material;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_activity_chooser_view = global::Reviewer.Droid.Resource.Layout.abc_activity_chooser_view;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_activity_chooser_view_list_item = global::Reviewer.Droid.Resource.Layout.abc_activity_chooser_view_list_item;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_alert_dialog_button_bar_material = global::Reviewer.Droid.Resource.Layout.abc_alert_dialog_button_bar_material;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_alert_dialog_material = global::Reviewer.Droid.Resource.Layout.abc_alert_dialog_material;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_alert_dialog_title_material = global::Reviewer.Droid.Resource.Layout.abc_alert_dialog_title_material;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_dialog_title_material = global::Reviewer.Droid.Resource.Layout.abc_dialog_title_material;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_expanded_menu_layout = global::Reviewer.Droid.Resource.Layout.abc_expanded_menu_layout;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_list_menu_item_checkbox = global::Reviewer.Droid.Resource.Layout.abc_list_menu_item_checkbox;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_list_menu_item_icon = global::Reviewer.Droid.Resource.Layout.abc_list_menu_item_icon;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_list_menu_item_layout = global::Reviewer.Droid.Resource.Layout.abc_list_menu_item_layout;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_list_menu_item_radio = global::Reviewer.Droid.Resource.Layout.abc_list_menu_item_radio;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_popup_menu_header_item_layout = global::Reviewer.Droid.Resource.Layout.abc_popup_menu_header_item_layout;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_popup_menu_item_layout = global::Reviewer.Droid.Resource.Layout.abc_popup_menu_item_layout;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_screen_content_include = global::Reviewer.Droid.Resource.Layout.abc_screen_content_include;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_screen_simple = global::Reviewer.Droid.Resource.Layout.abc_screen_simple;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_screen_simple_overlay_action_mode = global::Reviewer.Droid.Resource.Layout.abc_screen_simple_overlay_action_mode;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_screen_toolbar = global::Reviewer.Droid.Resource.Layout.abc_screen_toolbar;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_search_dropdown_item_icons_2line = global::Reviewer.Droid.Resource.Layout.abc_search_dropdown_item_icons_2line;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_search_view = global::Reviewer.Droid.Resource.Layout.abc_search_view;
+			global::Microsoft.Identity.Client.Resource.Layout.abc_select_dialog_material = global::Reviewer.Droid.Resource.Layout.abc_select_dialog_material;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_action = global::Reviewer.Droid.Resource.Layout.notification_action;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_action_tombstone = global::Reviewer.Droid.Resource.Layout.notification_action_tombstone;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_media_action = global::Reviewer.Droid.Resource.Layout.notification_media_action;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_media_cancel_action = global::Reviewer.Droid.Resource.Layout.notification_media_cancel_action;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_big_media = global::Reviewer.Droid.Resource.Layout.notification_template_big_media;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_big_media_custom = global::Reviewer.Droid.Resource.Layout.notification_template_big_media_custom;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_big_media_narrow = global::Reviewer.Droid.Resource.Layout.notification_template_big_media_narrow;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_big_media_narrow_custom = global::Reviewer.Droid.Resource.Layout.notification_template_big_media_narrow_custom;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_custom_big = global::Reviewer.Droid.Resource.Layout.notification_template_custom_big;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_icon_group = global::Reviewer.Droid.Resource.Layout.notification_template_icon_group;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_lines_media = global::Reviewer.Droid.Resource.Layout.notification_template_lines_media;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_media = global::Reviewer.Droid.Resource.Layout.notification_template_media;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_media_custom = global::Reviewer.Droid.Resource.Layout.notification_template_media_custom;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_part_chronometer = global::Reviewer.Droid.Resource.Layout.notification_template_part_chronometer;
+			global::Microsoft.Identity.Client.Resource.Layout.notification_template_part_time = global::Reviewer.Droid.Resource.Layout.notification_template_part_time;
+			global::Microsoft.Identity.Client.Resource.Layout.select_dialog_item_material = global::Reviewer.Droid.Resource.Layout.select_dialog_item_material;
+			global::Microsoft.Identity.Client.Resource.Layout.select_dialog_multichoice_material = global::Reviewer.Droid.Resource.Layout.select_dialog_multichoice_material;
+			global::Microsoft.Identity.Client.Resource.Layout.select_dialog_singlechoice_material = global::Reviewer.Droid.Resource.Layout.select_dialog_singlechoice_material;
+			global::Microsoft.Identity.Client.Resource.Layout.support_simple_spinner_dropdown_item = global::Reviewer.Droid.Resource.Layout.support_simple_spinner_dropdown_item;
+			global::Microsoft.Identity.Client.Resource.Layout.WebAuthenticationBroker = global::Reviewer.Droid.Resource.Layout.WebAuthenticationBroker;
+			global::Microsoft.Identity.Client.Resource.String.ApplicationName = global::Reviewer.Droid.Resource.String.ApplicationName;
+			global::Microsoft.Identity.Client.Resource.String.abc_action_bar_home_description = global::Reviewer.Droid.Resource.String.abc_action_bar_home_description;
+			global::Microsoft.Identity.Client.Resource.String.abc_action_bar_home_description_format = global::Reviewer.Droid.Resource.String.abc_action_bar_home_description_format;
+			global::Microsoft.Identity.Client.Resource.String.abc_action_bar_home_subtitle_description_format = global::Reviewer.Droid.Resource.String.abc_action_bar_home_subtitle_description_format;
+			global::Microsoft.Identity.Client.Resource.String.abc_action_bar_up_description = global::Reviewer.Droid.Resource.String.abc_action_bar_up_description;
+			global::Microsoft.Identity.Client.Resource.String.abc_action_menu_overflow_description = global::Reviewer.Droid.Resource.String.abc_action_menu_overflow_description;
+			global::Microsoft.Identity.Client.Resource.String.abc_action_mode_done = global::Reviewer.Droid.Resource.String.abc_action_mode_done;
+			global::Microsoft.Identity.Client.Resource.String.abc_activity_chooser_view_see_all = global::Reviewer.Droid.Resource.String.abc_activity_chooser_view_see_all;
+			global::Microsoft.Identity.Client.Resource.String.abc_activitychooserview_choose_application = global::Reviewer.Droid.Resource.String.abc_activitychooserview_choose_application;
+			global::Microsoft.Identity.Client.Resource.String.abc_capital_off = global::Reviewer.Droid.Resource.String.abc_capital_off;
+			global::Microsoft.Identity.Client.Resource.String.abc_capital_on = global::Reviewer.Droid.Resource.String.abc_capital_on;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_body_1_material = global::Reviewer.Droid.Resource.String.abc_font_family_body_1_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_body_2_material = global::Reviewer.Droid.Resource.String.abc_font_family_body_2_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_button_material = global::Reviewer.Droid.Resource.String.abc_font_family_button_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_caption_material = global::Reviewer.Droid.Resource.String.abc_font_family_caption_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_display_1_material = global::Reviewer.Droid.Resource.String.abc_font_family_display_1_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_display_2_material = global::Reviewer.Droid.Resource.String.abc_font_family_display_2_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_display_3_material = global::Reviewer.Droid.Resource.String.abc_font_family_display_3_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_display_4_material = global::Reviewer.Droid.Resource.String.abc_font_family_display_4_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_headline_material = global::Reviewer.Droid.Resource.String.abc_font_family_headline_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_menu_material = global::Reviewer.Droid.Resource.String.abc_font_family_menu_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_subhead_material = global::Reviewer.Droid.Resource.String.abc_font_family_subhead_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_font_family_title_material = global::Reviewer.Droid.Resource.String.abc_font_family_title_material;
+			global::Microsoft.Identity.Client.Resource.String.abc_search_hint = global::Reviewer.Droid.Resource.String.abc_search_hint;
+			global::Microsoft.Identity.Client.Resource.String.abc_searchview_description_clear = global::Reviewer.Droid.Resource.String.abc_searchview_description_clear;
+			global::Microsoft.Identity.Client.Resource.String.abc_searchview_description_query = global::Reviewer.Droid.Resource.String.abc_searchview_description_query;
+			global::Microsoft.Identity.Client.Resource.String.abc_searchview_description_search = global::Reviewer.Droid.Resource.String.abc_searchview_description_search;
+			global::Microsoft.Identity.Client.Resource.String.abc_searchview_description_submit = global::Reviewer.Droid.Resource.String.abc_searchview_description_submit;
+			global::Microsoft.Identity.Client.Resource.String.abc_searchview_description_voice = global::Reviewer.Droid.Resource.String.abc_searchview_description_voice;
+			global::Microsoft.Identity.Client.Resource.String.abc_shareactionprovider_share_with = global::Reviewer.Droid.Resource.String.abc_shareactionprovider_share_with;
+			global::Microsoft.Identity.Client.Resource.String.abc_shareactionprovider_share_with_application = global::Reviewer.Droid.Resource.String.abc_shareactionprovider_share_with_application;
+			global::Microsoft.Identity.Client.Resource.String.abc_toolbar_collapse_description = global::Reviewer.Droid.Resource.String.abc_toolbar_collapse_description;
+			global::Microsoft.Identity.Client.Resource.String.search_menu_title = global::Reviewer.Droid.Resource.String.search_menu_title;
+			global::Microsoft.Identity.Client.Resource.String.status_bar_notification_info_overflow = global::Reviewer.Droid.Resource.String.status_bar_notification_info_overflow;
+			global::Microsoft.Identity.Client.Resource.Style.AlertDialog_AppCompat = global::Reviewer.Droid.Resource.Style.AlertDialog_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.AlertDialog_AppCompat_Light = global::Reviewer.Droid.Resource.Style.AlertDialog_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Animation_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Animation_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Animation_AppCompat_DropDownUp = global::Reviewer.Droid.Resource.Style.Animation_AppCompat_DropDownUp;
+			global::Microsoft.Identity.Client.Resource.Style.Base_AlertDialog_AppCompat = global::Reviewer.Droid.Resource.Style.Base_AlertDialog_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_AlertDialog_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Base_AlertDialog_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Animation_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_Animation_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Animation_AppCompat_DropDownUp = global::Reviewer.Droid.Resource.Style.Base_Animation_AppCompat_DropDownUp;
+			global::Microsoft.Identity.Client.Resource.Style.Base_DialogWindowTitle_AppCompat = global::Reviewer.Droid.Resource.Style.Base_DialogWindowTitle_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_DialogWindowTitleBackground_AppCompat = global::Reviewer.Droid.Resource.Style.Base_DialogWindowTitleBackground_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Body1 = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body1;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Body2 = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Body2;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Button = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Button;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Caption = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Caption;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Display1 = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display1;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Display2 = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display2;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Display3 = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display3;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Display4 = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Display4;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Headline = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Headline;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Large = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Large_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Medium = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Medium_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Menu = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Menu;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_SearchResult = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_SearchResult_Title;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Small = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Small_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Subhead = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Subhead_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Title = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Title_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_Switch;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title = global::Reviewer.Droid.Resource.Style.Base_TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_CompactMenu = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_CompactMenu;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Dialog_Alert = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_Alert;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_FixedSize;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Dialog_MinWidth;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_DialogWhenLarge;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DarkActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Light_Dialog = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_Alert;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_FixedSize;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge = global::Reviewer.Droid.Resource.Style.Base_Theme_AppCompat_Light_DialogWhenLarge;
+			global::Microsoft.Identity.Client.Resource.Style.Base_ThemeOverlay_AppCompat = global::Reviewer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar = global::Reviewer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_ThemeOverlay_AppCompat_Dark = global::Reviewer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark;
+			global::Microsoft.Identity.Client.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar = global::Reviewer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert = global::Reviewer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Microsoft.Identity.Client.Resource.Style.Base_ThemeOverlay_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Base_ThemeOverlay_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V11_Theme_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog = global::Reviewer.Droid.Resource.Style.Base_V11_Theme_AppCompat_Light_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_V11_ThemeOverlay_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView = global::Reviewer.Droid.Resource.Style.Base_V12_Widget_AppCompat_AutoCompleteTextView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V12_Widget_AppCompat_EditText = global::Reviewer.Droid.Resource.Style.Base_V12_Widget_AppCompat_EditText;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V21_Theme_AppCompat = global::Reviewer.Droid.Resource.Style.Base_V21_Theme_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V21_Theme_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V21_Theme_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog = global::Reviewer.Droid.Resource.Style.Base_V21_Theme_AppCompat_Light_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_V21_ThemeOverlay_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V22_Theme_AppCompat = global::Reviewer.Droid.Resource.Style.Base_V22_Theme_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V22_Theme_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Base_V22_Theme_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V23_Theme_AppCompat = global::Reviewer.Droid.Resource.Style.Base_V23_Theme_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V23_Theme_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Base_V23_Theme_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V7_Theme_AppCompat = global::Reviewer.Droid.Resource.Style.Base_V7_Theme_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V7_Theme_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V7_Theme_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog = global::Reviewer.Droid.Resource.Style.Base_V7_Theme_AppCompat_Light_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Base_V7_ThemeOverlay_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView = global::Reviewer.Droid.Resource.Style.Base_V7_Widget_AppCompat_AutoCompleteTextView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_V7_Widget_AppCompat_EditText = global::Reviewer.Droid.Resource.Style.Base_V7_Widget_AppCompat_EditText;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_Solid;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabText;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionBar_TabView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionButton = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_CloseMode;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionButton_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActionMode = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActionMode;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ActivityChooserView = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ActivityChooserView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_AutoCompleteTextView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Button = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Button;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Button_Borderless = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Borderless_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Button_Colored = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Button_Small = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Button_Small;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ButtonBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_CheckBox;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_RadioButton;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_CompoundButton_Switch;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_DrawerArrowToggle_Common;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_DropDownItem_Spinner;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_EditText = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_EditText;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ImageButton = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ImageButton;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_ActionBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_Solid;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_ActionBar_TabView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ListMenuView = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ListMenuView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ListPopupWindow = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ListPopupWindow;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ListView = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ListView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ListView_DropDown = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_DropDown;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ListView_Menu = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ListView_Menu;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_PopupMenu = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_PopupMenu_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_PopupWindow = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_PopupWindow;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ProgressBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_ProgressBar_Horizontal;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_RatingBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Indicator;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_RatingBar_Small = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_RatingBar_Small;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_SearchView = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_SearchView_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_SeekBar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_SeekBar_Discrete;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Spinner = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Spinner_Underlined;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_TextView_SpinnerItem;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Toolbar = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar;
+			global::Microsoft.Identity.Client.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation = global::Reviewer.Droid.Resource.Style.Base_Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_AppCompat = global::Reviewer.Droid.Resource.Style.Platform_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Platform_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_ThemeOverlay_AppCompat = global::Reviewer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark = global::Reviewer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Dark;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_ThemeOverlay_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Platform_ThemeOverlay_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_V11_AppCompat = global::Reviewer.Droid.Resource.Style.Platform_V11_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_V11_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Platform_V11_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_V14_AppCompat = global::Reviewer.Droid.Resource.Style.Platform_V14_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_V14_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Platform_V14_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_V21_AppCompat = global::Reviewer.Droid.Resource.Style.Platform_V21_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_V21_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Platform_V21_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Platform_Widget_AppCompat_Spinner = global::Reviewer.Droid.Resource.Style.Platform_Widget_AppCompat_Spinner;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat = global::Reviewer.Droid.Resource.Style.RtlOverlay_DialogWindowTitle_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_ActionBar_TitleItem;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_DialogTitle_Icon;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_InternalGroup;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_PopupMenuItem_Text;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1 = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon1;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2 = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Icon2;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Query;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_Search_DropDown_Text;
+			global::Microsoft.Identity.Client.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon = global::Reviewer.Droid.Resource.Style.RtlOverlay_Widget_AppCompat_SearchView_MagIcon;
+			global::Microsoft.Identity.Client.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton = global::Reviewer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton;
+			global::Microsoft.Identity.Client.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow = global::Reviewer.Droid.Resource.Style.RtlUnderlay_Widget_AppCompat_ActionButton_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Body1 = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Body1;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Body2 = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Body2;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Button = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Button;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Caption = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Caption;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Display1 = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Display1;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Display2 = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Display2;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Display3 = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Display3;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Display4 = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Display4;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Headline = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Headline;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Large = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Large;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Large_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Large_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Light_SearchResult_Title;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Large;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Light_Widget_PopupMenu_Small;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Medium = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Medium;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Medium_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Medium_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Menu = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Menu;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Info = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Info_Media;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Line2 = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Line2_Media;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Media = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Media;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Time = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Time_Media;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Notification_Title_Media;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_SearchResult_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_SearchResult_Title;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Small = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Small;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Small_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Small_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Subhead = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Subhead_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Title;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Title_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Title_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Menu;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Subtitle_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionBar_Title_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Subtitle_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_ActionMode_Title_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_Button = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Borderless_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Button_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_DropDownItem;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Header;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Large;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_PopupMenu_Small;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_Switch = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_Switch;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem = global::Reviewer.Droid.Resource.Style.TextAppearance_AppCompat_Widget_TextView_SpinnerItem;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_StatusBar_EventContent = global::Reviewer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_StatusBar_EventContent_Info = global::Reviewer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Info;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_StatusBar_EventContent_Line2 = global::Reviewer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Line2;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_StatusBar_EventContent_Time = global::Reviewer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Time;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_StatusBar_EventContent_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_StatusBar_EventContent_Title;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item = global::Reviewer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_ExpandedMenu_Item;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle = global::Reviewer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Subtitle;
+			global::Microsoft.Identity.Client.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title = global::Reviewer.Droid.Resource.Style.TextAppearance_Widget_AppCompat_Toolbar_Title;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat = global::Reviewer.Droid.Resource.Style.Theme_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_CompactMenu = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_CompactMenu;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DayNight = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DayNight;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DayNight_DarkActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DayNight_Dialog = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_Alert;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DayNight_Dialog_MinWidth;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DayNight_DialogWhenLarge;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DayNight_NoActionBar = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DayNight_NoActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Dialog_Alert = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Dialog_Alert;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Dialog_MinWidth = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Dialog_MinWidth;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_DialogWhenLarge = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_DialogWhenLarge;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Light = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Light_DarkActionBar = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Light_DarkActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Light_Dialog = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Light_Dialog_Alert = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_Alert;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Light_Dialog_MinWidth;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Light_DialogWhenLarge;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_Light_NoActionBar = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_Light_NoActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Theme_AppCompat_NoActionBar = global::Reviewer.Droid.Resource.Style.Theme_AppCompat_NoActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.ThemeOverlay_AppCompat = global::Reviewer.Droid.Resource.Style.ThemeOverlay_AppCompat;
+			global::Microsoft.Identity.Client.Resource.Style.ThemeOverlay_AppCompat_ActionBar = global::Reviewer.Droid.Resource.Style.ThemeOverlay_AppCompat_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.ThemeOverlay_AppCompat_Dark = global::Reviewer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark;
+			global::Microsoft.Identity.Client.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar = global::Reviewer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dark_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.ThemeOverlay_AppCompat_Dialog = global::Reviewer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog;
+			global::Microsoft.Identity.Client.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert = global::Reviewer.Droid.Resource.Style.ThemeOverlay_AppCompat_Dialog_Alert;
+			global::Microsoft.Identity.Client.Resource.Style.ThemeOverlay_AppCompat_Light = global::Reviewer.Droid.Resource.Style.ThemeOverlay_AppCompat_Light;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionBar_Solid = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionBar_Solid;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionBar_TabBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionBar_TabText = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabText;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionBar_TabView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionBar_TabView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionButton = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionButton;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionButton_CloseMode = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionButton_CloseMode;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionButton_Overflow = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionButton_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActionMode = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActionMode;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ActivityChooserView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ActivityChooserView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_AutoCompleteTextView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_AutoCompleteTextView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Button = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Button;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Button_Borderless = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Button_Borderless_Colored = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Button_Borderless_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Button_ButtonBar_AlertDialog;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Button_Colored = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Button_Colored;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Button_Small = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Button_Small;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ButtonBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ButtonBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ButtonBar_AlertDialog;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_CheckBox;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_RadioButton;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_CompoundButton_Switch = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_CompoundButton_Switch;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_DrawerArrowToggle = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_DrawerArrowToggle;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_DropDownItem_Spinner = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_DropDownItem_Spinner;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_EditText = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_EditText;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ImageButton = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ImageButton;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_Solid_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabBar_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabText_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionBar_TabView_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionButton = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_CloseMode;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionButton_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActionMode_Inverse;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ActivityChooserView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ActivityChooserView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_AutoCompleteTextView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_DropDownItem_Spinner;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ListPopupWindow = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ListPopupWindow;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_ListView_DropDown = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_ListView_DropDown;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_PopupMenu = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_PopupMenu_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_SearchView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_SearchView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Light_Spinner_DropDown_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ListMenuView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ListMenuView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ListPopupWindow = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ListPopupWindow;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ListView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ListView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ListView_DropDown = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ListView_DropDown;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ListView_Menu = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ListView_Menu;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_NotificationActionContainer = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_NotificationActionContainer;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_NotificationActionText = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_NotificationActionText;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_PopupMenu = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_PopupMenu;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_PopupMenu_Overflow = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_PopupMenu_Overflow;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_PopupWindow = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_PopupWindow;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ProgressBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ProgressBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_ProgressBar_Horizontal;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_RatingBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_RatingBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_RatingBar_Indicator = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Indicator;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_RatingBar_Small = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_RatingBar_Small;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_SearchView = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_SearchView;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_SearchView_ActionBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_SearchView_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_SeekBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_SeekBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_SeekBar_Discrete = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_SeekBar_Discrete;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Spinner = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Spinner;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Spinner_DropDown = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Spinner_DropDown_ActionBar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Spinner_Underlined = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Spinner_Underlined;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_TextView_SpinnerItem = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_TextView_SpinnerItem;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Toolbar = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Toolbar;
+			global::Microsoft.Identity.Client.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation = global::Reviewer.Droid.Resource.Style.Widget_AppCompat_Toolbar_Button_Navigation;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar = global::Reviewer.Droid.Resource.Styleable.ActionBar;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_background = global::Reviewer.Droid.Resource.Styleable.ActionBar_background;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_backgroundSplit = global::Reviewer.Droid.Resource.Styleable.ActionBar_backgroundSplit;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_backgroundStacked = global::Reviewer.Droid.Resource.Styleable.ActionBar_backgroundStacked;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_contentInsetEnd = global::Reviewer.Droid.Resource.Styleable.ActionBar_contentInsetEnd;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_contentInsetEndWithActions = global::Reviewer.Droid.Resource.Styleable.ActionBar_contentInsetEndWithActions;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_contentInsetLeft = global::Reviewer.Droid.Resource.Styleable.ActionBar_contentInsetLeft;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_contentInsetRight = global::Reviewer.Droid.Resource.Styleable.ActionBar_contentInsetRight;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_contentInsetStart = global::Reviewer.Droid.Resource.Styleable.ActionBar_contentInsetStart;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_contentInsetStartWithNavigation = global::Reviewer.Droid.Resource.Styleable.ActionBar_contentInsetStartWithNavigation;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_customNavigationLayout = global::Reviewer.Droid.Resource.Styleable.ActionBar_customNavigationLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_displayOptions = global::Reviewer.Droid.Resource.Styleable.ActionBar_displayOptions;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_divider = global::Reviewer.Droid.Resource.Styleable.ActionBar_divider;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_elevation = global::Reviewer.Droid.Resource.Styleable.ActionBar_elevation;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_height = global::Reviewer.Droid.Resource.Styleable.ActionBar_height;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_hideOnContentScroll = global::Reviewer.Droid.Resource.Styleable.ActionBar_hideOnContentScroll;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_homeAsUpIndicator = global::Reviewer.Droid.Resource.Styleable.ActionBar_homeAsUpIndicator;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_homeLayout = global::Reviewer.Droid.Resource.Styleable.ActionBar_homeLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_icon = global::Reviewer.Droid.Resource.Styleable.ActionBar_icon;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_indeterminateProgressStyle = global::Reviewer.Droid.Resource.Styleable.ActionBar_indeterminateProgressStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_itemPadding = global::Reviewer.Droid.Resource.Styleable.ActionBar_itemPadding;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_logo = global::Reviewer.Droid.Resource.Styleable.ActionBar_logo;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_navigationMode = global::Reviewer.Droid.Resource.Styleable.ActionBar_navigationMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_popupTheme = global::Reviewer.Droid.Resource.Styleable.ActionBar_popupTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_progressBarPadding = global::Reviewer.Droid.Resource.Styleable.ActionBar_progressBarPadding;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_progressBarStyle = global::Reviewer.Droid.Resource.Styleable.ActionBar_progressBarStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_subtitle = global::Reviewer.Droid.Resource.Styleable.ActionBar_subtitle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_subtitleTextStyle = global::Reviewer.Droid.Resource.Styleable.ActionBar_subtitleTextStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_title = global::Reviewer.Droid.Resource.Styleable.ActionBar_title;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBar_titleTextStyle = global::Reviewer.Droid.Resource.Styleable.ActionBar_titleTextStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBarLayout = global::Reviewer.Droid.Resource.Styleable.ActionBarLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionBarLayout_android_layout_gravity = global::Reviewer.Droid.Resource.Styleable.ActionBarLayout_android_layout_gravity;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMenuItemView = global::Reviewer.Droid.Resource.Styleable.ActionMenuItemView;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMenuItemView_android_minWidth = global::Reviewer.Droid.Resource.Styleable.ActionMenuItemView_android_minWidth;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMenuView = global::Reviewer.Droid.Resource.Styleable.ActionMenuView;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMode = global::Reviewer.Droid.Resource.Styleable.ActionMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMode_background = global::Reviewer.Droid.Resource.Styleable.ActionMode_background;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMode_backgroundSplit = global::Reviewer.Droid.Resource.Styleable.ActionMode_backgroundSplit;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMode_closeItemLayout = global::Reviewer.Droid.Resource.Styleable.ActionMode_closeItemLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMode_height = global::Reviewer.Droid.Resource.Styleable.ActionMode_height;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMode_subtitleTextStyle = global::Reviewer.Droid.Resource.Styleable.ActionMode_subtitleTextStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActionMode_titleTextStyle = global::Reviewer.Droid.Resource.Styleable.ActionMode_titleTextStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActivityChooserView = global::Reviewer.Droid.Resource.Styleable.ActivityChooserView;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable = global::Reviewer.Droid.Resource.Styleable.ActivityChooserView_expandActivityOverflowButtonDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.ActivityChooserView_initialActivityCount = global::Reviewer.Droid.Resource.Styleable.ActivityChooserView_initialActivityCount;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog = global::Reviewer.Droid.Resource.Styleable.AlertDialog;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog_android_layout = global::Reviewer.Droid.Resource.Styleable.AlertDialog_android_layout;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog_buttonPanelSideLayout = global::Reviewer.Droid.Resource.Styleable.AlertDialog_buttonPanelSideLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog_listItemLayout = global::Reviewer.Droid.Resource.Styleable.AlertDialog_listItemLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog_listLayout = global::Reviewer.Droid.Resource.Styleable.AlertDialog_listLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog_multiChoiceItemLayout = global::Reviewer.Droid.Resource.Styleable.AlertDialog_multiChoiceItemLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog_showTitle = global::Reviewer.Droid.Resource.Styleable.AlertDialog_showTitle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AlertDialog_singleChoiceItemLayout = global::Reviewer.Droid.Resource.Styleable.AlertDialog_singleChoiceItemLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatImageView = global::Reviewer.Droid.Resource.Styleable.AppCompatImageView;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatImageView_android_src = global::Reviewer.Droid.Resource.Styleable.AppCompatImageView_android_src;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatImageView_srcCompat = global::Reviewer.Droid.Resource.Styleable.AppCompatImageView_srcCompat;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatImageView_tint = global::Reviewer.Droid.Resource.Styleable.AppCompatImageView_tint;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatImageView_tintMode = global::Reviewer.Droid.Resource.Styleable.AppCompatImageView_tintMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatSeekBar = global::Reviewer.Droid.Resource.Styleable.AppCompatSeekBar;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatSeekBar_android_thumb = global::Reviewer.Droid.Resource.Styleable.AppCompatSeekBar_android_thumb;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatSeekBar_tickMark = global::Reviewer.Droid.Resource.Styleable.AppCompatSeekBar_tickMark;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatSeekBar_tickMarkTint = global::Reviewer.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTint;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode = global::Reviewer.Droid.Resource.Styleable.AppCompatSeekBar_tickMarkTintMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper_android_drawableBottom = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableBottom;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper_android_drawableEnd = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableEnd;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper_android_drawableLeft = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableLeft;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper_android_drawableRight = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableRight;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper_android_drawableStart = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableStart;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper_android_drawableTop = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper_android_drawableTop;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextHelper_android_textAppearance = global::Reviewer.Droid.Resource.Styleable.AppCompatTextHelper_android_textAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextView = global::Reviewer.Droid.Resource.Styleable.AppCompatTextView;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextView_android_textAppearance = global::Reviewer.Droid.Resource.Styleable.AppCompatTextView_android_textAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTextView_textAllCaps = global::Reviewer.Droid.Resource.Styleable.AppCompatTextView_textAllCaps;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarDivider = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarDivider;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarItemBackground = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarItemBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarPopupTheme = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarPopupTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarSize = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarSize;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarSplitStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarSplitStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabBarStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarTabStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarTabTextStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarTheme = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionBarWidgetTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionDropDownStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionDropDownStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionMenuTextColor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionMenuTextColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeBackground = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeCloseDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeCopyDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeCutDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeCutDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeFindDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeFindDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModePasteDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModePasteDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModePopupWindowStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeSelectAllDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeShareDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeShareDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeSplitBackground = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeSplitBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionModeWebSearchDrawable;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_actionOverflowMenuStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_activityChooserViewStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_activityChooserViewStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_alertDialogButtonGroupStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_alertDialogCenterButtons;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_alertDialogStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_alertDialogStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_alertDialogTheme = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_alertDialogTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_android_windowAnimationStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_android_windowIsFloating = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_android_windowIsFloating;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_autoCompleteTextViewStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_borderlessButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_borderlessButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_buttonBarButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNegativeButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_buttonBarNeutralButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_buttonBarPositiveButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_buttonBarStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_buttonBarStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_buttonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_buttonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_buttonStyleSmall = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_buttonStyleSmall;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_checkboxStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_checkboxStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_checkedTextViewStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_checkedTextViewStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorAccent = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorAccent;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorBackgroundFloating = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorBackgroundFloating;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorButtonNormal = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorButtonNormal;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorControlActivated = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorControlActivated;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorControlHighlight = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorControlHighlight;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorControlNormal = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorControlNormal;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorPrimary = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorPrimary;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorPrimaryDark = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorPrimaryDark;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_colorSwitchThumbNormal;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_controlBackground = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_controlBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_dialogPreferredPadding = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_dialogPreferredPadding;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_dialogTheme = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_dialogTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_dividerHorizontal = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_dividerHorizontal;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_dividerVertical = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_dividerVertical;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_dropDownListViewStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_dropDownListViewStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_dropdownListPreferredItemHeight;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_editTextBackground = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_editTextBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_editTextColor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_editTextColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_editTextStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_editTextStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_homeAsUpIndicator = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_homeAsUpIndicator;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_imageButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_imageButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listChoiceBackgroundIndicator;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listDividerAlertDialog = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listDividerAlertDialog;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listMenuViewStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listMenuViewStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listPopupWindowStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listPopupWindowStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listPreferredItemHeight = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeight;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightLarge;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemHeightSmall;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingLeft;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_listPreferredItemPaddingRight;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_panelBackground = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_panelBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_panelMenuListTheme = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_panelMenuListWidth = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_panelMenuListWidth;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_popupMenuStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_popupMenuStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_popupWindowStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_popupWindowStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_radioButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_radioButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_ratingBarStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleIndicator;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_ratingBarStyleSmall;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_searchViewStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_searchViewStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_seekBarStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_seekBarStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_selectableItemBackground = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_selectableItemBackgroundBorderless;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_spinnerDropDownItemStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_spinnerStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_spinnerStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_switchStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_switchStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceLargePopupMenu;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearanceListItem = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItem;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSecondary;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceListItemSmall;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearancePopupMenuHeader;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultSubtitle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSearchResultTitle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textAppearanceSmallPopupMenu;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textColorAlertDialogListItem;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_textColorSearchUrl = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_textColorSearchUrl;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_toolbarNavigationButtonStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_toolbarStyle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_toolbarStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowActionBar = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowActionBar;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowActionBarOverlay = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowActionBarOverlay;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowActionModeOverlay = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowActionModeOverlay;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMajor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowFixedHeightMinor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMajor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowFixedWidthMinor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowMinWidthMajor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMajor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowMinWidthMinor = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowMinWidthMinor;
+			global::Microsoft.Identity.Client.Resource.Styleable.AppCompatTheme_windowNoTitle = global::Reviewer.Droid.Resource.Styleable.AppCompatTheme_windowNoTitle;
+			global::Microsoft.Identity.Client.Resource.Styleable.ButtonBarLayout = global::Reviewer.Droid.Resource.Styleable.ButtonBarLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.ButtonBarLayout_allowStacking = global::Reviewer.Droid.Resource.Styleable.ButtonBarLayout_allowStacking;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem = global::Reviewer.Droid.Resource.Styleable.ColorStateListItem;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_alpha = global::Reviewer.Droid.Resource.Styleable.ColorStateListItem_alpha;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_android_alpha = global::Reviewer.Droid.Resource.Styleable.ColorStateListItem_android_alpha;
+			global::Microsoft.Identity.Client.Resource.Styleable.ColorStateListItem_android_color = global::Reviewer.Droid.Resource.Styleable.ColorStateListItem_android_color;
+			global::Microsoft.Identity.Client.Resource.Styleable.CompoundButton = global::Reviewer.Droid.Resource.Styleable.CompoundButton;
+			global::Microsoft.Identity.Client.Resource.Styleable.CompoundButton_android_button = global::Reviewer.Droid.Resource.Styleable.CompoundButton_android_button;
+			global::Microsoft.Identity.Client.Resource.Styleable.CompoundButton_buttonTint = global::Reviewer.Droid.Resource.Styleable.CompoundButton_buttonTint;
+			global::Microsoft.Identity.Client.Resource.Styleable.CompoundButton_buttonTintMode = global::Reviewer.Droid.Resource.Styleable.CompoundButton_buttonTintMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_arrowHeadLength = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_arrowHeadLength;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_arrowShaftLength = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_arrowShaftLength;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_barLength = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_barLength;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_color = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_color;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_drawableSize = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_drawableSize;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_gapBetweenBars = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_gapBetweenBars;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_spinBars = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_spinBars;
+			global::Microsoft.Identity.Client.Resource.Styleable.DrawerArrowToggle_thickness = global::Reviewer.Droid.Resource.Styleable.DrawerArrowToggle_thickness;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_android_baselineAligned = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAligned;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_android_baselineAlignedChildIndex;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_android_gravity = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_android_gravity;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_android_orientation = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_android_orientation;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_android_weightSum = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_android_weightSum;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_divider = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_divider;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_dividerPadding = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_dividerPadding;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_measureWithLargestChild;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_showDividers = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_showDividers;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_Layout = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_Layout;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_gravity;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_height;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_weight;
+			global::Microsoft.Identity.Client.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width = global::Reviewer.Droid.Resource.Styleable.LinearLayoutCompat_Layout_android_layout_width;
+			global::Microsoft.Identity.Client.Resource.Styleable.ListPopupWindow = global::Reviewer.Droid.Resource.Styleable.ListPopupWindow;
+			global::Microsoft.Identity.Client.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset = global::Reviewer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownHorizontalOffset;
+			global::Microsoft.Identity.Client.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset = global::Reviewer.Droid.Resource.Styleable.ListPopupWindow_android_dropDownVerticalOffset;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuGroup = global::Reviewer.Droid.Resource.Styleable.MenuGroup;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuGroup_android_checkableBehavior = global::Reviewer.Droid.Resource.Styleable.MenuGroup_android_checkableBehavior;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuGroup_android_enabled = global::Reviewer.Droid.Resource.Styleable.MenuGroup_android_enabled;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuGroup_android_id = global::Reviewer.Droid.Resource.Styleable.MenuGroup_android_id;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuGroup_android_menuCategory = global::Reviewer.Droid.Resource.Styleable.MenuGroup_android_menuCategory;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuGroup_android_orderInCategory = global::Reviewer.Droid.Resource.Styleable.MenuGroup_android_orderInCategory;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuGroup_android_visible = global::Reviewer.Droid.Resource.Styleable.MenuGroup_android_visible;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem = global::Reviewer.Droid.Resource.Styleable.MenuItem;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_actionLayout = global::Reviewer.Droid.Resource.Styleable.MenuItem_actionLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_actionProviderClass = global::Reviewer.Droid.Resource.Styleable.MenuItem_actionProviderClass;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_actionViewClass = global::Reviewer.Droid.Resource.Styleable.MenuItem_actionViewClass;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_alphabeticShortcut = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_alphabeticShortcut;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_checkable = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_checkable;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_checked = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_checked;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_enabled = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_enabled;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_icon = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_icon;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_id = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_id;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_menuCategory = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_menuCategory;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_numericShortcut = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_numericShortcut;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_onClick = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_onClick;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_orderInCategory = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_orderInCategory;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_title = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_title;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_titleCondensed = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_titleCondensed;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_android_visible = global::Reviewer.Droid.Resource.Styleable.MenuItem_android_visible;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuItem_showAsAction = global::Reviewer.Droid.Resource.Styleable.MenuItem_showAsAction;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView = global::Reviewer.Droid.Resource.Styleable.MenuView;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_android_headerBackground = global::Reviewer.Droid.Resource.Styleable.MenuView_android_headerBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_android_horizontalDivider = global::Reviewer.Droid.Resource.Styleable.MenuView_android_horizontalDivider;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_android_itemBackground = global::Reviewer.Droid.Resource.Styleable.MenuView_android_itemBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_android_itemIconDisabledAlpha = global::Reviewer.Droid.Resource.Styleable.MenuView_android_itemIconDisabledAlpha;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_android_itemTextAppearance = global::Reviewer.Droid.Resource.Styleable.MenuView_android_itemTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_android_verticalDivider = global::Reviewer.Droid.Resource.Styleable.MenuView_android_verticalDivider;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_android_windowAnimationStyle = global::Reviewer.Droid.Resource.Styleable.MenuView_android_windowAnimationStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_preserveIconSpacing = global::Reviewer.Droid.Resource.Styleable.MenuView_preserveIconSpacing;
+			global::Microsoft.Identity.Client.Resource.Styleable.MenuView_subMenuArrow = global::Reviewer.Droid.Resource.Styleable.MenuView_subMenuArrow;
+			global::Microsoft.Identity.Client.Resource.Styleable.PopupWindow = global::Reviewer.Droid.Resource.Styleable.PopupWindow;
+			global::Microsoft.Identity.Client.Resource.Styleable.PopupWindow_android_popupAnimationStyle = global::Reviewer.Droid.Resource.Styleable.PopupWindow_android_popupAnimationStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.PopupWindow_android_popupBackground = global::Reviewer.Droid.Resource.Styleable.PopupWindow_android_popupBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.PopupWindow_overlapAnchor = global::Reviewer.Droid.Resource.Styleable.PopupWindow_overlapAnchor;
+			global::Microsoft.Identity.Client.Resource.Styleable.PopupWindowBackgroundState = global::Reviewer.Droid.Resource.Styleable.PopupWindowBackgroundState;
+			global::Microsoft.Identity.Client.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor = global::Reviewer.Droid.Resource.Styleable.PopupWindowBackgroundState_state_above_anchor;
+			global::Microsoft.Identity.Client.Resource.Styleable.RecycleListView = global::Reviewer.Droid.Resource.Styleable.RecycleListView;
+			global::Microsoft.Identity.Client.Resource.Styleable.RecycleListView_paddingBottomNoButtons = global::Reviewer.Droid.Resource.Styleable.RecycleListView_paddingBottomNoButtons;
+			global::Microsoft.Identity.Client.Resource.Styleable.RecycleListView_paddingTopNoTitle = global::Reviewer.Droid.Resource.Styleable.RecycleListView_paddingTopNoTitle;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView = global::Reviewer.Droid.Resource.Styleable.SearchView;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_android_focusable = global::Reviewer.Droid.Resource.Styleable.SearchView_android_focusable;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_android_imeOptions = global::Reviewer.Droid.Resource.Styleable.SearchView_android_imeOptions;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_android_inputType = global::Reviewer.Droid.Resource.Styleable.SearchView_android_inputType;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_android_maxWidth = global::Reviewer.Droid.Resource.Styleable.SearchView_android_maxWidth;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_closeIcon = global::Reviewer.Droid.Resource.Styleable.SearchView_closeIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_commitIcon = global::Reviewer.Droid.Resource.Styleable.SearchView_commitIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_defaultQueryHint = global::Reviewer.Droid.Resource.Styleable.SearchView_defaultQueryHint;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_goIcon = global::Reviewer.Droid.Resource.Styleable.SearchView_goIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_iconifiedByDefault = global::Reviewer.Droid.Resource.Styleable.SearchView_iconifiedByDefault;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_layout = global::Reviewer.Droid.Resource.Styleable.SearchView_layout;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_queryBackground = global::Reviewer.Droid.Resource.Styleable.SearchView_queryBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_queryHint = global::Reviewer.Droid.Resource.Styleable.SearchView_queryHint;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_searchHintIcon = global::Reviewer.Droid.Resource.Styleable.SearchView_searchHintIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_searchIcon = global::Reviewer.Droid.Resource.Styleable.SearchView_searchIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_submitBackground = global::Reviewer.Droid.Resource.Styleable.SearchView_submitBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_suggestionRowLayout = global::Reviewer.Droid.Resource.Styleable.SearchView_suggestionRowLayout;
+			global::Microsoft.Identity.Client.Resource.Styleable.SearchView_voiceIcon = global::Reviewer.Droid.Resource.Styleable.SearchView_voiceIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.Spinner = global::Reviewer.Droid.Resource.Styleable.Spinner;
+			global::Microsoft.Identity.Client.Resource.Styleable.Spinner_android_dropDownWidth = global::Reviewer.Droid.Resource.Styleable.Spinner_android_dropDownWidth;
+			global::Microsoft.Identity.Client.Resource.Styleable.Spinner_android_entries = global::Reviewer.Droid.Resource.Styleable.Spinner_android_entries;
+			global::Microsoft.Identity.Client.Resource.Styleable.Spinner_android_popupBackground = global::Reviewer.Droid.Resource.Styleable.Spinner_android_popupBackground;
+			global::Microsoft.Identity.Client.Resource.Styleable.Spinner_android_prompt = global::Reviewer.Droid.Resource.Styleable.Spinner_android_prompt;
+			global::Microsoft.Identity.Client.Resource.Styleable.Spinner_popupTheme = global::Reviewer.Droid.Resource.Styleable.Spinner_popupTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat = global::Reviewer.Droid.Resource.Styleable.SwitchCompat;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_android_textOff = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_android_textOff;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_android_textOn = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_android_textOn;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_android_thumb = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_android_thumb;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_showText = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_showText;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_splitTrack = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_splitTrack;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_switchMinWidth = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_switchMinWidth;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_switchPadding = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_switchPadding;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_switchTextAppearance = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_switchTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_thumbTextPadding = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_thumbTextPadding;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_thumbTint = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_thumbTint;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_thumbTintMode = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_thumbTintMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_track = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_track;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_trackTint = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_trackTint;
+			global::Microsoft.Identity.Client.Resource.Styleable.SwitchCompat_trackTintMode = global::Reviewer.Droid.Resource.Styleable.SwitchCompat_trackTintMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance = global::Reviewer.Droid.Resource.Styleable.TextAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_shadowColor = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_shadowColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_shadowDx = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_shadowDx;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_shadowDy = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_shadowDy;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_shadowRadius = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_shadowRadius;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_textColor = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_textColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_textColorHint = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_textColorHint;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_textSize = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_textSize;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_textStyle = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_textStyle;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_android_typeface = global::Reviewer.Droid.Resource.Styleable.TextAppearance_android_typeface;
+			global::Microsoft.Identity.Client.Resource.Styleable.TextAppearance_textAllCaps = global::Reviewer.Droid.Resource.Styleable.TextAppearance_textAllCaps;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar = global::Reviewer.Droid.Resource.Styleable.Toolbar;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_android_gravity = global::Reviewer.Droid.Resource.Styleable.Toolbar_android_gravity;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_android_minHeight = global::Reviewer.Droid.Resource.Styleable.Toolbar_android_minHeight;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_buttonGravity = global::Reviewer.Droid.Resource.Styleable.Toolbar_buttonGravity;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_collapseContentDescription = global::Reviewer.Droid.Resource.Styleable.Toolbar_collapseContentDescription;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_collapseIcon = global::Reviewer.Droid.Resource.Styleable.Toolbar_collapseIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_contentInsetEnd = global::Reviewer.Droid.Resource.Styleable.Toolbar_contentInsetEnd;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_contentInsetEndWithActions = global::Reviewer.Droid.Resource.Styleable.Toolbar_contentInsetEndWithActions;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_contentInsetLeft = global::Reviewer.Droid.Resource.Styleable.Toolbar_contentInsetLeft;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_contentInsetRight = global::Reviewer.Droid.Resource.Styleable.Toolbar_contentInsetRight;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_contentInsetStart = global::Reviewer.Droid.Resource.Styleable.Toolbar_contentInsetStart;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_contentInsetStartWithNavigation = global::Reviewer.Droid.Resource.Styleable.Toolbar_contentInsetStartWithNavigation;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_logo = global::Reviewer.Droid.Resource.Styleable.Toolbar_logo;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_logoDescription = global::Reviewer.Droid.Resource.Styleable.Toolbar_logoDescription;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_maxButtonHeight = global::Reviewer.Droid.Resource.Styleable.Toolbar_maxButtonHeight;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_navigationContentDescription = global::Reviewer.Droid.Resource.Styleable.Toolbar_navigationContentDescription;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_navigationIcon = global::Reviewer.Droid.Resource.Styleable.Toolbar_navigationIcon;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_popupTheme = global::Reviewer.Droid.Resource.Styleable.Toolbar_popupTheme;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_subtitle = global::Reviewer.Droid.Resource.Styleable.Toolbar_subtitle;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_subtitleTextAppearance = global::Reviewer.Droid.Resource.Styleable.Toolbar_subtitleTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_subtitleTextColor = global::Reviewer.Droid.Resource.Styleable.Toolbar_subtitleTextColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_title = global::Reviewer.Droid.Resource.Styleable.Toolbar_title;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleMargin = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleMargin;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleMarginBottom = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleMarginBottom;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleMarginEnd = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleMarginEnd;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleMarginStart = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleMarginStart;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleMarginTop = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleMarginTop;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleMargins = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleMargins;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleTextAppearance = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleTextAppearance;
+			global::Microsoft.Identity.Client.Resource.Styleable.Toolbar_titleTextColor = global::Reviewer.Droid.Resource.Styleable.Toolbar_titleTextColor;
+			global::Microsoft.Identity.Client.Resource.Styleable.View = global::Reviewer.Droid.Resource.Styleable.View;
+			global::Microsoft.Identity.Client.Resource.Styleable.View_android_focusable = global::Reviewer.Droid.Resource.Styleable.View_android_focusable;
+			global::Microsoft.Identity.Client.Resource.Styleable.View_android_theme = global::Reviewer.Droid.Resource.Styleable.View_android_theme;
+			global::Microsoft.Identity.Client.Resource.Styleable.View_paddingEnd = global::Reviewer.Droid.Resource.Styleable.View_paddingEnd;
+			global::Microsoft.Identity.Client.Resource.Styleable.View_paddingStart = global::Reviewer.Droid.Resource.Styleable.View_paddingStart;
+			global::Microsoft.Identity.Client.Resource.Styleable.View_theme = global::Reviewer.Droid.Resource.Styleable.View_theme;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewBackgroundHelper = global::Reviewer.Droid.Resource.Styleable.ViewBackgroundHelper;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewBackgroundHelper_android_background = global::Reviewer.Droid.Resource.Styleable.ViewBackgroundHelper_android_background;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewBackgroundHelper_backgroundTint = global::Reviewer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTint;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode = global::Reviewer.Droid.Resource.Styleable.ViewBackgroundHelper_backgroundTintMode;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewStubCompat = global::Reviewer.Droid.Resource.Styleable.ViewStubCompat;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewStubCompat_android_id = global::Reviewer.Droid.Resource.Styleable.ViewStubCompat_android_id;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewStubCompat_android_inflatedId = global::Reviewer.Droid.Resource.Styleable.ViewStubCompat_android_inflatedId;
+			global::Microsoft.Identity.Client.Resource.Styleable.ViewStubCompat_android_layout = global::Reviewer.Droid.Resource.Styleable.ViewStubCompat_android_layout;
 			global::Xamarin.Forms.Platform.Android.Resource.Attribute.actionBarSize = global::Reviewer.Droid.Resource.Attribute.actionBarSize;
 		}
 		
@@ -2192,26 +3623,26 @@ namespace Reviewer.Droid
 			// aapt resource value: 0x7f020053
 			public const int avd_hide_password = 2130837587;
 			
-			// aapt resource value: 0x7f02010e
-			public const int avd_hide_password_1 = 2130837774;
-			
 			// aapt resource value: 0x7f02010f
-			public const int avd_hide_password_2 = 2130837775;
+			public const int avd_hide_password_1 = 2130837775;
 			
 			// aapt resource value: 0x7f020110
-			public const int avd_hide_password_3 = 2130837776;
+			public const int avd_hide_password_2 = 2130837776;
+			
+			// aapt resource value: 0x7f020111
+			public const int avd_hide_password_3 = 2130837777;
 			
 			// aapt resource value: 0x7f020054
 			public const int avd_show_password = 2130837588;
 			
-			// aapt resource value: 0x7f020111
-			public const int avd_show_password_1 = 2130837777;
-			
 			// aapt resource value: 0x7f020112
-			public const int avd_show_password_2 = 2130837778;
+			public const int avd_show_password_1 = 2130837778;
 			
 			// aapt resource value: 0x7f020113
-			public const int avd_show_password_3 = 2130837779;
+			public const int avd_show_password_2 = 2130837779;
+			
+			// aapt resource value: 0x7f020114
+			public const int avd_show_password_3 = 2130837780;
 			
 			// aapt resource value: 0x7f020055
 			public const int design_bottom_navigation_item_background = 2130837589;
@@ -2238,535 +3669,538 @@ namespace Reviewer.Droid
 			public const int ic_audiotrack_light = 2130837596;
 			
 			// aapt resource value: 0x7f02005d
-			public const int ic_dialog_close_dark = 2130837597;
+			public const int ic_bitcommunity = 2130837597;
 			
 			// aapt resource value: 0x7f02005e
-			public const int ic_dialog_close_light = 2130837598;
+			public const int ic_dialog_close_dark = 2130837598;
 			
 			// aapt resource value: 0x7f02005f
-			public const int ic_group_collapse_00 = 2130837599;
+			public const int ic_dialog_close_light = 2130837599;
 			
 			// aapt resource value: 0x7f020060
-			public const int ic_group_collapse_01 = 2130837600;
+			public const int ic_group_collapse_00 = 2130837600;
 			
 			// aapt resource value: 0x7f020061
-			public const int ic_group_collapse_02 = 2130837601;
+			public const int ic_group_collapse_01 = 2130837601;
 			
 			// aapt resource value: 0x7f020062
-			public const int ic_group_collapse_03 = 2130837602;
+			public const int ic_group_collapse_02 = 2130837602;
 			
 			// aapt resource value: 0x7f020063
-			public const int ic_group_collapse_04 = 2130837603;
+			public const int ic_group_collapse_03 = 2130837603;
 			
 			// aapt resource value: 0x7f020064
-			public const int ic_group_collapse_05 = 2130837604;
+			public const int ic_group_collapse_04 = 2130837604;
 			
 			// aapt resource value: 0x7f020065
-			public const int ic_group_collapse_06 = 2130837605;
+			public const int ic_group_collapse_05 = 2130837605;
 			
 			// aapt resource value: 0x7f020066
-			public const int ic_group_collapse_07 = 2130837606;
+			public const int ic_group_collapse_06 = 2130837606;
 			
 			// aapt resource value: 0x7f020067
-			public const int ic_group_collapse_08 = 2130837607;
+			public const int ic_group_collapse_07 = 2130837607;
 			
 			// aapt resource value: 0x7f020068
-			public const int ic_group_collapse_09 = 2130837608;
+			public const int ic_group_collapse_08 = 2130837608;
 			
 			// aapt resource value: 0x7f020069
-			public const int ic_group_collapse_10 = 2130837609;
+			public const int ic_group_collapse_09 = 2130837609;
 			
 			// aapt resource value: 0x7f02006a
-			public const int ic_group_collapse_11 = 2130837610;
+			public const int ic_group_collapse_10 = 2130837610;
 			
 			// aapt resource value: 0x7f02006b
-			public const int ic_group_collapse_12 = 2130837611;
+			public const int ic_group_collapse_11 = 2130837611;
 			
 			// aapt resource value: 0x7f02006c
-			public const int ic_group_collapse_13 = 2130837612;
+			public const int ic_group_collapse_12 = 2130837612;
 			
 			// aapt resource value: 0x7f02006d
-			public const int ic_group_collapse_14 = 2130837613;
+			public const int ic_group_collapse_13 = 2130837613;
 			
 			// aapt resource value: 0x7f02006e
-			public const int ic_group_collapse_15 = 2130837614;
+			public const int ic_group_collapse_14 = 2130837614;
 			
 			// aapt resource value: 0x7f02006f
-			public const int ic_group_expand_00 = 2130837615;
+			public const int ic_group_collapse_15 = 2130837615;
 			
 			// aapt resource value: 0x7f020070
-			public const int ic_group_expand_01 = 2130837616;
+			public const int ic_group_expand_00 = 2130837616;
 			
 			// aapt resource value: 0x7f020071
-			public const int ic_group_expand_02 = 2130837617;
+			public const int ic_group_expand_01 = 2130837617;
 			
 			// aapt resource value: 0x7f020072
-			public const int ic_group_expand_03 = 2130837618;
+			public const int ic_group_expand_02 = 2130837618;
 			
 			// aapt resource value: 0x7f020073
-			public const int ic_group_expand_04 = 2130837619;
+			public const int ic_group_expand_03 = 2130837619;
 			
 			// aapt resource value: 0x7f020074
-			public const int ic_group_expand_05 = 2130837620;
+			public const int ic_group_expand_04 = 2130837620;
 			
 			// aapt resource value: 0x7f020075
-			public const int ic_group_expand_06 = 2130837621;
+			public const int ic_group_expand_05 = 2130837621;
 			
 			// aapt resource value: 0x7f020076
-			public const int ic_group_expand_07 = 2130837622;
+			public const int ic_group_expand_06 = 2130837622;
 			
 			// aapt resource value: 0x7f020077
-			public const int ic_group_expand_08 = 2130837623;
+			public const int ic_group_expand_07 = 2130837623;
 			
 			// aapt resource value: 0x7f020078
-			public const int ic_group_expand_09 = 2130837624;
+			public const int ic_group_expand_08 = 2130837624;
 			
 			// aapt resource value: 0x7f020079
-			public const int ic_group_expand_10 = 2130837625;
+			public const int ic_group_expand_09 = 2130837625;
 			
 			// aapt resource value: 0x7f02007a
-			public const int ic_group_expand_11 = 2130837626;
+			public const int ic_group_expand_10 = 2130837626;
 			
 			// aapt resource value: 0x7f02007b
-			public const int ic_group_expand_12 = 2130837627;
+			public const int ic_group_expand_11 = 2130837627;
 			
 			// aapt resource value: 0x7f02007c
-			public const int ic_group_expand_13 = 2130837628;
+			public const int ic_group_expand_12 = 2130837628;
 			
 			// aapt resource value: 0x7f02007d
-			public const int ic_group_expand_14 = 2130837629;
+			public const int ic_group_expand_13 = 2130837629;
 			
 			// aapt resource value: 0x7f02007e
-			public const int ic_group_expand_15 = 2130837630;
+			public const int ic_group_expand_14 = 2130837630;
 			
 			// aapt resource value: 0x7f02007f
-			public const int ic_media_pause_dark = 2130837631;
+			public const int ic_group_expand_15 = 2130837631;
 			
 			// aapt resource value: 0x7f020080
-			public const int ic_media_pause_light = 2130837632;
+			public const int ic_media_pause_dark = 2130837632;
 			
 			// aapt resource value: 0x7f020081
-			public const int ic_media_play_dark = 2130837633;
+			public const int ic_media_pause_light = 2130837633;
 			
 			// aapt resource value: 0x7f020082
-			public const int ic_media_play_light = 2130837634;
+			public const int ic_media_play_dark = 2130837634;
 			
 			// aapt resource value: 0x7f020083
-			public const int ic_media_stop_dark = 2130837635;
+			public const int ic_media_play_light = 2130837635;
 			
 			// aapt resource value: 0x7f020084
-			public const int ic_media_stop_light = 2130837636;
+			public const int ic_media_stop_dark = 2130837636;
 			
 			// aapt resource value: 0x7f020085
-			public const int ic_mr_button_connected_00_dark = 2130837637;
+			public const int ic_media_stop_light = 2130837637;
 			
 			// aapt resource value: 0x7f020086
-			public const int ic_mr_button_connected_00_light = 2130837638;
+			public const int ic_mr_button_connected_00_dark = 2130837638;
 			
 			// aapt resource value: 0x7f020087
-			public const int ic_mr_button_connected_01_dark = 2130837639;
+			public const int ic_mr_button_connected_00_light = 2130837639;
 			
 			// aapt resource value: 0x7f020088
-			public const int ic_mr_button_connected_01_light = 2130837640;
+			public const int ic_mr_button_connected_01_dark = 2130837640;
 			
 			// aapt resource value: 0x7f020089
-			public const int ic_mr_button_connected_02_dark = 2130837641;
+			public const int ic_mr_button_connected_01_light = 2130837641;
 			
 			// aapt resource value: 0x7f02008a
-			public const int ic_mr_button_connected_02_light = 2130837642;
+			public const int ic_mr_button_connected_02_dark = 2130837642;
 			
 			// aapt resource value: 0x7f02008b
-			public const int ic_mr_button_connected_03_dark = 2130837643;
+			public const int ic_mr_button_connected_02_light = 2130837643;
 			
 			// aapt resource value: 0x7f02008c
-			public const int ic_mr_button_connected_03_light = 2130837644;
+			public const int ic_mr_button_connected_03_dark = 2130837644;
 			
 			// aapt resource value: 0x7f02008d
-			public const int ic_mr_button_connected_04_dark = 2130837645;
+			public const int ic_mr_button_connected_03_light = 2130837645;
 			
 			// aapt resource value: 0x7f02008e
-			public const int ic_mr_button_connected_04_light = 2130837646;
+			public const int ic_mr_button_connected_04_dark = 2130837646;
 			
 			// aapt resource value: 0x7f02008f
-			public const int ic_mr_button_connected_05_dark = 2130837647;
+			public const int ic_mr_button_connected_04_light = 2130837647;
 			
 			// aapt resource value: 0x7f020090
-			public const int ic_mr_button_connected_05_light = 2130837648;
+			public const int ic_mr_button_connected_05_dark = 2130837648;
 			
 			// aapt resource value: 0x7f020091
-			public const int ic_mr_button_connected_06_dark = 2130837649;
+			public const int ic_mr_button_connected_05_light = 2130837649;
 			
 			// aapt resource value: 0x7f020092
-			public const int ic_mr_button_connected_06_light = 2130837650;
+			public const int ic_mr_button_connected_06_dark = 2130837650;
 			
 			// aapt resource value: 0x7f020093
-			public const int ic_mr_button_connected_07_dark = 2130837651;
+			public const int ic_mr_button_connected_06_light = 2130837651;
 			
 			// aapt resource value: 0x7f020094
-			public const int ic_mr_button_connected_07_light = 2130837652;
+			public const int ic_mr_button_connected_07_dark = 2130837652;
 			
 			// aapt resource value: 0x7f020095
-			public const int ic_mr_button_connected_08_dark = 2130837653;
+			public const int ic_mr_button_connected_07_light = 2130837653;
 			
 			// aapt resource value: 0x7f020096
-			public const int ic_mr_button_connected_08_light = 2130837654;
+			public const int ic_mr_button_connected_08_dark = 2130837654;
 			
 			// aapt resource value: 0x7f020097
-			public const int ic_mr_button_connected_09_dark = 2130837655;
+			public const int ic_mr_button_connected_08_light = 2130837655;
 			
 			// aapt resource value: 0x7f020098
-			public const int ic_mr_button_connected_09_light = 2130837656;
+			public const int ic_mr_button_connected_09_dark = 2130837656;
 			
 			// aapt resource value: 0x7f020099
-			public const int ic_mr_button_connected_10_dark = 2130837657;
+			public const int ic_mr_button_connected_09_light = 2130837657;
 			
 			// aapt resource value: 0x7f02009a
-			public const int ic_mr_button_connected_10_light = 2130837658;
+			public const int ic_mr_button_connected_10_dark = 2130837658;
 			
 			// aapt resource value: 0x7f02009b
-			public const int ic_mr_button_connected_11_dark = 2130837659;
+			public const int ic_mr_button_connected_10_light = 2130837659;
 			
 			// aapt resource value: 0x7f02009c
-			public const int ic_mr_button_connected_11_light = 2130837660;
+			public const int ic_mr_button_connected_11_dark = 2130837660;
 			
 			// aapt resource value: 0x7f02009d
-			public const int ic_mr_button_connected_12_dark = 2130837661;
+			public const int ic_mr_button_connected_11_light = 2130837661;
 			
 			// aapt resource value: 0x7f02009e
-			public const int ic_mr_button_connected_12_light = 2130837662;
+			public const int ic_mr_button_connected_12_dark = 2130837662;
 			
 			// aapt resource value: 0x7f02009f
-			public const int ic_mr_button_connected_13_dark = 2130837663;
+			public const int ic_mr_button_connected_12_light = 2130837663;
 			
 			// aapt resource value: 0x7f0200a0
-			public const int ic_mr_button_connected_13_light = 2130837664;
+			public const int ic_mr_button_connected_13_dark = 2130837664;
 			
 			// aapt resource value: 0x7f0200a1
-			public const int ic_mr_button_connected_14_dark = 2130837665;
+			public const int ic_mr_button_connected_13_light = 2130837665;
 			
 			// aapt resource value: 0x7f0200a2
-			public const int ic_mr_button_connected_14_light = 2130837666;
+			public const int ic_mr_button_connected_14_dark = 2130837666;
 			
 			// aapt resource value: 0x7f0200a3
-			public const int ic_mr_button_connected_15_dark = 2130837667;
+			public const int ic_mr_button_connected_14_light = 2130837667;
 			
 			// aapt resource value: 0x7f0200a4
-			public const int ic_mr_button_connected_15_light = 2130837668;
+			public const int ic_mr_button_connected_15_dark = 2130837668;
 			
 			// aapt resource value: 0x7f0200a5
-			public const int ic_mr_button_connected_16_dark = 2130837669;
+			public const int ic_mr_button_connected_15_light = 2130837669;
 			
 			// aapt resource value: 0x7f0200a6
-			public const int ic_mr_button_connected_16_light = 2130837670;
+			public const int ic_mr_button_connected_16_dark = 2130837670;
 			
 			// aapt resource value: 0x7f0200a7
-			public const int ic_mr_button_connected_17_dark = 2130837671;
+			public const int ic_mr_button_connected_16_light = 2130837671;
 			
 			// aapt resource value: 0x7f0200a8
-			public const int ic_mr_button_connected_17_light = 2130837672;
+			public const int ic_mr_button_connected_17_dark = 2130837672;
 			
 			// aapt resource value: 0x7f0200a9
-			public const int ic_mr_button_connected_18_dark = 2130837673;
+			public const int ic_mr_button_connected_17_light = 2130837673;
 			
 			// aapt resource value: 0x7f0200aa
-			public const int ic_mr_button_connected_18_light = 2130837674;
+			public const int ic_mr_button_connected_18_dark = 2130837674;
 			
 			// aapt resource value: 0x7f0200ab
-			public const int ic_mr_button_connected_19_dark = 2130837675;
+			public const int ic_mr_button_connected_18_light = 2130837675;
 			
 			// aapt resource value: 0x7f0200ac
-			public const int ic_mr_button_connected_19_light = 2130837676;
+			public const int ic_mr_button_connected_19_dark = 2130837676;
 			
 			// aapt resource value: 0x7f0200ad
-			public const int ic_mr_button_connected_20_dark = 2130837677;
+			public const int ic_mr_button_connected_19_light = 2130837677;
 			
 			// aapt resource value: 0x7f0200ae
-			public const int ic_mr_button_connected_20_light = 2130837678;
+			public const int ic_mr_button_connected_20_dark = 2130837678;
 			
 			// aapt resource value: 0x7f0200af
-			public const int ic_mr_button_connected_21_dark = 2130837679;
+			public const int ic_mr_button_connected_20_light = 2130837679;
 			
 			// aapt resource value: 0x7f0200b0
-			public const int ic_mr_button_connected_21_light = 2130837680;
+			public const int ic_mr_button_connected_21_dark = 2130837680;
 			
 			// aapt resource value: 0x7f0200b1
-			public const int ic_mr_button_connected_22_dark = 2130837681;
+			public const int ic_mr_button_connected_21_light = 2130837681;
 			
 			// aapt resource value: 0x7f0200b2
-			public const int ic_mr_button_connected_22_light = 2130837682;
+			public const int ic_mr_button_connected_22_dark = 2130837682;
 			
 			// aapt resource value: 0x7f0200b3
-			public const int ic_mr_button_connecting_00_dark = 2130837683;
+			public const int ic_mr_button_connected_22_light = 2130837683;
 			
 			// aapt resource value: 0x7f0200b4
-			public const int ic_mr_button_connecting_00_light = 2130837684;
+			public const int ic_mr_button_connecting_00_dark = 2130837684;
 			
 			// aapt resource value: 0x7f0200b5
-			public const int ic_mr_button_connecting_01_dark = 2130837685;
+			public const int ic_mr_button_connecting_00_light = 2130837685;
 			
 			// aapt resource value: 0x7f0200b6
-			public const int ic_mr_button_connecting_01_light = 2130837686;
+			public const int ic_mr_button_connecting_01_dark = 2130837686;
 			
 			// aapt resource value: 0x7f0200b7
-			public const int ic_mr_button_connecting_02_dark = 2130837687;
+			public const int ic_mr_button_connecting_01_light = 2130837687;
 			
 			// aapt resource value: 0x7f0200b8
-			public const int ic_mr_button_connecting_02_light = 2130837688;
+			public const int ic_mr_button_connecting_02_dark = 2130837688;
 			
 			// aapt resource value: 0x7f0200b9
-			public const int ic_mr_button_connecting_03_dark = 2130837689;
+			public const int ic_mr_button_connecting_02_light = 2130837689;
 			
 			// aapt resource value: 0x7f0200ba
-			public const int ic_mr_button_connecting_03_light = 2130837690;
+			public const int ic_mr_button_connecting_03_dark = 2130837690;
 			
 			// aapt resource value: 0x7f0200bb
-			public const int ic_mr_button_connecting_04_dark = 2130837691;
+			public const int ic_mr_button_connecting_03_light = 2130837691;
 			
 			// aapt resource value: 0x7f0200bc
-			public const int ic_mr_button_connecting_04_light = 2130837692;
+			public const int ic_mr_button_connecting_04_dark = 2130837692;
 			
 			// aapt resource value: 0x7f0200bd
-			public const int ic_mr_button_connecting_05_dark = 2130837693;
+			public const int ic_mr_button_connecting_04_light = 2130837693;
 			
 			// aapt resource value: 0x7f0200be
-			public const int ic_mr_button_connecting_05_light = 2130837694;
+			public const int ic_mr_button_connecting_05_dark = 2130837694;
 			
 			// aapt resource value: 0x7f0200bf
-			public const int ic_mr_button_connecting_06_dark = 2130837695;
+			public const int ic_mr_button_connecting_05_light = 2130837695;
 			
 			// aapt resource value: 0x7f0200c0
-			public const int ic_mr_button_connecting_06_light = 2130837696;
+			public const int ic_mr_button_connecting_06_dark = 2130837696;
 			
 			// aapt resource value: 0x7f0200c1
-			public const int ic_mr_button_connecting_07_dark = 2130837697;
+			public const int ic_mr_button_connecting_06_light = 2130837697;
 			
 			// aapt resource value: 0x7f0200c2
-			public const int ic_mr_button_connecting_07_light = 2130837698;
+			public const int ic_mr_button_connecting_07_dark = 2130837698;
 			
 			// aapt resource value: 0x7f0200c3
-			public const int ic_mr_button_connecting_08_dark = 2130837699;
+			public const int ic_mr_button_connecting_07_light = 2130837699;
 			
 			// aapt resource value: 0x7f0200c4
-			public const int ic_mr_button_connecting_08_light = 2130837700;
+			public const int ic_mr_button_connecting_08_dark = 2130837700;
 			
 			// aapt resource value: 0x7f0200c5
-			public const int ic_mr_button_connecting_09_dark = 2130837701;
+			public const int ic_mr_button_connecting_08_light = 2130837701;
 			
 			// aapt resource value: 0x7f0200c6
-			public const int ic_mr_button_connecting_09_light = 2130837702;
+			public const int ic_mr_button_connecting_09_dark = 2130837702;
 			
 			// aapt resource value: 0x7f0200c7
-			public const int ic_mr_button_connecting_10_dark = 2130837703;
+			public const int ic_mr_button_connecting_09_light = 2130837703;
 			
 			// aapt resource value: 0x7f0200c8
-			public const int ic_mr_button_connecting_10_light = 2130837704;
+			public const int ic_mr_button_connecting_10_dark = 2130837704;
 			
 			// aapt resource value: 0x7f0200c9
-			public const int ic_mr_button_connecting_11_dark = 2130837705;
+			public const int ic_mr_button_connecting_10_light = 2130837705;
 			
 			// aapt resource value: 0x7f0200ca
-			public const int ic_mr_button_connecting_11_light = 2130837706;
+			public const int ic_mr_button_connecting_11_dark = 2130837706;
 			
 			// aapt resource value: 0x7f0200cb
-			public const int ic_mr_button_connecting_12_dark = 2130837707;
+			public const int ic_mr_button_connecting_11_light = 2130837707;
 			
 			// aapt resource value: 0x7f0200cc
-			public const int ic_mr_button_connecting_12_light = 2130837708;
+			public const int ic_mr_button_connecting_12_dark = 2130837708;
 			
 			// aapt resource value: 0x7f0200cd
-			public const int ic_mr_button_connecting_13_dark = 2130837709;
+			public const int ic_mr_button_connecting_12_light = 2130837709;
 			
 			// aapt resource value: 0x7f0200ce
-			public const int ic_mr_button_connecting_13_light = 2130837710;
+			public const int ic_mr_button_connecting_13_dark = 2130837710;
 			
 			// aapt resource value: 0x7f0200cf
-			public const int ic_mr_button_connecting_14_dark = 2130837711;
+			public const int ic_mr_button_connecting_13_light = 2130837711;
 			
 			// aapt resource value: 0x7f0200d0
-			public const int ic_mr_button_connecting_14_light = 2130837712;
+			public const int ic_mr_button_connecting_14_dark = 2130837712;
 			
 			// aapt resource value: 0x7f0200d1
-			public const int ic_mr_button_connecting_15_dark = 2130837713;
+			public const int ic_mr_button_connecting_14_light = 2130837713;
 			
 			// aapt resource value: 0x7f0200d2
-			public const int ic_mr_button_connecting_15_light = 2130837714;
+			public const int ic_mr_button_connecting_15_dark = 2130837714;
 			
 			// aapt resource value: 0x7f0200d3
-			public const int ic_mr_button_connecting_16_dark = 2130837715;
+			public const int ic_mr_button_connecting_15_light = 2130837715;
 			
 			// aapt resource value: 0x7f0200d4
-			public const int ic_mr_button_connecting_16_light = 2130837716;
+			public const int ic_mr_button_connecting_16_dark = 2130837716;
 			
 			// aapt resource value: 0x7f0200d5
-			public const int ic_mr_button_connecting_17_dark = 2130837717;
+			public const int ic_mr_button_connecting_16_light = 2130837717;
 			
 			// aapt resource value: 0x7f0200d6
-			public const int ic_mr_button_connecting_17_light = 2130837718;
+			public const int ic_mr_button_connecting_17_dark = 2130837718;
 			
 			// aapt resource value: 0x7f0200d7
-			public const int ic_mr_button_connecting_18_dark = 2130837719;
+			public const int ic_mr_button_connecting_17_light = 2130837719;
 			
 			// aapt resource value: 0x7f0200d8
-			public const int ic_mr_button_connecting_18_light = 2130837720;
+			public const int ic_mr_button_connecting_18_dark = 2130837720;
 			
 			// aapt resource value: 0x7f0200d9
-			public const int ic_mr_button_connecting_19_dark = 2130837721;
+			public const int ic_mr_button_connecting_18_light = 2130837721;
 			
 			// aapt resource value: 0x7f0200da
-			public const int ic_mr_button_connecting_19_light = 2130837722;
+			public const int ic_mr_button_connecting_19_dark = 2130837722;
 			
 			// aapt resource value: 0x7f0200db
-			public const int ic_mr_button_connecting_20_dark = 2130837723;
+			public const int ic_mr_button_connecting_19_light = 2130837723;
 			
 			// aapt resource value: 0x7f0200dc
-			public const int ic_mr_button_connecting_20_light = 2130837724;
+			public const int ic_mr_button_connecting_20_dark = 2130837724;
 			
 			// aapt resource value: 0x7f0200dd
-			public const int ic_mr_button_connecting_21_dark = 2130837725;
+			public const int ic_mr_button_connecting_20_light = 2130837725;
 			
 			// aapt resource value: 0x7f0200de
-			public const int ic_mr_button_connecting_21_light = 2130837726;
+			public const int ic_mr_button_connecting_21_dark = 2130837726;
 			
 			// aapt resource value: 0x7f0200df
-			public const int ic_mr_button_connecting_22_dark = 2130837727;
+			public const int ic_mr_button_connecting_21_light = 2130837727;
 			
 			// aapt resource value: 0x7f0200e0
-			public const int ic_mr_button_connecting_22_light = 2130837728;
+			public const int ic_mr_button_connecting_22_dark = 2130837728;
 			
 			// aapt resource value: 0x7f0200e1
-			public const int ic_mr_button_disabled_dark = 2130837729;
+			public const int ic_mr_button_connecting_22_light = 2130837729;
 			
 			// aapt resource value: 0x7f0200e2
-			public const int ic_mr_button_disabled_light = 2130837730;
+			public const int ic_mr_button_disabled_dark = 2130837730;
 			
 			// aapt resource value: 0x7f0200e3
-			public const int ic_mr_button_disconnected_dark = 2130837731;
+			public const int ic_mr_button_disabled_light = 2130837731;
 			
 			// aapt resource value: 0x7f0200e4
-			public const int ic_mr_button_disconnected_light = 2130837732;
+			public const int ic_mr_button_disconnected_dark = 2130837732;
 			
 			// aapt resource value: 0x7f0200e5
-			public const int ic_mr_button_grey = 2130837733;
+			public const int ic_mr_button_disconnected_light = 2130837733;
 			
 			// aapt resource value: 0x7f0200e6
-			public const int ic_vol_type_speaker_dark = 2130837734;
+			public const int ic_mr_button_grey = 2130837734;
 			
 			// aapt resource value: 0x7f0200e7
-			public const int ic_vol_type_speaker_group_dark = 2130837735;
+			public const int ic_vol_type_speaker_dark = 2130837735;
 			
 			// aapt resource value: 0x7f0200e8
-			public const int ic_vol_type_speaker_group_light = 2130837736;
+			public const int ic_vol_type_speaker_group_dark = 2130837736;
 			
 			// aapt resource value: 0x7f0200e9
-			public const int ic_vol_type_speaker_light = 2130837737;
+			public const int ic_vol_type_speaker_group_light = 2130837737;
 			
 			// aapt resource value: 0x7f0200ea
-			public const int ic_vol_type_tv_dark = 2130837738;
+			public const int ic_vol_type_speaker_light = 2130837738;
 			
 			// aapt resource value: 0x7f0200eb
-			public const int ic_vol_type_tv_light = 2130837739;
+			public const int ic_vol_type_tv_dark = 2130837739;
 			
 			// aapt resource value: 0x7f0200ec
-			public const int icon = 2130837740;
+			public const int ic_vol_type_tv_light = 2130837740;
 			
 			// aapt resource value: 0x7f0200ed
-			public const int mr_button_connected_dark = 2130837741;
+			public const int icon = 2130837741;
 			
 			// aapt resource value: 0x7f0200ee
-			public const int mr_button_connected_light = 2130837742;
+			public const int mr_button_connected_dark = 2130837742;
 			
 			// aapt resource value: 0x7f0200ef
-			public const int mr_button_connecting_dark = 2130837743;
+			public const int mr_button_connected_light = 2130837743;
 			
 			// aapt resource value: 0x7f0200f0
-			public const int mr_button_connecting_light = 2130837744;
+			public const int mr_button_connecting_dark = 2130837744;
 			
 			// aapt resource value: 0x7f0200f1
-			public const int mr_button_dark = 2130837745;
+			public const int mr_button_connecting_light = 2130837745;
 			
 			// aapt resource value: 0x7f0200f2
-			public const int mr_button_light = 2130837746;
+			public const int mr_button_dark = 2130837746;
 			
 			// aapt resource value: 0x7f0200f3
-			public const int mr_dialog_close_dark = 2130837747;
+			public const int mr_button_light = 2130837747;
 			
 			// aapt resource value: 0x7f0200f4
-			public const int mr_dialog_close_light = 2130837748;
+			public const int mr_dialog_close_dark = 2130837748;
 			
 			// aapt resource value: 0x7f0200f5
-			public const int mr_dialog_material_background_dark = 2130837749;
+			public const int mr_dialog_close_light = 2130837749;
 			
 			// aapt resource value: 0x7f0200f6
-			public const int mr_dialog_material_background_light = 2130837750;
+			public const int mr_dialog_material_background_dark = 2130837750;
 			
 			// aapt resource value: 0x7f0200f7
-			public const int mr_group_collapse = 2130837751;
+			public const int mr_dialog_material_background_light = 2130837751;
 			
 			// aapt resource value: 0x7f0200f8
-			public const int mr_group_expand = 2130837752;
+			public const int mr_group_collapse = 2130837752;
 			
 			// aapt resource value: 0x7f0200f9
-			public const int mr_media_pause_dark = 2130837753;
+			public const int mr_group_expand = 2130837753;
 			
 			// aapt resource value: 0x7f0200fa
-			public const int mr_media_pause_light = 2130837754;
+			public const int mr_media_pause_dark = 2130837754;
 			
 			// aapt resource value: 0x7f0200fb
-			public const int mr_media_play_dark = 2130837755;
+			public const int mr_media_pause_light = 2130837755;
 			
 			// aapt resource value: 0x7f0200fc
-			public const int mr_media_play_light = 2130837756;
+			public const int mr_media_play_dark = 2130837756;
 			
 			// aapt resource value: 0x7f0200fd
-			public const int mr_media_stop_dark = 2130837757;
+			public const int mr_media_play_light = 2130837757;
 			
 			// aapt resource value: 0x7f0200fe
-			public const int mr_media_stop_light = 2130837758;
+			public const int mr_media_stop_dark = 2130837758;
 			
 			// aapt resource value: 0x7f0200ff
-			public const int mr_vol_type_audiotrack_dark = 2130837759;
+			public const int mr_media_stop_light = 2130837759;
 			
 			// aapt resource value: 0x7f020100
-			public const int mr_vol_type_audiotrack_light = 2130837760;
+			public const int mr_vol_type_audiotrack_dark = 2130837760;
 			
 			// aapt resource value: 0x7f020101
-			public const int navigation_empty_icon = 2130837761;
+			public const int mr_vol_type_audiotrack_light = 2130837761;
 			
 			// aapt resource value: 0x7f020102
-			public const int notification_action_background = 2130837762;
+			public const int navigation_empty_icon = 2130837762;
 			
 			// aapt resource value: 0x7f020103
-			public const int notification_bg = 2130837763;
+			public const int notification_action_background = 2130837763;
 			
 			// aapt resource value: 0x7f020104
-			public const int notification_bg_low = 2130837764;
+			public const int notification_bg = 2130837764;
 			
 			// aapt resource value: 0x7f020105
-			public const int notification_bg_low_normal = 2130837765;
+			public const int notification_bg_low = 2130837765;
 			
 			// aapt resource value: 0x7f020106
-			public const int notification_bg_low_pressed = 2130837766;
+			public const int notification_bg_low_normal = 2130837766;
 			
 			// aapt resource value: 0x7f020107
-			public const int notification_bg_normal = 2130837767;
+			public const int notification_bg_low_pressed = 2130837767;
 			
 			// aapt resource value: 0x7f020108
-			public const int notification_bg_normal_pressed = 2130837768;
+			public const int notification_bg_normal = 2130837768;
 			
 			// aapt resource value: 0x7f020109
-			public const int notification_icon_background = 2130837769;
-			
-			// aapt resource value: 0x7f02010c
-			public const int notification_template_icon_bg = 2130837772;
-			
-			// aapt resource value: 0x7f02010d
-			public const int notification_template_icon_low_bg = 2130837773;
+			public const int notification_bg_normal_pressed = 2130837769;
 			
 			// aapt resource value: 0x7f02010a
-			public const int notification_tile_bg = 2130837770;
+			public const int notification_icon_background = 2130837770;
+			
+			// aapt resource value: 0x7f02010d
+			public const int notification_template_icon_bg = 2130837773;
+			
+			// aapt resource value: 0x7f02010e
+			public const int notification_template_icon_low_bg = 2130837774;
 			
 			// aapt resource value: 0x7f02010b
-			public const int notify_panel_notification_icon_bg = 2130837771;
+			public const int notification_tile_bg = 2130837771;
+			
+			// aapt resource value: 0x7f02010c
+			public const int notify_panel_notification_icon_bg = 2130837772;
 			
 			static Drawable()
 			{
@@ -2843,6 +4277,9 @@ namespace Reviewer.Droid
 			
 			// aapt resource value: 0x7f08001e
 			public const int add = 2131230750;
+			
+			// aapt resource value: 0x7f0800b4
+			public const int agentWebView = 2131230900;
 			
 			// aapt resource value: 0x7f080058
 			public const int alertTitle = 2131230808;
@@ -3009,8 +4446,8 @@ namespace Reviewer.Droid
 			// aapt resource value: 0x7f080048
 			public const int list_item = 2131230792;
 			
-			// aapt resource value: 0x7f0800b5
-			public const int masked = 2131230901;
+			// aapt resource value: 0x7f0800b6
+			public const int masked = 2131230902;
 			
 			// aapt resource value: 0x7f0800a1
 			public const int media_actions = 2131230881;
@@ -3315,8 +4752,8 @@ namespace Reviewer.Droid
 			// aapt resource value: 0x7f08000e
 			public const int view_offset_helper = 2131230734;
 			
-			// aapt resource value: 0x7f0800b4
-			public const int visible = 2131230900;
+			// aapt resource value: 0x7f0800b5
+			public const int visible = 2131230901;
 			
 			// aapt resource value: 0x7f080093
 			public const int volume_item_container = 2131230867;
@@ -3612,6 +5049,9 @@ namespace Reviewer.Droid
 			// aapt resource value: 0x7f030043
 			public const int Toolbar = 2130903107;
 			
+			// aapt resource value: 0x7f030044
+			public const int WebAuthenticationBroker = 2130903108;
+			
 			static Layout()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -3624,6 +5064,9 @@ namespace Reviewer.Droid
 		
 		public partial class String
 		{
+			
+			// aapt resource value: 0x7f09003e
+			public const int ApplicationName = 2131296318;
 			
 			// aapt resource value: 0x7f090015
 			public const int abc_action_bar_home_description = 2131296277;

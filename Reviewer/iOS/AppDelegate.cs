@@ -6,6 +6,7 @@ using Foundation;
 using UIKit;
 
 using Reviewer.Core;
+using Microsoft.Identity.Client;
 
 namespace Reviewer.iOS
 {
@@ -19,6 +20,13 @@ namespace Reviewer.iOS
             LoadApplication(new App());
 
             return base.FinishedLaunching(app, options);
+        }
+
+        public override bool OpenUrl(UIApplication app, NSUrl url, NSDictionary options)
+        {
+            AuthenticationContinuationHelper.SetAuthenticationContinuationEventArgs(url);
+
+            return true;
         }
     }
 }

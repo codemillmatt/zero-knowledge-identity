@@ -54,5 +54,21 @@ namespace Reviewer.Core
 
             return await Task.FromResult(new List<Review> { review1, review2, review3 });
         }
+
+        public Task InsertReview(Review review, string token)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task UpdateReview(Review review, string token)
+        {
+            return Task.CompletedTask;
+        }
+
+        public Task<List<Review>> GetReviewsForAuthor(string authorId, string token)
+        {
+            return Task.FromResult(new List<Review>());
+        }
+
     }
 }

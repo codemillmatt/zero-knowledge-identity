@@ -33,11 +33,13 @@
                            Text="{Binding Business.Address.City}"/>
                 </Grid>
                 <Label Text="{Binding Review.Author}" HorizontalOptions="Center" FontSize="Medium" FontAttributes="Bold" />
-                <Button Text="Edit"
-                        HorizontalOptions="Center" WidthRequest="200"
-                        BackgroundColor="{StaticResource PrimaryDark}" TextColor="White" />
 
-                <BoxView HeightRequest="1" Color="#DDDDDD" />
+                 <StackLayout Spacing="0">
+                    <BoxView HeightRequest="5" Color="{StaticResource Accent}" />
+                    <BoxView HeightRequest="5" Color="{StaticResource SecondaryAccent}" />
+                    <BoxView HeightRequest="5" Color="{StaticResource Primary}" />
+                </StackLayout>
+                
 
                 <Label Margin="10" Text="{Binding Review.ReviewText}" />
             </StackLayout>

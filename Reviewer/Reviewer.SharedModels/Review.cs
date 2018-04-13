@@ -4,38 +4,47 @@ using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
 namespace Reviewer.SharedModels
 {
-    public class Review
+    public class Review : ObservableObject
     {
         public Review()
         {
         }
 
+        string id;
         [JsonProperty("id")]
-        public string Id { get; set; }
+        public string Id { get => id; set => SetProperty(ref id, value); }
 
+        string businessId;
         [JsonProperty("businessId")]
-        public string BusinessId { get; set; }
+        public string BusinessId { get => businessId; set => SetProperty(ref businessId, value); }
 
+        string businessName;
         [JsonProperty("businessName")]
-        public string BusinessName { get; set; }
+        public string BusinessName { get => businessName; set => SetProperty(ref businessName, value); }
 
+        string author;
         [JsonProperty("author")]
-        public string Author { get; set; }
+        public string Author { get => author; set => SetProperty(ref author, value); }
 
+        string authorId;
         [JsonProperty("authorId")]
-        public string AuthorId { get; set; }
+        public string AuthorId { get => authorId; set => SetProperty(ref authorId, value); }
 
+        string reviewText;
         [JsonProperty("reviewText")]
-        public string ReviewText { get; set; }
+        public string ReviewText { get => reviewText; set => SetProperty(ref reviewText, value); }
 
+        DateTime date = DateTime.Now;
         [JsonProperty("date")]
-        public DateTime Date { get; set; }
+        public DateTime Date { get => date; set => SetProperty(ref date, value); }
 
+        List<string> photos;
         [JsonProperty("photos")]
-        public List<string> Photos { get; set; }
+        public List<string> Photos { get => photos; set => SetProperty(ref photos, value); }
 
+        int rating = 1;
         [JsonProperty("rating")]
-        public int Rating { get; set; }
+        public int Rating { get => rating; set => SetProperty(ref rating, value); }
     }
 }
 
