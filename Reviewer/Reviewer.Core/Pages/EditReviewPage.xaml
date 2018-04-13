@@ -13,7 +13,7 @@
             <TableView Intent="Form" HasUnevenRows="true" >
                 <TableView.Root>
                     <TableSection Title="Author">
-                        <EntryCell Label="Your Name:" Text="{Binding Review.Author}" />
+                        <EntryCell Label="Your Name:" Text="{Binding Review.Author}" IsEnabled="false" />
                     </TableSection>
                     <TableSection Title="When Did You Go Here?">
                         <ViewCell>

@@ -20,6 +20,8 @@ namespace Reviewer.Core
 
         public event EventHandler SaveComplete;
 
+        IIdentityService idService;
+
         public EditReviewViewModel(Review theReview, Business theBusiness)
         {
             Review = theReview;
@@ -30,6 +32,10 @@ namespace Reviewer.Core
             Title = "A Review";
 
             IsNew = false;
+
+            idService = DependencyService.Get<IIdentityService>();
+
+            Review.Author = idService.DisplayName;
         }
 
         public EditReviewViewModel(Business theBusiness) :
@@ -46,13 +52,16 @@ namespace Reviewer.Core
             try
             {
                 IsBusy = true;
-                var idService = DependencyService.Get<IIdentityService>();
+                //vidService = DependencyService.Get<IIdentityService>();
                 var authResult = await idService.GetCachedSignInToken();
 
                 var webAPI = DependencyService.Get<IAPIService>();
 
                 if (IsNew)
+                {
+                    Review.AuthorId = authResult.UniqueId;
                     await webAPI.InsertReview(Review, authResult.AccessToken);
+                }
                 else
                     await webAPI.UpdateReview(Review, authResult.AccessToken);
             }
