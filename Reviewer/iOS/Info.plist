@@ -55,5 +55,15 @@
 			</array>
 		</dict>
 	</array>
+	<key>NSCameraUsageDescription</key>
+	<string>Take photos for the review</string>
+	<key>NSAppleMusicUsageDescription</key>
+	<string>Pick videos for the review</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Record video for the review</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Pick photos for review</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Pick photos from gallery for the review</string>
 </dict>
 </plist>

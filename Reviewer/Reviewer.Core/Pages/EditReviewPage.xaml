@@ -51,4 +51,7 @@
             <Button Text="Save" Command="{Binding SaveCommand}" IsEnabled="{Binding IsNotBusy}" Grid.Row="1" Style="{StaticResource ButtonOutline}" Margin="15,0,15,5" />
         </Grid>
     </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Photo" Command="{Binding TakePhotoCommand}" />
+    </ContentPage.ToolbarItems>
 </ContentPage>
