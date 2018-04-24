@@ -25,7 +25,7 @@ namespace Reviewer.Core
 
         IIdentityService idService;
 
-        public EditReviewViewModel(Review theReview, string businessId, string businessName)
+        public EditReviewViewModel(Review theReview)
         {
             Review = theReview;
 
@@ -42,7 +42,7 @@ namespace Reviewer.Core
         }
 
         public EditReviewViewModel(string businessId, string businessName) :
-            this(new Review { Id = Guid.NewGuid().ToString(), BusinessId = businessId, BusinessName = businessName }, businessId, businessName)
+            this(new Review { Id = Guid.NewGuid().ToString(), BusinessId = businessId, BusinessName = businessName })
         {
             IsNew = true;
         }

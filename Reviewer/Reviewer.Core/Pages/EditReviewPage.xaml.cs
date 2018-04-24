@@ -21,11 +21,11 @@ namespace Reviewer.Core
             vm.SaveComplete += SaveComplete;
         }
 
-        public EditReviewPage(string businessId, string businessName, Review review) : base()
+        public EditReviewPage(Review review) : base()
         {
             InitializeComponent();
 
-            vm = new EditReviewViewModel(review, businessId, businessName);
+            vm = new EditReviewViewModel(review);
             BindingContext = vm;
             isNew = false;
 
