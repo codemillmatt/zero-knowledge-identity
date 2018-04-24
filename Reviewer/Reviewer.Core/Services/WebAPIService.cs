@@ -52,5 +52,10 @@ namespace Reviewer.Core
 
             await webClient.SendAsync(request);
         }
+
+        public async Task<string> GetContainerWriteSasToken()
+        {
+            return await Task.FromResult("");
+        }
     }
 }

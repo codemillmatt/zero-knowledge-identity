@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 using Plugin.Media.Abstractions;
 using Plugin.Media;
 using System.Collections.Generic;
+using System.IO;
+using System.Collections.ObjectModel;
 
 namespace Reviewer.Core
 {
@@ -16,6 +18,8 @@ namespace Reviewer.Core
 
         bool isNew;
         public bool IsNew { get => isNew; set => SetProperty(ref isNew, value); }
+
+        public ObservableCollection<ImageSource> Photos { get; private set; } = new ObservableCollection<ImageSource>();
 
         public ICommand SaveCommand { get; }
 
@@ -39,6 +43,18 @@ namespace Reviewer.Core
             idService = DependencyService.Get<IIdentityService>();
 
             Review.Author = idService.DisplayName;
+
+            if (Review.Photos != null)
+            {
+                foreach (var photo in Review.Photos)
+                {
+                    Photos.Add(ImageSource.FromUri(new Uri(photo)));
+                }
+            }
+            else
+            {
+                Review.Photos = new List<string>();
+            }
         }
 
         public EditReviewViewModel(string businessId, string businessName) :
@@ -55,7 +71,7 @@ namespace Reviewer.Core
             try
             {
                 IsBusy = true;
-                //vidService = DependencyService.Get<IIdentityService>();
+
                 var authResult = await idService.GetCachedSignInToken();
 
                 var webAPI = DependencyService.Get<IAPIService>();
@@ -87,16 +103,36 @@ namespace Reviewer.Core
                 actions.Add("Pick Photo");
 
 
-            var result = await Application.Current.MainPage.DisplayActionSheet("Take Photo", "Cancel", "", actions.ToArray());
+            var result = await Application.Current.MainPage.DisplayActionSheet("Take or Pick Photo", "Cancel", null, actions.ToArray());
 
+            MediaFile mediaFile = null;
             if (result == "Take Photo")
             {
-                var photo = CrossMedia.Current.TakePhotoAsync(new StoreCameraMediaOptions { PhotoSize = PhotoSize.Medium });
+                var options = new StoreCameraMediaOptions
+                {
+                    PhotoSize = PhotoSize.Medium,
+                    AllowCropping = true,
+                    DefaultCamera = CameraDevice.Rear
+                };
+
+                mediaFile = await CrossMedia.Current.TakePhotoAsync(options);
             }
             else if (result == "Pick Photo")
             {
-                var photo = CrossMedia.Current.PickPhotoAsync();
+                mediaFile = await CrossMedia.Current.PickPhotoAsync();
             }
+
+            if (mediaFile == null)
+                return;
+
+            //var photoStream = mediaFile.GetStream();
+            //var source = ImageSource.FromStream(() => photoStream);
+            //var coll = new List<ImageSource> { source };
+
+            //Photos = new ObservableCollection<ImageSource>(coll);
+            //Photos.Add(ImageSource.FromStream(() => photoStream));
+
+            //mediaFile.Dispose();
         }
     }
 }

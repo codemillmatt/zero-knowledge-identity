@@ -151,6 +151,15 @@
     <Reference Include="Xamarin.Android.Support.v7.MediaRouter">
       <HintPath>..\packages\Xamarin.Android.Support.v7.MediaRouter.27.0.2\lib\MonoAndroid81\Xamarin.Android.Support.v7.MediaRouter.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Storage">
+      <HintPath>..\packages\WindowsAzure.Storage.9.1.1\lib\netstandard1.3\Microsoft.WindowsAzure.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="MonkeyCache">
+      <HintPath>..\packages\MonkeyCache.0.1.0.1-beta\lib\monoandroid50\MonkeyCache.dll</HintPath>
+    </Reference>
+    <Reference Include="MonkeyCache.FileStore">
+      <HintPath>..\packages\MonkeyCache.FileStore.0.1.0.1-beta\lib\monoandroid50\MonkeyCache.FileStore.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="MainActivity.cs" />
