@@ -70,5 +70,14 @@ namespace Reviewer.Core
             return Task.FromResult(new List<Review>());
         }
 
+        public Task<string> GetContainerWriteSasToken()
+        {
+            return Task.FromResult("");
+        }
+
+        public Task WritePhotoInfoToQueue(string businessId, string photoUrl)
+        {
+            return Task.CompletedTask;
+        }
     }
 }

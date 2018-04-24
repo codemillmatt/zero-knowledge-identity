@@ -14,24 +14,24 @@ namespace Reviewer.Functions
     {
         [FunctionName("WritePhotoInfoQueue")]
         [return: Queue("review-photos")]
-        public static async Task<HttpResponseMessage> Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequestMessage req, TraceWriter log)
+        public static QueueMsg Run([HttpTrigger(AuthorizationLevel.Anonymous, "post")]QueueMsg req, TraceWriter log)
         {
-            log.Info("C# HTTP trigger function processed a request.");
 
-            // parse query parameter
-            string name = req.GetQueryNameValuePairs()
-                .FirstOrDefault(q => string.Compare(q.Key, "name", true) == 0)
-                .Value;
+            log.Info("Starting the queue trigger");
+            log.Info($"Review ID: {req.reviewId}, Photo Url: {req.photoUrl}");
 
             // Get request body
-            dynamic data = await req.Content.ReadAsAsync<object>();
 
             // Set name to query string or body data
-            name = name ?? data?.name;
+            //name = name ?? data?.name;
 
-            return name == null
-                ? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
-                : req.CreateResponse(HttpStatusCode.OK, "Hello " + name);
+            //return name == null
+            //? req.CreateResponse(HttpStatusCode.BadRequest, "Please pass a name on the query string or in the request body")
+            //: req.CreateResponse(HttpStatusCode.OK, "Hello " + name);
+
+            //return req.CreateErrorResponse
+
+            return req;
         }
 
         //[FunctionName("WritePhotoInfoCosmos")]
@@ -57,5 +57,11 @@ namespace Reviewer.Functions
         //    }
         //}:w
 
+    }
+
+    public class QueueMsg
+    {
+        public string reviewId { get; set; }
+        public string photoUrl { get; set; }
     }
 }
