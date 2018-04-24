@@ -18,7 +18,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reviewer.WebAPI", "Reviewer
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Functions", "Functions", "{D2A79129-85EB-4EE1-A01B-D266A3DBE571}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Reviewer.Functions", "Reviewer.Functions\Reviewer.Functions.csproj", "{DC343662-6AC2-4405-B955-D12C753F0EC6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Reviewer.Functions", "Reviewer.Functions\Reviewer.Functions.csproj", "{DC343662-6AC2-4405-B955-D12C753F0EC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
