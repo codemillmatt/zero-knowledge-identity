@@ -52,5 +52,33 @@ namespace Reviewer.Core
 
             await webClient.SendAsync(request);
         }
+
+        public async Task<string> GetContainerWriteSasToken()
+        {
+            var spr = new StoragePermissionRequest { Permission = "Write" };
+
+            var request = new HttpRequestMessage(HttpMethod.Post, APIKeys.SASRetrievalUrl);
+
+            var content = new StringContent(JsonConvert.SerializeObject(spr), Encoding.UTF8, "application/json");
+
+            request.Content = content;
+
+            var response = await webClient.SendAsync(request);
+
+            return await response.Content.ReadAsStringAsync();
+        }
+
+        public async Task WritePhotoInfoToQueue(string reviewId, string photoUrl)
+        {
+            var queueInfo = new { reviewId, photoUrl };
+
+            var request = new HttpRequestMessage(HttpMethod.Post, APIKeys.WriteToQueueUrl);
+
+            var content = new StringContent(JsonConvert.SerializeObject(queueInfo), Encoding.UTF8, "application/json");
+
+            request.Content = content;
+
+            await webClient.SendAsync(request);
+        }
     }
 }

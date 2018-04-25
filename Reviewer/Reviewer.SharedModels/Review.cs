@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using Newtonsoft.Json.Serialization;
 using Newtonsoft.Json;
+using System.Collections.ObjectModel;
+using System.IO;
 namespace Reviewer.SharedModels
 {
     public class Review : ObservableObject

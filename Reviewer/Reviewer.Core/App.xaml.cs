@@ -14,10 +14,13 @@ namespace Reviewer.Core
         {
             InitializeComponent();
 
+            MonkeyCache.FileStore.Barrel.ApplicationId = "buildreviewer";
+
             //DependencyService.Register<IDataService, MockDataService>();
             DependencyService.Register<IDataService, CosmosDataService>();
             //DependencyService.Register<IAPIService, MockAPIService>();
             DependencyService.Register<IAPIService, WebAPIService>();
+            DependencyService.Register<IStorageService, StorageService>();
 
             var tabbedPage = new TabbedPage();
 

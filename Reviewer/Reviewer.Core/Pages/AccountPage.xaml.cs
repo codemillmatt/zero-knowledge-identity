@@ -34,7 +34,7 @@ namespace Reviewer.Core
             if (review == null)
                 return;
 
-            await Navigation.PushAsync(new EditReviewPage(review.BusinessId, review.BusinessName, review));
+            await Navigation.PushAsync(new EditReviewPage(review));
         }
     }
 }
