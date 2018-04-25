@@ -7,5 +7,12 @@ namespace Reviewer.Services
         public static readonly string CosmosAuthKey = "";
 
         public static readonly string WebAPIUrl = "";
+        
+        public static readonly string SASRetrievalUrl = "";
+        public static readonly string WriteToQueueUrl = "";
+
+        public static readonly string StorageAccountName = "";
+        public static readonly string StorageAccountUrlSuffix = "";
+        public static readonly string PhotosContainerName = "";
     }
 }
