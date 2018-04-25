@@ -9,10 +9,10 @@ namespace Reviewer.iOS
 {
     public class VideoConverter : IVideoConversion
     {
-        public async Task<string> ConvertToMP4(string videoLocation)
+        public async Task<Stream> ConvertToMP4(string videoLocation)
         {
             string finishedPath = Environment.GetFolderPath(Environment.SpecialFolder.Personal);
-            string finishedFilePath = Path.Combine(finishedPath, "converted_video.mp4");
+            string finishedFilePath = Path.Combine(finishedPath, $"{Guid.NewGuid()}.mp4");
 
             var asset = AVAsset.FromUrl(NSUrl.FromFilename(videoLocation));
 
@@ -23,7 +23,7 @@ namespace Reviewer.iOS
 
             await exportSession.ExportTaskAsync();
 
-            return finishedFilePath;
+            return File.Open(finishedFilePath, FileMode.Open);
         }
     }
 }

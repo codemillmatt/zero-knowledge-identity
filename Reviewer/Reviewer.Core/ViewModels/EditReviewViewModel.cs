@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Data.Common;
 
 namespace Reviewer.Core
 {
@@ -160,46 +161,59 @@ namespace Reviewer.Core
                 if (mediaFile == null)
                     return;
 
-                UploadProgress progressUpdater = new UploadProgress();
-
-                using (var mediaStream = mediaFile.GetStream())
-                {
-                    var storageService = DependencyService.Get<IStorageService>();
-
-                    if (isVideo)
-                    {
-                        var vidConverter = DependencyService.Get<IVideoConversion>();
-
-                        var finalPath = await vidConverter?.ConvertToMP4(mediaFile.Path);
-
-                        var theStream = File.OpenRead(finalPath);
-                    }
-
-                    var blobAddress = await storageService.UploadBlob(mediaStream, progressUpdater);
-                    Debug.WriteLine(blobAddress);
-
-                    var thePhotos = new List<ImageSource>();
-                    thePhotos.AddRange(Photos);
-                    thePhotos.Add(ImageSource.FromUri(blobAddress));
-
-                    Photos = thePhotos;
-
-                    Review.Photos.Add(blobAddress.AbsoluteUri);
-
-                    // Write to a queue to have the review record updated if we're in edit mode
-                    // this way if a person takes a photo on an existing record, they don't have to click save
-                    // in order for it to be persisted
-                    if (!IsNew)
-                    {
-                        var functionApi = DependencyService.Get<IAPIService>();
-                        await functionApi.WritePhotoInfoToQueue(Review.Id, blobAddress.AbsoluteUri);
-                    }
-                };
+                if (isVideo)
+                    await UploadVideo(mediaFile);
+                else
+                    await UploadPhoto(mediaFile);
             }
             finally
             {
                 IsBusy = false;
             }
+        }
+
+        async Task UploadPhoto(MediaFile mediaFile)
+        {
+            UploadProgress progressUpdater = new UploadProgress();
+
+            using (var mediaStream = mediaFile.GetStream())
+            {
+                var storageService = DependencyService.Get<IStorageService>();
+
+                var blobAddress = await storageService.UploadBlob(mediaStream, progressUpdater);
+
+                var thePhotos = new List<ImageSource>();
+                thePhotos.AddRange(Photos);
+                thePhotos.Add(ImageSource.FromUri(blobAddress));
+
+                Photos = thePhotos;
+
+                Review.Photos.Add(blobAddress.AbsoluteUri);
+
+                if (!IsNew)
+                {
+                    var functionApi = DependencyService.Get<IAPIService>();
+                    await functionApi.WritePhotoInfoToQueue(Review.Id, blobAddress.AbsoluteUri);
+                }
+            }
+        }
+
+        async Task UploadVideo(MediaFile mediaFile)
+        {
+            var videoConverter = DependencyService.Get<IVideoConversion>();
+            if (videoConverter == null)
+                return;
+
+            using (var mediaStream = await videoConverter.ConvertToMP4(mediaFile.Path))
+            {
+                UploadProgress progressUpdater = new UploadProgress();
+
+                var storageService = DependencyService.Get<IStorageService>();
+                var blobAddress = await storageService.UploadBlob(mediaStream, progressUpdater);
+
+                //TODO: Display a message saying the video will be available after it's finished processing
+            }
+
         }
     }
 }

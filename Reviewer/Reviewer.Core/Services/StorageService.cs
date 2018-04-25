@@ -21,7 +21,7 @@ namespace Reviewer.Core
             Write
         }
 
-        public async Task<Uri> UploadBlob(Stream blobContent, UploadProgress progressUpdater)
+        public async Task<Uri> UploadBlob(Stream blobContent, bool isVideo, UploadProgress progressUpdater)
         {
             Uri blobAddress = null;
             try
@@ -32,7 +32,8 @@ namespace Reviewer.Core
 
                 var blobClient = csa.CreateCloudBlobClient();
 
-                var container = blobClient.GetContainerReference(APIKeys.PhotosContainerName);
+                var containerName = isVideo ? APIKeys.VideoInjestContainerName : APIKeys.PhotosContainerName;
+                var container = blobClient.GetContainerReference(containerName);
 
                 var blockBlob = container.GetBlockBlobReference($"{Guid.NewGuid()}.png");
 
