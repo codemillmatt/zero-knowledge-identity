@@ -151,6 +151,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
+    <Folder Include="VideoConversion\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -163,6 +164,7 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
+    <Compile Include="VideoConversion\VideoConverter.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reviewer.Core\Reviewer.Core.csproj">

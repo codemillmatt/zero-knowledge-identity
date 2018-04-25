@@ -117,12 +117,17 @@ namespace Reviewer.Core
                 if (CrossMedia.Current.IsTakePhotoSupported && CrossMedia.Current.IsCameraAvailable)
                     actions.Add("Take Photo");
 
+                if (CrossMedia.Current.IsTakeVideoSupported && CrossMedia.Current.IsCameraAvailable)
+                    actions.Add("Take Video");
+
                 if (CrossMedia.Current.IsPickPhotoSupported)
                     actions.Add("Pick Photo");
 
 
                 var result = await Application.Current.MainPage.DisplayActionSheet("Take or Pick Photo", "Cancel", null, actions.ToArray());
 
+
+                bool isVideo = false;
                 MediaFile mediaFile = null;
                 if (result == "Take Photo")
                 {
@@ -133,6 +138,19 @@ namespace Reviewer.Core
                     };
 
                     mediaFile = await CrossMedia.Current.TakePhotoAsync(options);
+                }
+                else if (result == "Take Video")
+                {
+                    var options = new StoreVideoOptions
+                    {
+                        CompressionQuality = 50,
+                        CustomPhotoSize = 50,
+                        DefaultCamera = CameraDevice.Rear,
+                        Quality = VideoQuality.Medium
+                    };
+
+                    mediaFile = await CrossMedia.Current.TakeVideoAsync(options);
+                    isVideo = true;
                 }
                 else if (result == "Pick Photo")
                 {
@@ -147,6 +165,15 @@ namespace Reviewer.Core
                 using (var mediaStream = mediaFile.GetStream())
                 {
                     var storageService = DependencyService.Get<IStorageService>();
+
+                    if (isVideo)
+                    {
+                        var vidConverter = DependencyService.Get<IVideoConversion>();
+
+                        var finalPath = await vidConverter?.ConvertToMP4(mediaFile.Path);
+
+                        var theStream = File.OpenRead(finalPath);
+                    }
 
                     var blobAddress = await storageService.UploadBlob(mediaStream, progressUpdater);
                     Debug.WriteLine(blobAddress);
