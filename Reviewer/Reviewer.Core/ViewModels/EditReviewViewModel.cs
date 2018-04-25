@@ -157,13 +157,15 @@ namespace Reviewer.Core
 
                     Photos = thePhotos;
 
+                    Review.Photos.Add(blobAddress.AbsoluteUri);
+
                     // Write to a queue to have the review record updated if we're in edit mode
                     // this way if a person takes a photo on an existing record, they don't have to click save
                     // in order for it to be persisted
                     if (!IsNew)
                     {
                         var functionApi = DependencyService.Get<IAPIService>();
-                        await functionApi.WritePhotoInfoToQueue(Review.Id, blobAddress.AbsolutePath);
+                        await functionApi.WritePhotoInfoToQueue(Review.Id, blobAddress.AbsoluteUri);
                     }
                 };
             }
