@@ -19,6 +19,8 @@ namespace Reviewer.iOS
 
             LoadApplication(new App());
 
+            Xamarin.Forms.DependencyService.Register<IVideoConversion, VideoConverter>();
+
             return base.FinishedLaunching(app, options);
         }
 

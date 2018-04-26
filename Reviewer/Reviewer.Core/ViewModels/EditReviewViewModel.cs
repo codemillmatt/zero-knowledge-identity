@@ -9,6 +9,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Collections.ObjectModel;
 using System.Diagnostics;
+using System.Data.Common;
 
 namespace Reviewer.Core
 {
@@ -117,12 +118,17 @@ namespace Reviewer.Core
                 if (CrossMedia.Current.IsTakePhotoSupported && CrossMedia.Current.IsCameraAvailable)
                     actions.Add("Take Photo");
 
+                if (CrossMedia.Current.IsTakeVideoSupported && CrossMedia.Current.IsCameraAvailable)
+                    actions.Add("Take Video");
+
                 if (CrossMedia.Current.IsPickPhotoSupported)
                     actions.Add("Pick Photo");
 
 
                 var result = await Application.Current.MainPage.DisplayActionSheet("Take or Pick Photo", "Cancel", null, actions.ToArray());
 
+
+                bool isVideo = false;
                 MediaFile mediaFile = null;
                 if (result == "Take Photo")
                 {
@@ -134,6 +140,19 @@ namespace Reviewer.Core
 
                     mediaFile = await CrossMedia.Current.TakePhotoAsync(options);
                 }
+                else if (result == "Take Video")
+                {
+                    var options = new StoreVideoOptions
+                    {
+                        CompressionQuality = 50,
+                        CustomPhotoSize = 50,
+                        DefaultCamera = CameraDevice.Rear,
+                        Quality = VideoQuality.Medium
+                    };
+
+                    mediaFile = await CrossMedia.Current.TakeVideoAsync(options);
+                    isVideo = true;
+                }
                 else if (result == "Pick Photo")
                 {
                     mediaFile = await CrossMedia.Current.PickPhotoAsync();
@@ -142,37 +161,65 @@ namespace Reviewer.Core
                 if (mediaFile == null)
                     return;
 
-                UploadProgress progressUpdater = new UploadProgress();
-
-                using (var mediaStream = mediaFile.GetStream())
-                {
-                    var storageService = DependencyService.Get<IStorageService>();
-
-                    var blobAddress = await storageService.UploadBlob(mediaStream, progressUpdater);
-                    Debug.WriteLine(blobAddress);
-
-                    var thePhotos = new List<ImageSource>();
-                    thePhotos.AddRange(Photos);
-                    thePhotos.Add(ImageSource.FromUri(blobAddress));
-
-                    Photos = thePhotos;
-
-                    Review.Photos.Add(blobAddress.AbsoluteUri);
-
-                    // Write to a queue to have the review record updated if we're in edit mode
-                    // this way if a person takes a photo on an existing record, they don't have to click save
-                    // in order for it to be persisted
-                    if (!IsNew)
-                    {
-                        var functionApi = DependencyService.Get<IAPIService>();
-                        await functionApi.WritePhotoInfoToQueue(Review.Id, blobAddress.AbsoluteUri);
-                    }
-                };
+                if (isVideo)
+                    await UploadVideo(mediaFile);
+                else
+                    await UploadPhoto(mediaFile);
             }
             finally
             {
                 IsBusy = false;
             }
+        }
+
+        async Task UploadPhoto(MediaFile mediaFile)
+        {
+            UploadProgress progressUpdater = new UploadProgress();
+
+            using (var mediaStream = mediaFile.GetStream())
+            {
+                var storageService = DependencyService.Get<IStorageService>();
+
+                var blobAddress = await storageService.UploadBlob(mediaStream, false, Review.Id, progressUpdater);
+
+                if (blobAddress == null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Upload Error", "There was an error uploading your photo, please try again.", "OK");
+                    return;
+                }
+
+                var thePhotos = new List<ImageSource>();
+                thePhotos.AddRange(Photos);
+                thePhotos.Add(ImageSource.FromUri(blobAddress));
+
+                Photos = thePhotos;
+
+                Review.Photos.Add(blobAddress.AbsoluteUri);
+
+                if (!IsNew)
+                {
+                    var functionApi = DependencyService.Get<IAPIService>();
+                    await functionApi.WritePhotoInfoToQueue(Review.Id, blobAddress.AbsoluteUri);
+                }
+            }
+        }
+
+        async Task UploadVideo(MediaFile mediaFile)
+        {
+            var videoConverter = DependencyService.Get<IVideoConversion>();
+            if (videoConverter == null)
+                return;
+
+            using (var mediaStream = await videoConverter.ConvertToMP4(mediaFile.Path))
+            {
+                UploadProgress progressUpdater = new UploadProgress();
+
+                var storageService = DependencyService.Get<IStorageService>();
+                var blobAddress = await storageService.UploadBlob(mediaStream, true, Review.Id, progressUpdater);
+
+                await Application.Current.MainPage.DisplayAlert("Video Upload", "We're processing your video! It'll be visible here as soon as we're done!", "OK");
+            }
+
         }
     }
 }
