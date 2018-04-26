@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,7 +9,19 @@ namespace Reviewer.Functions.Models
 {
     public class VideoQueueMessage
     {
-        public string reviewId { get; set; }
-        public string assetName { get; set; }
+        [JsonProperty("reviewId")]
+        public string ReviewId { get; set; }
+
+        [JsonProperty("hlsUri")]
+        public string HLSUri { get; set; }
+
+        [JsonProperty("smoothStreamingUri")]
+        public string SmoothStreamingUri { get; set; }
+
+        [JsonProperty("mpegDashUri")]
+        public string MpegDashUri { get; set; }
+
+        [JsonProperty("thumbnailUri")]
+        public string ThumbnailUri { get; set; }
     }
 }

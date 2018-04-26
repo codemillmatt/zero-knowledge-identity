@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using Reviewer.Functions.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -34,6 +35,9 @@ namespace Reviewer.Functions
         [JsonProperty("photos")]
         public List<string> Photos { get; set; }
         
+        [JsonProperty("videos")]
+        public List<Video> Videos { get; set; }
+
         [JsonProperty("rating")]
         public int Rating { get; set; }
     }

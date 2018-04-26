@@ -11,6 +11,8 @@ using Microsoft.WindowsAzure.Storage.Blob;
 using Reviewer.Functions.Helpers;
 using Reviewer.Functions.Models;
 
+using System.Net.Http;
+
 namespace Reviewer.Functions
 {
     public static class AMSIngest
@@ -23,12 +25,13 @@ namespace Reviewer.Functions
         static readonly string storageAccountName = Environment.GetEnvironmentVariable("MediaServicesStorageAccountName");
         static readonly string storageAccountKey = Environment.GetEnvironmentVariable("MediaServicesStorageAccountKey");
 
+        static readonly string webhookEndpoint = Environment.GetEnvironmentVariable("WebhookEndpoint");
+
         private static CloudMediaContext context = null;
         private static CloudStorageAccount destinationStorageAccount = null;
 
         [FunctionName("AMSIngest")]
-        [return: Queue("review-videos", Connection ="AzureWebJobsStorage")]
-        public static async Task<VideoQueueMessage> Run([BlobTrigger("review-photos/{fileName}.mp4", Connection = "AzureWebJobsStorage")]CloudBlockBlob inputBlob,
+        public static async Task Run([BlobTrigger("review-photos/{fileName}.mp4", Connection = "AzureWebJobsStorage")]CloudBlockBlob inputBlob,
             string fileName, TraceWriter log)
         {
             try
@@ -41,7 +44,6 @@ namespace Reviewer.Functions
                 {
                     log.Warning("No review id metadata!");
                     await inputBlob.DeleteIfExistsAsync();
-                    return null;
                 }
 
                 string reviewId = inputBlob.Metadata["reviewId"];
@@ -58,7 +60,6 @@ namespace Reviewer.Functions
                 StorageCredentials mediaServicesCredentials = new StorageCredentials(storageAccountName, storageAccountKey);
 
                 // 1. Copy BLOB into Input Asset
-                //IAsset newAsset = await CreateAssetFromBlobAsync(inputBlob, fileName, log);
                 IAsset thumbAsset = await CreateAssetFromBlobAsync(inputBlob, $"thumb-{fileName}", log);
 
                 log.Info("Deleting the source asset from the input container");
@@ -73,60 +74,24 @@ namespace Reviewer.Functions
                 // processor to use for the specific task.
                 IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
-                // Create a task with the encoding details, using the Adaptive Streaming System Preset.
-                //ITask task = job.Tasks.AddNew("Encode with Adaptive Streaming",
-                //    processor,
-                //    "Content Adaptive Multiple Bitrate MP4",//"Adaptive Streaming",
-                //    TaskOptions.None);
+                // 3. Create an encoding task
 
+                // grab preset encoding info that will create a video & a thumbnail
+                var thumbnailPreset = VideoEncodingPresetGenerator.Thumbnail().ToJson();
 
-                // Set the Task Priority
-                //task.Priority = 100;
-
-                // Specify the input asset to be encoded.
-                //task.InputAssets.Add(newAsset);
-
-                // Add an output asset to contain the results of the job. 
-                // This output is specified as AssetCreationOptions.None, which 
-                // means the output asset is not encrypted. 
-                //task.OutputAssets.AddNew(fileName, AssetCreationOptions.None);
-
-                log.Info("Trying to create the thumbnail blob");
-
-                string homePath = Environment.GetEnvironmentVariable("HOME", EnvironmentVariableTarget.Process);
-                string presetPath = "";
-                log.Info($"Home path: {homePath}");
-
-                if (string.IsNullOrEmpty(homePath))
-                {
-                    presetPath = @"../Presets/thumbnail.json";
-                }
-                else
-                {
-                    presetPath = Path.Combine(homePath, @"site\wwwroot\Presets\thumbnail.json");
-                }
-
-                log.Info($"Preset path: {presetPath}");
-
-                string thumbnailPreset = File.ReadAllText(presetPath);
-
-                thumbnailPreset = VideoEncodingPresetGenerator.Thumbnail().ToJson();
-                log.Info($"Start of preset: {thumbnailPreset.Substring(0, 10)}");
-
-
+                // create a task that does the encoding
                 ITask thumbnailTask = job.Tasks.AddNew("Thumbnail encode", processor, thumbnailPreset, TaskOptions.None);
                 thumbnailTask.Priority = 100;
-                if (thumbAsset == null)
-                {
-                    log.Error("Thumbnail asset is null!!!");
-                }
-                thumbnailTask.InputAssets.Add(thumbAsset);
-                var outAssetName = $"thumbname-{fileName}";
 
+                // Make sure there's an input asset to encode
+                thumbnailTask.InputAssets.Add(thumbAsset);
+
+                var outAssetName = $"thumbnail-{fileName}";
+
+                // Define the output asset
                 thumbnailTask.OutputAssets.AddNew(outAssetName, AssetCreationOptions.None);
 
-                log.Info("Thumbnail task created");
-
+                // Submit the job
                 job.Submit();
                 log.Info("Job Submitted");
 
@@ -148,14 +113,18 @@ namespace Reviewer.Functions
                 {
                     log.Info($"Job {job.Id} is complete.");
 
-                    return new VideoQueueMessage { reviewId = reviewId, assetName = outAssetName};
+                    // Call a webhook
+                    var msg = new VideoPublishMessage { AssetName = outAssetName, ReviewId = reviewId };
+
+                    var client = new HttpClient();
+                    await client.PostAsJsonAsync<VideoPublishMessage>(webhookEndpoint, msg);
                 }
                 else if (job.State == JobState.Error)
                 {
                     log.Error("Job Failed with Error. ");
                     throw new Exception("Job failed encoding .");
                 }
-            } 
+            }
             catch (Exception ex)
             {
                 log.Error($"An exception occurred: {ex.Message}");
@@ -163,7 +132,6 @@ namespace Reviewer.Functions
 
             // Write to a queue
             log.Info("All done!!");
-            return null;
         }
 
         public static async Task<IAsset> CreateAssetFromBlobAsync(CloudBlockBlob blob, string assetName, TraceWriter log)
@@ -220,8 +188,6 @@ namespace Reviewer.Functions
                 var assetFile = asset.AssetFiles.Create(blob.Name);
                 assetFile.ContentFileSize = blob.Properties.Length;
 
-                //assetFile.MimeType = "video/mp4";
-
                 assetFile.IsPrimary = true;
                 assetFile.Update();
                 asset.Update();
@@ -252,6 +218,6 @@ namespace Reviewer.Functions
             return processor;
         }
 
-        
+
     }
 }

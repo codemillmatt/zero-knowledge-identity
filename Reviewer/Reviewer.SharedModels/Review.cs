@@ -44,6 +44,9 @@ namespace Reviewer.SharedModels
         [JsonProperty("photos")]
         public List<string> Photos { get => photos; set => SetProperty(ref photos, value); }
 
+        List<Video> videos;
+        public List<Video> Videos { get => videos; set => SetProperty(ref videos, value); }
+
         int rating = 1;
         [JsonProperty("rating")]
         public int Rating { get => rating; set => SetProperty(ref rating, value); }

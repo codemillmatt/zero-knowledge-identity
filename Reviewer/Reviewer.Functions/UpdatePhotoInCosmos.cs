@@ -9,9 +9,9 @@ namespace Reviewer.Functions
     {
         [FunctionName("UpdatePhotoInCosmos")]
         public static void Run(
-            [QueueTrigger("review-photos", Connection = "AzureWebJobsStorage")]QueueMessage myQueueItem, 
-            [DocumentDB("BuildReviewer","Reviews",Id ="{reviewId}", ConnectionStringSetting ="Reviews_Cosmos")]Review review,
-            [DocumentDB("BuildReviewer","Reviews",Id="id",ConnectionStringSetting ="Reviews_Cosmos")]out dynamic outputReview,
+            [QueueTrigger("review-photos", Connection = "AzureWebJobsStorage")]QueueMessage myQueueItem,
+            [DocumentDB("BuildReviewer", "Reviews", Id = "{reviewId}", ConnectionStringSetting = "Reviews_Cosmos")]Review review,
+            [DocumentDB("BuildReviewer", "Reviews", Id = "id", ConnectionStringSetting = "Reviews_Cosmos")]out dynamic outputReview,
             TraceWriter log)
         {
             log.Info($"C# Queue trigger function processed: {myQueueItem}");
