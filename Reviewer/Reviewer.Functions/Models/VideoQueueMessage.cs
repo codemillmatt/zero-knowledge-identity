@@ -9,6 +9,6 @@ namespace Reviewer.Functions.Models
     public class VideoQueueMessage
     {
         public string reviewId { get; set; }
-        public string assetId { get; set; }
+        public string assetName { get; set; }
     }
 }

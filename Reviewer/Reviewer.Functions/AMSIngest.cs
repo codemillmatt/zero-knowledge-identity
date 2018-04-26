@@ -28,88 +28,137 @@ namespace Reviewer.Functions
 
         [FunctionName("AMSIngest")]
         [return: Queue("review-videos", Connection ="AzureWebJobsStorage")]
-        public static async Task<VideoQueueMessage> Run([BlobTrigger("ams-in/{fileName}", Connection = "AzureWebJobsStorage")]CloudBlockBlob inputBlob,
+        public static async Task<VideoQueueMessage> Run([BlobTrigger("review-photos/{fileName}.mp4", Connection = "AzureWebJobsStorage")]CloudBlockBlob inputBlob,
             string fileName, TraceWriter log)
         {
-            log.Info($"C# Blob trigger function Processed blob\n Name:{fileName}");
-
-            if (!inputBlob.Metadata.ContainsKey("reviewId"))
+            try
             {
-                log.Warning("No review id metadata!");
+                fileName = $"{fileName}.mp4";
+
+                log.Info($"C# Blob trigger function Processed blob\n Name:{fileName}");
+
+                if (!inputBlob.Metadata.ContainsKey("reviewId"))
+                {
+                    log.Warning("No review id metadata!");
+                    await inputBlob.DeleteIfExistsAsync();
+                    return null;
+                }
+
+                string reviewId = inputBlob.Metadata["reviewId"];
+                string assetName = inputBlob.Name;
+
+                AzureAdTokenCredentials tokenCredentials = new AzureAdTokenCredentials(AADTenantDomain,
+                               new AzureAdClientSymmetricKey(mediaServicesClientId, mediaServicesClientSecret),
+                               AzureEnvironments.AzureCloudEnvironment);
+
+                AzureAdTokenProvider tokenProvider = new AzureAdTokenProvider(tokenCredentials);
+
+                context = new CloudMediaContext(new Uri(RESTAPIEndpoint), tokenProvider);
+
+                StorageCredentials mediaServicesCredentials = new StorageCredentials(storageAccountName, storageAccountKey);
+
+                // 1. Copy BLOB into Input Asset
+                //IAsset newAsset = await CreateAssetFromBlobAsync(inputBlob, fileName, log);
+                IAsset thumbAsset = await CreateAssetFromBlobAsync(inputBlob, $"thumb-{fileName}", log);
+
+                log.Info("Deleting the source asset from the input container");
                 await inputBlob.DeleteIfExistsAsync();
-                return null;
-            }
 
-            string reviewId = inputBlob.Metadata["reviewId"];
+                // 2. Create an encoding job
 
-            AzureAdTokenCredentials tokenCredentials = new AzureAdTokenCredentials(AADTenantDomain,
-                           new AzureAdClientSymmetricKey(mediaServicesClientId, mediaServicesClientSecret),
-                           AzureEnvironments.AzureCloudEnvironment);
+                // Declare a new encoding job with the Standard encoder
+                IJob job = context.Jobs.Create("Build Reviewer - Function Kickoff");
 
-            AzureAdTokenProvider tokenProvider = new AzureAdTokenProvider(tokenCredentials);
+                // Get a media processor reference, and pass to it the name of the 
+                // processor to use for the specific task.
+                IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
 
-            context = new CloudMediaContext(new Uri(RESTAPIEndpoint), tokenProvider);
+                // Create a task with the encoding details, using the Adaptive Streaming System Preset.
+                //ITask task = job.Tasks.AddNew("Encode with Adaptive Streaming",
+                //    processor,
+                //    "Content Adaptive Multiple Bitrate MP4",//"Adaptive Streaming",
+                //    TaskOptions.None);
 
-            StorageCredentials mediaServicesCredentials = new StorageCredentials(storageAccountName, storageAccountKey);
 
-            // 1. Copy BLOB into Input Asset
-            IAsset newAsset = await CreateAssetFromBlobAsync(inputBlob, fileName, log);
-            log.Info("Deleting the source asset from the input container");
-            await inputBlob.DeleteIfExistsAsync();
+                // Set the Task Priority
+                //task.Priority = 100;
 
-            // 2. Create an encoding job
+                // Specify the input asset to be encoded.
+                //task.InputAssets.Add(newAsset);
 
-            // Declare a new encoding job with the Standard encoder
-            IJob job = context.Jobs.Create("Function - Encode-blob-adaptive-stream");
+                // Add an output asset to contain the results of the job. 
+                // This output is specified as AssetCreationOptions.None, which 
+                // means the output asset is not encrypted. 
+                //task.OutputAssets.AddNew(fileName, AssetCreationOptions.None);
 
-            // Get a media processor reference, and pass to it the name of the 
-            // processor to use for the specific task.
-            IMediaProcessor processor = GetLatestMediaProcessorByName("Media Encoder Standard");
+                log.Info("Trying to create the thumbnail blob");
 
-            // Create a task with the encoding details, using the Adaptive Streaming System Preset.
-            ITask task = job.Tasks.AddNew("Encode with Adaptive Streaming",
-                processor,
-                "Adaptive Streaming",
-                TaskOptions.None);
+                string homePath = Environment.GetEnvironmentVariable("HOME", EnvironmentVariableTarget.Process);
+                string presetPath = "";
+                log.Info($"Home path: {homePath}");
 
-            // Set the Task Priority
-            task.Priority = 100;
+                if (string.IsNullOrEmpty(homePath))
+                {
+                    presetPath = @"../Presets/thumbnail.json";
+                }
+                else
+                {
+                    presetPath = Path.Combine(homePath, @"site\wwwroot\Presets\thumbnail.json");
+                }
 
-            // Specify the input asset to be encoded.
-            task.InputAssets.Add(newAsset);
+                log.Info($"Preset path: {presetPath}");
 
-            // Add an output asset to contain the results of the job. 
-            // This output is specified as AssetCreationOptions.None, which 
-            // means the output asset is not encrypted. 
-            var outAsset = task.OutputAssets.AddNew(fileName, AssetCreationOptions.None);
+                string thumbnailPreset = File.ReadAllText(presetPath);
 
-            job.Submit();
-            log.Info("Job Submitted");
+                thumbnailPreset = VideoEncodingPresetGenerator.Thumbnail().ToJson();
+                log.Info($"Start of preset: {thumbnailPreset.Substring(0, 10)}");
 
-            // 3. Monitor the job
-            while (true)
+
+                ITask thumbnailTask = job.Tasks.AddNew("Thumbnail encode", processor, thumbnailPreset, TaskOptions.None);
+                thumbnailTask.Priority = 100;
+                if (thumbAsset == null)
+                {
+                    log.Error("Thumbnail asset is null!!!");
+                }
+                thumbnailTask.InputAssets.Add(thumbAsset);
+                var outAssetName = $"thumbname-{fileName}";
+
+                thumbnailTask.OutputAssets.AddNew(outAssetName, AssetCreationOptions.None);
+
+                log.Info("Thumbnail task created");
+
+                job.Submit();
+                log.Info("Job Submitted");
+
+                // 3. Monitor the job
+                while (true)
+                {
+                    job.Refresh();
+
+                    // Refresh every 5 seconds
+                    await Task.Delay(5000);
+
+                    log.Info($"Job: {job.Id}    State: {job.State.ToString()}");
+
+                    if (job.State == JobState.Error || job.State == JobState.Finished || job.State == JobState.Canceled)
+                        break;
+                }
+
+                if (job.State == JobState.Finished)
+                {
+                    log.Info($"Job {job.Id} is complete.");
+
+                    return new VideoQueueMessage { reviewId = reviewId, assetName = outAssetName};
+                }
+                else if (job.State == JobState.Error)
+                {
+                    log.Error("Job Failed with Error. ");
+                    throw new Exception("Job failed encoding .");
+                }
+            } 
+            catch (Exception ex)
             {
-                job.Refresh();
-
-                // Refresh every 5 seconds
-                await Task.Delay(5000);
-
-                log.Info($"Job: {job.Id}    State: {job.State.ToString()}");
-
-                if (job.State == JobState.Error || job.State == JobState.Finished || job.State == JobState.Canceled)
-                    break;
-            }
-
-            if (job.State == JobState.Finished)
-            {
-                log.Info($"Job {job.Id} is complete.");
-
-                return new VideoQueueMessage { reviewId = reviewId, assetId = outAsset.Id };
-            }
-            else if (job.State == JobState.Error)
-            {
-                log.Error("Job Failed with Error. ");
-                throw new Exception("Job failed encoding .");
+                log.Error($"An exception occurred: {ex.Message}");
             }
 
             // Write to a queue
@@ -202,5 +251,7 @@ namespace Reviewer.Functions
 
             return processor;
         }
+
+        
     }
 }
