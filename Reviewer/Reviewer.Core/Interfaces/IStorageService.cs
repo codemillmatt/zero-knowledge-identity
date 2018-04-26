@@ -5,6 +5,6 @@ namespace Reviewer.Core
 {
     public interface IStorageService
     {
-        Task<Uri> UploadBlob(Stream blobContent, bool isVideo, UploadProgress progressUpdater);
+        Task<Uri> UploadBlob(Stream blobContent, bool isVideo, string reviewId, UploadProgress progressUpdater);
     }
 }

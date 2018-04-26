@@ -21,7 +21,7 @@ namespace Reviewer.Core
             Write
         }
 
-        public async Task<Uri> UploadBlob(Stream blobContent, bool isVideo, UploadProgress progressUpdater)
+        public async Task<Uri> UploadBlob(Stream blobContent, bool isVideo, string reviewId, UploadProgress progressUpdater)
         {
             Uri blobAddress = null;
             try
@@ -35,8 +35,10 @@ namespace Reviewer.Core
                 var containerName = isVideo ? APIKeys.VideoInjestContainerName : APIKeys.PhotosContainerName;
                 var container = blobClient.GetContainerReference(containerName);
 
-                var blockBlob = container.GetBlockBlobReference($"{Guid.NewGuid()}.png");
+                var extension = isVideo ? "mp4" : "png";
+                var blockBlob = container.GetBlockBlobReference($"{Guid.NewGuid()}.{extension}");
 
+                blockBlob.Metadata.Add("reviewId", reviewId);
                 await blockBlob.UploadFromStreamAsync(blobContent, null, null, null, progressUpdater, new CancellationToken());
 
                 blobAddress = blockBlob.Uri;

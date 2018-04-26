@@ -180,7 +180,13 @@ namespace Reviewer.Core
             {
                 var storageService = DependencyService.Get<IStorageService>();
 
-                var blobAddress = await storageService.UploadBlob(mediaStream, progressUpdater);
+                var blobAddress = await storageService.UploadBlob(mediaStream, false, Review.Id, progressUpdater);
+
+                if (blobAddress == null)
+                {
+                    await Application.Current.MainPage.DisplayAlert("Upload Error", "There was an error uploading your photo, please try again.", "OK");
+                    return;
+                }
 
                 var thePhotos = new List<ImageSource>();
                 thePhotos.AddRange(Photos);
@@ -209,9 +215,9 @@ namespace Reviewer.Core
                 UploadProgress progressUpdater = new UploadProgress();
 
                 var storageService = DependencyService.Get<IStorageService>();
-                var blobAddress = await storageService.UploadBlob(mediaStream, progressUpdater);
+                var blobAddress = await storageService.UploadBlob(mediaStream, true, Review.Id, progressUpdater);
 
-                //TODO: Display a message saying the video will be available after it's finished processing
+                await Application.Current.MainPage.DisplayAlert("Video Upload", "We're processing your video! It'll be visible here as soon as we're done!", "OK");
             }
 
         }
