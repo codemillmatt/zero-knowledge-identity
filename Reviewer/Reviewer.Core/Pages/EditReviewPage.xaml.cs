@@ -46,9 +46,9 @@ namespace Reviewer.Core
             if (!(horizontalList.SelectedItem is Video video))
                 return;
 
-            var playerPage = new VideoPlayerPage(video);
+            var playerPage = new NavigationPage(new VideoPlayerPage(video));
 
-            await Navigation.PushModalAsync(playerPage);
+            await Navigation.PushModalAsync(playerPage, true);
         }
 
         async void SaveComplete(object sender, EventArgs args)

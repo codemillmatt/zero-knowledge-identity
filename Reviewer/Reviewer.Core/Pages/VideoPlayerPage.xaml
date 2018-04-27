@@ -2,12 +2,13 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
-    x:Class="Reviewer.Core.VideoPlayerPage">
+    x:Class="Reviewer.Core.VideoPlayerPage" 
+    Title="Video"
+    BackgroundColor="Black">
     <ContentPage.Content>
-        <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
-            <Label Text="{Binding Video.HLSUrl}" />
-            <Label Text="{Binding Video.SmoothStreamUrl}" />
-            <Label Text="{Binding Video.MPEGDashUrl}" />
-        </StackLayout>
+        <WebView Source="{Binding VideoUrl}" BackgroundColor="Black" />
     </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Done" Clicked="Done_Clicked" />
+    </ContentPage.ToolbarItems>
 </ContentPage>

@@ -18,5 +18,10 @@ namespace Reviewer.Core
 
             BindingContext = vm;
         }
+
+        async void Done_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync(true);
+        }
     }
 }

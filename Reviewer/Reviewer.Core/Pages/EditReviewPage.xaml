@@ -48,7 +48,7 @@
                         </ViewCell>
                     </TableSection>
                     <TableSection Title="Review It!">
-                        <ViewCell Height="150">
+                        <ViewCell Height="100">
                             <Editor Text="{Binding Review.ReviewText}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                         </ViewCell>
                     </TableSection>
