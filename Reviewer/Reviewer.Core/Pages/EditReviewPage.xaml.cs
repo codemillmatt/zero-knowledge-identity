@@ -8,6 +8,9 @@ namespace Reviewer.Core
 {
     public partial class EditReviewPage : ContentPage
     {
+
+
+
         EditReviewViewModel vm;
         bool isNew;
 
@@ -19,6 +22,7 @@ namespace Reviewer.Core
             isNew = true;
 
             vm.SaveComplete += SaveComplete;
+            videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
         }
 
         public EditReviewPage(Review review) : base()
@@ -30,6 +34,21 @@ namespace Reviewer.Core
             isNew = false;
 
             vm.SaveComplete += SaveComplete;
+
+            videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
+        }
+
+        async void VideoList_SelectedItemChanged(object sender, EventArgs e)
+        {
+            if (!(sender is HorizontalList horizontalList))
+                return;
+
+            if (!(horizontalList.SelectedItem is Video video))
+                return;
+
+            var playerPage = new VideoPlayerPage(video);
+
+            await Navigation.PushModalAsync(playerPage);
         }
 
         async void SaveComplete(object sender, EventArgs args)
