@@ -20,9 +20,6 @@ namespace Reviewer.Core
             vm = new EditReviewViewModel(businessId, businessName);
             BindingContext = vm;
             isNew = true;
-
-            vm.SaveComplete += SaveComplete;
-            videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
         }
 
         public EditReviewPage(Review review) : base()
@@ -32,10 +29,22 @@ namespace Reviewer.Core
             vm = new EditReviewViewModel(review);
             BindingContext = vm;
             isNew = false;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
             vm.SaveComplete += SaveComplete;
-
             videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            vm.SaveComplete -= SaveComplete;
+            videoList.SelectedItemChanged -= VideoList_SelectedItemChanged;
         }
 
         async void VideoList_SelectedItemChanged(object sender, EventArgs e)

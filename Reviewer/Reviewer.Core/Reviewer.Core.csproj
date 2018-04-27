@@ -41,6 +41,9 @@
     <Compile Update="Pages\AccountPage.xaml.cs">
       <DependentUpon>AccountPage.xaml</DependentUpon>
     </Compile>
+    <Compile Update="Cells\VideoPreviewCellView.xaml.cs">
+      <DependentUpon>VideoPreviewCellView.xaml</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reviewer.SharedModels\Reviewer.SharedModels.csproj" />

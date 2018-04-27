@@ -2,6 +2,7 @@
 <ContentPage 
     xmlns="http://xamarin.com/schemas/2014/forms" 
     xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:Reviewer.Core"
     x:Class="Reviewer.Core.ReviewDetailPage"
     Title="{Binding Title}">
     <ContentPage.Content>
@@ -20,11 +21,34 @@
 
                     <BoxView HorizontalOptions="FillAndExpand" HeightRequest="200" Grid.ColumnSpan="3" Color="{StaticResource Secondary}" />
 
+                    <StackLayout HorizontalOptions="FillAndExpand" Grid.ColumnSpan="3" Orientation="Vertical" Spacing="3" Margin="10">
+
+                        <local:HorizontalList ListOrientation="Horizontal" ColumnSpacing="5" ItemsSource="{Binding Review.Photos}">
+                            <local:HorizontalList.ItemTemplate>
+                                <DataTemplate>
+                                    <local:PhotoPreviewCellView />
+                                </DataTemplate>
+                            </local:HorizontalList.ItemTemplate> 
+                        </local:HorizontalList> 
+                        
+                        <local:HorizontalList ListOrientation="Horizontal" ColumnSpacing="5" ItemsSource="{Binding Review.Videos}" x:Name="videoList">
+                            <local:HorizontalList.ItemTemplate>
+                                <DataTemplate>
+                                    <local:VideoPreviewCellView />
+                                </DataTemplate>
+                            </local:HorizontalList.ItemTemplate>
+                        </local:HorizontalList>
+                                              
+                    </StackLayout>
+
                     <Grid Grid.RowSpan="2" Grid.Column="1" Margin="0,125,0,0" HeightRequest="105" WidthRequest="105">
                         <BoxView Color="{StaticResource PrimaryDark}" HeightRequest="105" WidthRequest="105" />
-                        <Label Text="{Binding Review.Rating}" FontSize="72" TextColor="{StaticResource SecondaryAccent}" 
-                               HorizontalTextAlignment="Center"
-                               VerticalTextAlignment="Center"/>
+                        <StackLayout Orientation="Vertical" Spacing="0">
+                            <Label Text="{Binding Review.Rating}" FontSize="72" TextColor="{StaticResource SecondaryAccent}" 
+                                   HorizontalTextAlignment="Center"
+                                   VerticalTextAlignment="Center"/>
+                            <Label Text="Stars" FontSize="Micro" TextColor="{StaticResource SecondaryAccent}" HorizontalTextAlignment="Center" />
+                       </StackLayout>
                     </Grid>
 
                     <Label FontSize="Micro" HorizontalOptions="Center" Grid.Row="1" Margin="10" 
