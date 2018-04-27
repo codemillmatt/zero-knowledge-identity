@@ -47,8 +47,8 @@
                             </StackLayout>
                         </ViewCell>
                     </TableSection>
-                    <TableSection Title="Finally - Review It!">
-                        <ViewCell Height="200">
+                    <TableSection Title="Review It!">
+                        <ViewCell Height="100">
                             <Editor Text="{Binding Review.ReviewText}" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
                         </ViewCell>
                     </TableSection>
@@ -61,6 +61,17 @@
                                     </DataTemplate>
                                 </local:HorizontalList.ItemTemplate>
                             </local:HorizontalList> 
+                        </ViewCell>
+                    </TableSection>
+                    <TableSection Title="Videos">
+                        <ViewCell Height="100">
+                            <local:HorizontalList x:Name="videoList" ItemsSource="{Binding Review.Videos}" ListOrientation="Horizontal" ColumnSpacing="10">
+                                <local:HorizontalList.ItemTemplate>
+                                    <DataTemplate>
+                                        <Image Source="{Binding ThumbnailUrl}" HeightRequest="100" WidthRequest="100" />
+                                    </DataTemplate>
+                                </local:HorizontalList.ItemTemplate>
+                            </local:HorizontalList>
                         </ViewCell>
                     </TableSection>
                 </TableView.Root>

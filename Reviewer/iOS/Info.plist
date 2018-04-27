@@ -10,8 +10,6 @@
 	<string>com.microsoft.Reviewer</string>
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
-	<key>CFBundleVersion</key>
-	<string>1.0</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>MinimumOSVersion</key>
@@ -65,5 +63,7 @@
 	<string>Pick photos for review</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Pick photos from gallery for the review</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
 </dict>
 </plist>

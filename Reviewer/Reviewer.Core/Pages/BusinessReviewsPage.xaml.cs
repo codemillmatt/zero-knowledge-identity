@@ -19,21 +19,30 @@ namespace Reviewer.Core
             BindingContext = vm;
 
             reviewList.ItemTapped += (sender, args) => reviewList.SelectedItem = null;
-            reviewList.ItemSelected += ReviewList_ItemSelected;
-
-            addNewReview.Clicked += async (sender, e) =>
-            {
-                var editPage = new EditReviewPage(business.Id, business.Name);
-
-                await Navigation.PushModalAsync(new NavigationPage(editPage));
-            };
         }
 
         protected override void OnAppearing()
         {
             base.OnAppearing();
 
+            reviewList.ItemSelected += ReviewList_ItemSelected;
+            addNewReview.Clicked += AddNewReview_Clicked;
+
             vm.RefreshCommand.Execute(null);
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            reviewList.ItemSelected -= ReviewList_ItemSelected;
+        }
+
+        async void AddNewReview_Clicked(object sender, EventArgs e)
+        {
+            var editPage = new EditReviewPage(vm.Business.Id, vm.Business.Name);
+
+            await Navigation.PushModalAsync(new NavigationPage(editPage));
         }
 
         async void ReviewList_ItemSelected(object sender, SelectedItemChangedEventArgs e)

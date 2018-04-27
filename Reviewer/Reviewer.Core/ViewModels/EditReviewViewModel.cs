@@ -21,8 +21,6 @@ namespace Reviewer.Core
         bool isNew;
         public bool IsNew { get => isNew; set => SetProperty(ref isNew, value); }
 
-        //public ObservableCollection<ImageSource> Photos { get; private set; } = new ObservableCollection<ImageSource>();
-
         List<ImageSource> photos;
         public List<ImageSource> Photos { get => photos; set => SetProperty(ref photos, value); }
 

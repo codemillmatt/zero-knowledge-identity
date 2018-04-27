@@ -8,6 +8,9 @@ namespace Reviewer.Core
 {
     public partial class EditReviewPage : ContentPage
     {
+
+
+
         EditReviewViewModel vm;
         bool isNew;
 
@@ -17,8 +20,6 @@ namespace Reviewer.Core
             vm = new EditReviewViewModel(businessId, businessName);
             BindingContext = vm;
             isNew = true;
-
-            vm.SaveComplete += SaveComplete;
         }
 
         public EditReviewPage(Review review) : base()
@@ -28,8 +29,35 @@ namespace Reviewer.Core
             vm = new EditReviewViewModel(review);
             BindingContext = vm;
             isNew = false;
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
 
             vm.SaveComplete += SaveComplete;
+            videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            vm.SaveComplete -= SaveComplete;
+            videoList.SelectedItemChanged -= VideoList_SelectedItemChanged;
+        }
+
+        async void VideoList_SelectedItemChanged(object sender, EventArgs e)
+        {
+            if (!(sender is HorizontalList horizontalList))
+                return;
+
+            if (!(horizontalList.SelectedItem is Video video))
+                return;
+
+            var playerPage = new NavigationPage(new VideoPlayerPage(video));
+
+            await Navigation.PushModalAsync(playerPage, true);
         }
 
         async void SaveComplete(object sender, EventArgs args)

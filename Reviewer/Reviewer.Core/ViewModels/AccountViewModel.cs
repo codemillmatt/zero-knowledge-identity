@@ -54,19 +54,20 @@ namespace Reviewer.Core
             if (IsBusy)
                 return;
 
-            AuthenticationResult signInResult;
+            //AuthenticationResult signInResult;
             try
             {
                 IsBusy = true;
 
-                signInResult = await identityService.Login();
+                //signInResult = await identityService.Login();
+                authResult = await identityService.Login();
             }
             finally
             {
                 IsBusy = false;
             }
 
-            if (signInResult?.User == null)
+            if (authResult?.User == null)
             {
                 LoggedIn = false;
                 NotLoggedIn = true;
@@ -76,6 +77,9 @@ namespace Reviewer.Core
             {
                 LoggedIn = true;
                 NotLoggedIn = false;
+
+                await ExecuteRefreshCommand();
+
                 SuccessfulSignIn?.Invoke(this, new EventArgs());
             }
         }

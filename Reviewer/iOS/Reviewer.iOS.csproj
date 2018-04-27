@@ -36,7 +36,7 @@
     <OutputPath>bin\iPhone\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <CodesignKey>iPhone Developer</CodesignKey>
+    <CodesignKey>iPhone Distribution</CodesignKey>
     <MtouchFloat32>true</MtouchFloat32>
     <CodesignEntitlements>Entitlements.plist</CodesignEntitlements>
     <MtouchLink>SdkOnly</MtouchLink>
@@ -140,6 +140,24 @@
     <Reference Include="System.Net.Http.Primitives">
       <HintPath>..\packages\System.Net.Http.Formatting.Extension.5.2.3.0\lib\System.Net.Http.Primitives.dll</HintPath>
     </Reference>
+    <Reference Include="Microsoft.AppCenter">
+      <HintPath>..\packages\Microsoft.AppCenter.1.6.0\lib\Xamarin.iOS10\Microsoft.AppCenter.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.1.6.0\lib\Xamarin.iOS10\Microsoft.AppCenter.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.6.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Analytics.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.Analytics.1.6.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Analytics.iOS.Bindings.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.6.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AppCenter.Crashes.iOS.Bindings">
+      <HintPath>..\packages\Microsoft.AppCenter.Crashes.1.6.0\lib\Xamarin.iOS10\Microsoft.AppCenter.Crashes.iOS.Bindings.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\Contents.json">
@@ -148,6 +166,18 @@
     <ImageAsset Include="Assets.xcassets\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-60.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

@@ -17,7 +17,7 @@ namespace Reviewer.Core
             vm = new BusinessListViewModel();
             BindingContext = vm;
 
-            allBusList.ItemSelected += listItemSelected;
+
             allBusList.ItemTapped += (sender, args) => allBusList.SelectedItem = null;
 
             vm.Title = "Businesses";
@@ -27,7 +27,15 @@ namespace Reviewer.Core
         {
             base.OnAppearing();
 
+            allBusList.ItemSelected += listItemSelected;
             vm.RefreshCommand.Execute(null);
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+
+            allBusList.ItemSelected -= listItemSelected;
         }
 
         protected async void listItemSelected(object sender, SelectedItemChangedEventArgs args)

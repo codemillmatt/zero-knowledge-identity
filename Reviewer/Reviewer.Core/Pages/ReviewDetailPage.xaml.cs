@@ -17,11 +17,37 @@ namespace Reviewer.Core
             vm.Title = "Review Details";
 
             BindingContext = vm;
+
         }
 
         public ReviewDetailPage()
         {
             InitializeComponent();
+        }
+
+        protected override void OnAppearing()
+        {
+            base.OnAppearing();
+            videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
+        }
+
+        protected override void OnDisappearing()
+        {
+            base.OnDisappearing();
+            videoList.SelectedItemChanged -= VideoList_SelectedItemChanged;
+        }
+
+        async void VideoList_SelectedItemChanged(object sender, EventArgs e)
+        {
+            if (!(sender is HorizontalList horizontalList))
+                return;
+
+            if (!(horizontalList.SelectedItem is Video video))
+                return;
+
+            var videoPlayer = new NavigationPage(new VideoPlayerPage(video));
+
+            await Navigation.PushModalAsync(videoPlayer);
         }
     }
 }
