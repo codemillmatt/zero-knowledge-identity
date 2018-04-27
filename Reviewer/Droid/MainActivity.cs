@@ -15,7 +15,7 @@ using Microsoft.Identity.Client;
 namespace Reviewer.Droid
 {
     [Activity(Label = "Reviewer.Droid",
-              Icon = "@drawable/icon",
+              Icon = "@mipmap/ic_eightbit",
               Theme = "@style/MyTheme",
               MainLauncher = false,
               LaunchMode = LaunchMode.SingleTask,

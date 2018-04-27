@@ -148,6 +148,18 @@
     <ImageAsset Include="Assets.xcassets\Contents.json">
       <Visible>false</Visible>
     </ImageAsset>
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-120.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-180.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-80.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-20.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-40.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-58.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-87.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-76.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-152.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-167.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-1024.png" />
+    <ImageAsset Include="Assets.xcassets\AppIcon.appiconset\8bit-60.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />

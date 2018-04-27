@@ -202,6 +202,11 @@
     <AndroidResource Include="Resources\values-v21\styles.xml" />
     <AndroidResource Include="Resources\color\icon_tab.xml" />
     <AndroidResource Include="Resources\drawable\background_splash.xml" />
+    <AndroidResource Include="Resources\mipmap-hdpi\ic_eightbit.png" />
+    <AndroidResource Include="Resources\mipmap-mdpi\ic_eightbit.png" />
+    <AndroidResource Include="Resources\mipmap-xhdpi\ic_eightbit.png" />
+    <AndroidResource Include="Resources\mipmap-xxhdpi\ic_eightbit.png" />
+    <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_eightbit.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reviewer.Core\Reviewer.Core.csproj">
@@ -216,6 +221,11 @@
     <Folder Include="Resources\values-v19\" />
     <Folder Include="Resources\values-v21\" />
     <Folder Include="Resources\color\" />
+    <Folder Include="Resources\mipmap-hdpi\" />
+    <Folder Include="Resources\mipmap-mdpi\" />
+    <Folder Include="Resources\mipmap-xhdpi\" />
+    <Folder Include="Resources\mipmap-xxhdpi\" />
+    <Folder Include="Resources\mipmap-xxxhdpi\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.1.444934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.1.444934\build\netstandard1.0\Xamarin.Forms.targets')" />

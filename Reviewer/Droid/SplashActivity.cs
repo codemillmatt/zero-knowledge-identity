@@ -14,7 +14,7 @@ using Android.Widget;
 namespace Reviewer.Droid
 {
     [Activity(Label = "Reviewer",
-             Icon = "@drawable/icon",
+             Icon = "@mipmap/ic_eightbit",
              Theme = "@style/SplashTheme",
              MainLauncher = true)]
     public class SplashActivity : Activity
