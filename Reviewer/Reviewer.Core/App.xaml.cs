@@ -5,6 +5,10 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Reviewer.Services;
 
+using Microsoft.AppCenter;
+using Microsoft.AppCenter.Analytics;
+using Microsoft.AppCenter.Crashes;
+
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Reviewer.Core
 {
@@ -34,6 +38,8 @@ namespace Reviewer.Core
         protected override void OnStart()
         {
             base.OnStart();
+
+            AppCenter.Start($"{APIKeys.AppCenterIOSKey}{APIKeys.AppCenterAndroidKey}");
         }
 
         protected override void OnSleep()
