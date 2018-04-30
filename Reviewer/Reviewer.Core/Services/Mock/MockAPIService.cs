@@ -1,83 +1,83 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
+using Newtonsoft.Json;
+using Reviewer.Services;
 using Reviewer.SharedModels;
 
 namespace Reviewer.Core
 {
     public class MockAPIService : IAPIService
     {
-        List<string> authors = new List<string> { "Fred", "Wilma", "Barney", "Betty" };
-        List<string> text = new List<string> { "Good", "Meh", "Delicious", "Best thing ever!", "Never go there!" };
+        HttpClient webClient = new HttpClient();
 
-        public MockAPIService()
-        {
-        }
 
         public async Task<List<Review>> GetReviewsForBusiness(string businessId)
         {
-            var r = new Random();
+            var reviewJson = await webClient.GetStringAsync($"{APIKeys.WebAPIUrl}review/business/{businessId}");
 
-            var review1 = new Review
-            {
-                Author = authors[r.Next(0, authors.Count)],
-                BusinessId = businessId,
-                Date = DateTime.Now.Subtract(TimeSpan.FromDays(4)),
-                Id = Guid.NewGuid().ToString(),
-                Photos = new List<string>(),
-                Rating = r.Next(1, 5),
-                ReviewText = text[r.Next(0, text.Count)]
-            };
-
-            var review2 = new Review
-            {
-                Author = authors[r.Next(0, authors.Count)],
-                BusinessId = businessId,
-                Date = DateTime.Now.Subtract(TimeSpan.FromDays(4)),
-                Id = Guid.NewGuid().ToString(),
-                Photos = new List<string>(),
-                Rating = r.Next(1, 5),
-                ReviewText = text[r.Next(0, text.Count)]
-            };
-
-
-            var review3 = new Review
-            {
-                Author = authors[r.Next(0, authors.Count)],
-                BusinessId = businessId,
-                Date = DateTime.Now.Subtract(TimeSpan.FromDays(4)),
-                Id = Guid.NewGuid().ToString(),
-                Photos = new List<string>(),
-                Rating = r.Next(1, 5),
-                ReviewText = text[r.Next(0, text.Count)]
-            };
-
-            return await Task.FromResult(new List<Review> { review1, review2, review3 });
+            return JsonConvert.DeserializeObject<List<Review>>(reviewJson);
         }
 
-        public Task InsertReview(Review review, string token)
+        public async Task InsertReview(Review review, string token)
         {
-            return Task.CompletedTask;
+            var request = new HttpRequestMessage(HttpMethod.Post, $"{APIKeys.NoSecurityWebAPIInsertReview}");
+
+            request.Content = new StringContent(JsonConvert.SerializeObject(review), Encoding.UTF8, "application/json");
+
+            await webClient.SendAsync(request);
         }
 
-        public Task UpdateReview(Review review, string token)
+        public async Task UpdateReview(Review review, string token)
         {
-            return Task.CompletedTask;
+            var request = new HttpRequestMessage(HttpMethod.Put, $"{APIKeys.NoSecurityWebAPIUpdateReview}");
+
+            request.Content = new StringContent(JsonConvert.SerializeObject(review), Encoding.UTF8, "application/json");
+
+            await webClient.SendAsync(request);
         }
 
-        public Task<List<Review>> GetReviewsForAuthor(string authorId, string token)
+        public async Task<List<Review>> GetReviewsForAuthor(string authorId, string token)
         {
-            return Task.FromResult(new List<Review>());
+            authorId = Guid.Empty.ToString();
+
+            var request = new HttpRequestMessage(HttpMethod.Get, $"{APIKeys.NoSecurityWebAPIGetReviewsForAuthor}{authorId}");
+
+            var response = await webClient.SendAsync(request);
+
+            var reviewJson = await response.Content.ReadAsStringAsync();
+
+            return JsonConvert.DeserializeObject<List<Review>>(reviewJson);
         }
 
-        public Task<string> GetContainerWriteSasToken()
+        public async Task<string> GetContainerWriteSasToken()
         {
-            return Task.FromResult("");
+            var spr = new StoragePermissionRequest { Permission = "Write" };
+
+            var request = new HttpRequestMessage(HttpMethod.Post, APIKeys.NoSecuritySasUrl);
+
+            var content = new StringContent(JsonConvert.SerializeObject(spr), Encoding.UTF8, "application/json");
+
+            request.Content = content;
+
+            var response = await webClient.SendAsync(request);
+
+            return await response.Content.ReadAsStringAsync();
         }
 
-        public Task WritePhotoInfoToQueue(string businessId, string photoUrl)
+        public async Task WritePhotoInfoToQueue(string reviewId, string photoUrl)
         {
-            return Task.CompletedTask;
+            var queueInfo = new { reviewId, photoUrl };
+
+            var request = new HttpRequestMessage(HttpMethod.Post, APIKeys.NoSecurityWriteToQueueUrl);
+
+            var content = new StringContent(JsonConvert.SerializeObject(queueInfo), Encoding.UTF8, "application/json");
+
+            request.Content = content;
+
+            await webClient.SendAsync(request);
         }
     }
 }

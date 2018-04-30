@@ -31,7 +31,7 @@ namespace Reviewer.Core
         string notLoggedInInfo = "Sign in to unlock the wonderful world of reviews!";
         string loggedInInfo = "Hiya {user}! Here are your reviews so far!";
 
-        AuthenticationResult authResult;
+        IAuthenticationResult authResult;
 
         IIdentityService identityService;
 
@@ -54,12 +54,10 @@ namespace Reviewer.Core
             if (IsBusy)
                 return;
 
-            //AuthenticationResult signInResult;
             try
             {
                 IsBusy = true;
 
-                //signInResult = await identityService.Login();
                 authResult = await identityService.Login();
             }
             finally
