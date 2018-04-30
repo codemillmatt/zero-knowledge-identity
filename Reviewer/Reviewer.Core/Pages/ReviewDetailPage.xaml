@@ -23,7 +23,7 @@
 
                     <StackLayout HorizontalOptions="FillAndExpand" Grid.ColumnSpan="3" Orientation="Vertical" Spacing="3" Margin="10">
 
-                        <local:HorizontalList ListOrientation="Horizontal" ColumnSpacing="5" ItemsSource="{Binding Review.Photos}">
+                        <local:HorizontalList ListOrientation="Horizontal" ColumnSpacing="5" ItemsSource="{Binding Review.Photos}" x:Name="photoList">
                             <local:HorizontalList.ItemTemplate>
                                 <DataTemplate>
                                     <local:PhotoPreviewCellView />

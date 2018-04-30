@@ -59,6 +59,9 @@ namespace Reviewer.Core
 
             var request = new HttpRequestMessage(HttpMethod.Post, APIKeys.SASRetrievalUrl);
 
+            var bearerToken = await GetAccessBearerToken();
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
             var content = new StringContent(JsonConvert.SerializeObject(spr), Encoding.UTF8, "application/json");
 
             request.Content = content;
@@ -74,11 +77,24 @@ namespace Reviewer.Core
 
             var request = new HttpRequestMessage(HttpMethod.Post, APIKeys.WriteToQueueUrl);
 
+            var bearerToken = await GetAccessBearerToken();
+            request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", bearerToken);
+
             var content = new StringContent(JsonConvert.SerializeObject(queueInfo), Encoding.UTF8, "application/json");
 
             request.Content = content;
 
             await webClient.SendAsync(request);
+        }
+
+        async Task<string> GetAccessBearerToken()
+        {
+            var identityService = Xamarin.Forms.DependencyService.Get<IIdentityService>(Xamarin.Forms.DependencyFetchTarget.GlobalInstance);
+
+            var authResult = await identityService.GetCachedSignInToken();
+            var bearerToken = authResult.AccessToken;
+
+            return bearerToken;
         }
     }
 }

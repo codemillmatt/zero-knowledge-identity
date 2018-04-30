@@ -29,12 +29,14 @@ namespace Reviewer.Core
         {
             base.OnAppearing();
             videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
+            photoList.SelectedItemChanged += PhotoList_SelectedItemChanged;
         }
 
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
             videoList.SelectedItemChanged -= VideoList_SelectedItemChanged;
+            photoList.SelectedItemChanged -= PhotoList_SelectedItemChanged;
         }
 
         async void VideoList_SelectedItemChanged(object sender, EventArgs e)
@@ -48,6 +50,19 @@ namespace Reviewer.Core
             var videoPlayer = new NavigationPage(new VideoPlayerPage(video));
 
             await Navigation.PushModalAsync(videoPlayer);
+        }
+
+        async void PhotoList_SelectedItemChanged(object sender, EventArgs e)
+        {
+            if (!(sender is HorizontalList horizontalList))
+                return;
+
+            if (!(horizontalList.SelectedItem is string photoUrl))
+                return;
+
+            var photoViewer = new NavigationPage(new PhotoViewerPage(photoUrl));
+
+            await Navigation.PushModalAsync(photoViewer);
         }
     }
 }
