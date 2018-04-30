@@ -18,51 +18,46 @@ namespace Reviewer.Services
 
         DocumentClient client;
 
-        public async Task Initialize()
+        public void Initialize()
         {
             if (client != null)
                 return;
 
             client = new DocumentClient(new Uri(APIKeys.CosmosEndpointUrl), APIKeys.CosmosAuthKey);
-
-            await client.CreateDatabaseIfNotExistsAsync(new Database { Id = databaseName });
-
-            await client.CreateDocumentCollectionIfNotExistsAsync(
-                UriFactory.CreateDatabaseUri(databaseName),
-                new DocumentCollection { Id = businessCollectionName },
-                new RequestOptions { OfferThroughput = 400 }
-            );
-
-            await client.CreateDocumentCollectionIfNotExistsAsync(
-                UriFactory.CreateDatabaseUri(databaseName),
-                new DocumentCollection { Id = reviewCollectionName },
-                new RequestOptions { OfferThroughput = 400 }
-            );
         }
 
         public async Task<List<Business>> GetBusinesses()
         {
-            await Initialize();
-
-            var businesses = new List<Business>();
-
-            var businessQuery = client.CreateDocumentQuery<Business>(
-                UriFactory.CreateDocumentCollectionUri(databaseName, businessCollectionName),
-                new FeedOptions { MaxItemCount = -1 }).AsDocumentQuery();
-
-            while (businessQuery.HasMoreResults)
+            try
             {
-                var queryResults = await businessQuery.ExecuteNextAsync<Business>();
+                Initialize();
 
-                businesses.AddRange(queryResults);
+                var businesses = new List<Business>();
+
+                var businessQuery = client.CreateDocumentQuery<Business>(
+                    UriFactory.CreateDocumentCollectionUri(databaseName, businessCollectionName),
+                    new FeedOptions { MaxItemCount = -1 }).AsDocumentQuery();
+
+                while (businessQuery.HasMoreResults)
+                {
+                    var queryResults = await businessQuery.ExecuteNextAsync<Business>();
+
+                    businesses.AddRange(queryResults);
+                }
+
+                return businesses;
+            }
+            catch (Exception ex)
+            {
+                System.Diagnostics.Debug.WriteLine($"*** ERROR: {ex.Message}");
             }
 
-            return businesses;
+            return new List<Business>();
         }
 
         public async Task<List<Review>> GetReviewsForBusiness(string businessId)
         {
-            await Initialize();
+            Initialize();
 
             var reviews = new List<Review>();
 
@@ -84,7 +79,7 @@ namespace Reviewer.Services
 
         public async Task<List<Review>> GetReviewsByAuthor(string authorId)
         {
-            await Initialize();
+            Initialize();
 
             var reviews = new List<Review>();
 
@@ -106,7 +101,7 @@ namespace Reviewer.Services
 
         public async Task InsertReview(Review review)
         {
-            await Initialize();
+            Initialize();
 
             await client.CreateDocumentAsync(
                 UriFactory.CreateDocumentCollectionUri(databaseName, reviewCollectionName),
@@ -115,7 +110,7 @@ namespace Reviewer.Services
 
         public async Task UpdateReview(Review review)
         {
-            await Initialize();
+            Initialize();
 
             var reviewUri = UriFactory.CreateDocumentUri(databaseName, reviewCollectionName, review.Id);
 

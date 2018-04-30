@@ -8,9 +8,6 @@ namespace Reviewer.Core
 {
     public partial class EditReviewPage : ContentPage
     {
-
-
-
         EditReviewViewModel vm;
         bool isNew;
 
@@ -37,6 +34,7 @@ namespace Reviewer.Core
 
             vm.SaveComplete += SaveComplete;
             videoList.SelectedItemChanged += VideoList_SelectedItemChanged;
+            photoList.SelectedItemChanged += PhotoList_SelectedItemChanged;
         }
 
         protected override void OnDisappearing()
@@ -45,6 +43,7 @@ namespace Reviewer.Core
 
             vm.SaveComplete -= SaveComplete;
             videoList.SelectedItemChanged -= VideoList_SelectedItemChanged;
+            photoList.SelectedItemChanged -= PhotoList_SelectedItemChanged;
         }
 
         async void VideoList_SelectedItemChanged(object sender, EventArgs e)
@@ -60,12 +59,33 @@ namespace Reviewer.Core
             await Navigation.PushModalAsync(playerPage, true);
         }
 
+        async void PhotoList_SelectedItemChanged(object sender, EventArgs e)
+        {
+            if (!(sender is HorizontalList horizontalList))
+                return;
+
+            if (!(horizontalList.SelectedItem is UriImageSource photoUrl))
+                return;
+
+            var photoPage = new NavigationPage(new PhotoViewerPage(photoUrl.Uri.AbsoluteUri));
+
+            await Navigation.PushModalAsync(photoPage, true);
+        }
+
         async void SaveComplete(object sender, EventArgs args)
         {
             if (isNew)
                 await Navigation.PopModalAsync();
             else
                 await Navigation.PopAsync();
+        }
+
+        async void Cancel_Clicked(object sender, EventArgs args)
+        {
+            if (vm.IsNew)
+                await Navigation.PopModalAsync(true);
+            else
+                await Navigation.PopAsync(true);
         }
     }
 

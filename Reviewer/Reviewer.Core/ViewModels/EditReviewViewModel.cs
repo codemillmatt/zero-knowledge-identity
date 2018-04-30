@@ -19,7 +19,18 @@ namespace Reviewer.Core
         public Review Review { get => review; set => SetProperty(ref review, value); }
 
         bool isNew;
-        public bool IsNew { get => isNew; set => SetProperty(ref isNew, value); }
+        public bool IsNew
+        {
+            get => isNew;
+            set
+            {
+                SetProperty(ref isNew, value);
+                IsNotNew = !IsNew;
+            }
+        }
+
+        bool isNotNew;
+        public bool IsNotNew { get => isNotNew; set => SetProperty(ref isNotNew, value); }
 
         List<ImageSource> photos;
         public List<ImageSource> Photos { get => photos; set => SetProperty(ref photos, value); }
