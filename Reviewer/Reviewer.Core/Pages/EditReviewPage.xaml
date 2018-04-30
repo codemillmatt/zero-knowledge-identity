@@ -54,7 +54,7 @@
                     </TableSection>
                     <TableSection Title="Photos">
                         <ViewCell Height="100">
-                           <local:HorizontalList ItemsSource="{Binding Photos}" ListOrientation="Horizontal" ColumnSpacing="10">
+                           <local:HorizontalList x:Name="photoList" ItemsSource="{Binding Photos}" ListOrientation="Horizontal" ColumnSpacing="10">
                                 <local:HorizontalList.ItemTemplate>
                                     <DataTemplate>
                                         <Image Source="{Binding .}" HeightRequest="100" WidthRequest="100" />
