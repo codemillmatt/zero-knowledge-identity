@@ -79,6 +79,14 @@ namespace Reviewer.Core
             else
                 await Navigation.PopAsync();
         }
+
+        async void Cancel_Clicked(object sender, EventArgs args)
+        {
+            if (vm.IsNew)
+                await Navigation.PopModalAsync(true);
+            else
+                await Navigation.PopAsync(true);
+        }
     }
 
 }

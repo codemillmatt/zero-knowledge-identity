@@ -82,5 +82,6 @@
     </ContentPage.Content>
     <ContentPage.ToolbarItems>
         <ToolbarItem Text="Photo" Command="{Binding TakePhotoCommand}" />
+        <ToolbarItem Text="Cancel" Clicked="Cancel_Clicked" />
     </ContentPage.ToolbarItems>
 </ContentPage>
