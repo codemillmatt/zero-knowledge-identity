@@ -40,7 +40,7 @@ namespace Reviewer.Core
         public async Task<IAuthenticationResult> Login()
         {
             IAuthenticationResult theResult = null;
-            AuthenticationResult result = null;
+            AuthenticationResult msalResult = null;
 
             // Running on Android - we need UIParent to be set to the main Activity
             if (UIParent == null && Device.RuntimePlatform == Device.Android)
@@ -55,7 +55,7 @@ namespace Reviewer.Core
             // Token not in cache - call adb2c to acquire it
             try
             {
-                result = await msaClient.AcquireTokenAsync(Scopes,
+                msalResult = await msaClient.AcquireTokenAsync(Scopes,
                                                            GetUserByPolicy(msaClient.Users,
                                                                            SignUpAndInPolicy),
                                                            UIBehavior.ForceLogin,
@@ -63,9 +63,9 @@ namespace Reviewer.Core
                                                            null,
                                                            Authority,
                                                            UIParent);
-                if (result?.User != null)
+                if (msalResult?.User != null)
                 {
-                    var parsed = ParseIdToken(result.IdToken);
+                    var parsed = ParseIdToken(msalResult.IdToken);
                     DisplayName = parsed["name"]?.ToString();
                 }
             }
@@ -92,9 +92,9 @@ namespace Reviewer.Core
 
             return new AuthResult
             {
-                AccessToken = result.AccessToken,
-                UniqueId = result.UniqueId,
-                User = result.User
+                AccessToken = msalResult.AccessToken,
+                UniqueId = msalResult.UniqueId,
+                User = msalResult.User
             };
         }
 
