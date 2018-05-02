@@ -45,7 +45,7 @@
                       IsVisible="{Binding LoggedIn}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                       <TextCell Text="{Binding ReviewText}" /> 
+                       <TextCell Text="{Binding ReviewText}" Detail="{Binding BusinessName}" /> 
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
