@@ -32,7 +32,6 @@ namespace Reviewer.Core
 
         public Task<IAuthenticationResult> Login()
         {
-
             var auth = new AuthResult
             {
                 User = new MockUser(),

@@ -12,6 +12,7 @@ namespace Reviewer.Core
     {
         public ICommand SignInCommand { get; }
         public ICommand RefreshCommand { get; }
+        public ICommand SignOutCommand { get; }
 
         public event EventHandler SuccessfulSignIn;
         public event EventHandler UnsuccessfulSignIn;
@@ -49,6 +50,30 @@ namespace Reviewer.Core
             Task.Run(async () => await CheckLoginStatus());
         }
 
+        void ExecuteSignOutCommand()
+        {
+            if (IsBusy)
+                return;
+
+            if (NotLoggedIn)
+                return;
+
+            try
+            {
+                IsBusy = true;
+
+                identityService.Logout();
+
+                NotLoggedIn = true;
+                LoggedIn = false;
+                Info = notLoggedInInfo;
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
         async Task ExecuteSignInCommand()
         {
             if (IsBusy)
@@ -69,12 +94,14 @@ namespace Reviewer.Core
             {
                 LoggedIn = false;
                 NotLoggedIn = true;
+                Info = notLoggedInInfo;
                 UnsuccessfulSignIn?.Invoke(this, new EventArgs());
             }
             else
             {
                 LoggedIn = true;
                 NotLoggedIn = false;
+                Info = loggedInInfo;
 
                 await ExecuteRefreshCommand();
 

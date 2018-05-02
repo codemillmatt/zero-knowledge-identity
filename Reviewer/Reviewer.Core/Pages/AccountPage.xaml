@@ -57,4 +57,7 @@
                                Grid.RowSpan="5" />
         </Grid>
     </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Out" IsEnabled="{Binding LoggedIn}" Command="{Binding SignOutCommand}" />
+    </ContentPage.ToolbarItems>
 </ContentPage>
