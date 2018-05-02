@@ -42,6 +42,7 @@ namespace Reviewer.Core
 
             SignInCommand = new Command(async () => await ExecuteSignInCommand());
             RefreshCommand = new Command(async () => await ExecuteRefreshCommand());
+            SignOutCommand = new Command(() => ExecuteSignOutCommand());
 
             Info = notLoggedInInfo;
 
@@ -101,7 +102,7 @@ namespace Reviewer.Core
             {
                 LoggedIn = true;
                 NotLoggedIn = false;
-                Info = loggedInInfo;
+                Info = loggedInInfo.Replace("{user}", identityService.DisplayName);
 
                 await ExecuteRefreshCommand();
 
