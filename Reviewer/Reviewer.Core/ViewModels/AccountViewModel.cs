@@ -21,7 +21,15 @@ namespace Reviewer.Core
         public List<Review> Reviews { get => reviews; set => SetProperty(ref reviews, value); }
 
         bool loggedIn = false;
-        public bool LoggedIn { get => loggedIn; set => SetProperty(ref loggedIn, value); }
+        public bool LoggedIn
+        {
+            get => loggedIn;
+            set
+            {
+                SetProperty(ref loggedIn, value);
+                NotLoggedIn = !LoggedIn;
+            }
+        }
 
         bool notLoggedIn = true;
         public bool NotLoggedIn { get => notLoggedIn; set => SetProperty(ref notLoggedIn, value); }
@@ -65,7 +73,6 @@ namespace Reviewer.Core
 
                 identityService.Logout();
 
-                NotLoggedIn = true;
                 LoggedIn = false;
                 Info = notLoggedInInfo;
             }
@@ -94,14 +101,12 @@ namespace Reviewer.Core
             if (authResult?.User == null)
             {
                 LoggedIn = false;
-                NotLoggedIn = true;
                 Info = notLoggedInInfo;
                 UnsuccessfulSignIn?.Invoke(this, new EventArgs());
             }
             else
             {
                 LoggedIn = true;
-                NotLoggedIn = false;
                 Info = loggedInInfo.Replace("{user}", identityService.DisplayName);
 
                 await ExecuteRefreshCommand();
@@ -144,7 +149,6 @@ namespace Reviewer.Core
                 if (authResult?.User != null)
                 {
                     LoggedIn = true;
-                    NotLoggedIn = false;
 
                     Title = identityService.DisplayName;
                     Info = loggedInInfo.Replace("{user}", identityService.DisplayName);
@@ -152,6 +156,7 @@ namespace Reviewer.Core
                 else
                 {
                     Title = "Account";
+                    LoggedIn = false;
                 }
             }
             finally
