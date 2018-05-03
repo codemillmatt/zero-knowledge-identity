@@ -3,6 +3,7 @@ using System.Collections.Generic;
 
 using Xamarin.Forms;
 using Reviewer.SharedModels;
+using System.Threading.Tasks;
 
 namespace Reviewer.Core
 {
@@ -74,15 +75,17 @@ namespace Reviewer.Core
 
         async void SaveComplete(object sender, EventArgs args)
         {
-            if (isNew)
-                await Navigation.PopModalAsync();
-            else
-                await Navigation.PopAsync();
+            await CloseWindow();
         }
 
         async void Cancel_Clicked(object sender, EventArgs args)
         {
-            if (vm.IsNew)
+            await CloseWindow();
+        }
+
+        async Task CloseWindow()
+        {
+            if (isNew)
                 await Navigation.PopModalAsync(true);
             else
                 await Navigation.PopAsync(true);

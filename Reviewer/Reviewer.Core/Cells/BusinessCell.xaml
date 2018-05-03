@@ -34,9 +34,13 @@
                 </Grid.ColumnDefinitions>
                 <BoxView 
                     Color="{StaticResource PrimaryDark}" 
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
                     HeightRequest="66" 
                     WidthRequest="66" />
                 <Label Grid.Column="0"
+                    HorizontalOptions="CenterAndExpand"
+                       VerticalOptions="CenterAndExpand"
                     WidthRequest="66"
                     HeightRequest="66"
                     TextColor="White"

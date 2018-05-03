@@ -45,7 +45,7 @@
                       IsVisible="{Binding LoggedIn}">
                 <ListView.ItemTemplate>
                     <DataTemplate>
-                       <TextCell Text="{Binding ReviewText}" /> 
+                       <TextCell Text="{Binding ReviewText}" Detail="{Binding BusinessName}" /> 
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
@@ -57,4 +57,7 @@
                                Grid.RowSpan="5" />
         </Grid>
     </ContentPage.Content>
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Sign Out" IsEnabled="{Binding LoggedIn}" Command="{Binding SignOutCommand}" />
+    </ContentPage.ToolbarItems>
 </ContentPage>

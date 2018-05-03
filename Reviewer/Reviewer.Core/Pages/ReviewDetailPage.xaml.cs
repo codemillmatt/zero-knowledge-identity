@@ -17,7 +17,6 @@ namespace Reviewer.Core
             vm.Title = "Review Details";
 
             BindingContext = vm;
-
         }
 
         public ReviewDetailPage()
@@ -63,6 +62,13 @@ namespace Reviewer.Core
             var photoViewer = new NavigationPage(new PhotoViewerPage(photoUrl));
 
             await Navigation.PushModalAsync(photoViewer);
+        }
+
+        async void Handle_EditClicked(object sender, EventArgs e)
+        {
+            var editPage = new EditReviewPage(vm.Review);
+
+            await Navigation.PushAsync(editPage);
         }
     }
 }

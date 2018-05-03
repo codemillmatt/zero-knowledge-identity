@@ -32,8 +32,7 @@ namespace Reviewer.Core
 
                 var blobClient = csa.CreateCloudBlobClient();
 
-                var containerName = isVideo ? APIKeys.VideoInjestContainerName : APIKeys.PhotosContainerName;
-                var container = blobClient.GetContainerReference(containerName);
+                var container = blobClient.GetContainerReference(APIKeys.PhotosContainerName);
 
                 var extension = isVideo ? "mp4" : "png";
                 var blockBlob = container.GetBlockBlobReference($"{Guid.NewGuid()}.{extension}");

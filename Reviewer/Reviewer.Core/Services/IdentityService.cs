@@ -39,22 +39,22 @@ namespace Reviewer.Core
 
         public async Task<AuthenticationResult> Login()
         {
-            AuthenticationResult result = null;
+            AuthenticationResult msalResult = null;
 
             // Running on Android - we need UIParent to be set to the main Activity
             if (UIParent == null && Device.RuntimePlatform == Device.Android)
-                return result;
+                return msalResult;
 
             // First check if the token happens to be cached - grab silently
-            result = await GetCachedSignInToken();
+            msalResult = await GetCachedSignInToken();
 
-            if (result != null)
-                return result;
+            if (msalResult != null)
+                return msalResult;
 
             // Token not in cache - call adb2c to acquire it
             try
             {
-                result = await msaClient.AcquireTokenAsync(Scopes,
+                msalResult = await msaClient.AcquireTokenAsync(Scopes,
                                                            GetUserByPolicy(msaClient.Users,
                                                                            SignUpAndInPolicy),
                                                            UIBehavior.ForceLogin,
@@ -62,9 +62,9 @@ namespace Reviewer.Core
                                                            null,
                                                            Authority,
                                                            UIParent);
-                if (result?.User != null)
+                if (msalResult?.User != null)
                 {
-                    var parsed = ParseIdToken(result.IdToken);
+                    var parsed = ParseIdToken(msalResult.IdToken);
                     DisplayName = parsed["name"]?.ToString();
                 }
             }
@@ -89,7 +89,7 @@ namespace Reviewer.Core
                 System.Diagnostics.Debug.WriteLine(ex);
             }
 
-            return result;
+            return msalResult;
         }
 
         public async Task<AuthenticationResult> GetCachedSignInToken()

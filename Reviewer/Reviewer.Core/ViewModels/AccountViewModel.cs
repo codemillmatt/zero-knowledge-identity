@@ -12,6 +12,7 @@ namespace Reviewer.Core
     {
         public ICommand SignInCommand { get; }
         public ICommand RefreshCommand { get; }
+        public ICommand SignOutCommand { get; }
 
         public event EventHandler SuccessfulSignIn;
         public event EventHandler UnsuccessfulSignIn;
@@ -41,6 +42,7 @@ namespace Reviewer.Core
 
             SignInCommand = new Command(async () => await ExecuteSignInCommand());
             RefreshCommand = new Command(async () => await ExecuteRefreshCommand());
+            SignOutCommand = new Command(() => ExecuteSignOutCommand());
 
             Info = notLoggedInInfo;
 
@@ -49,17 +51,39 @@ namespace Reviewer.Core
             Task.Run(async () => await CheckLoginStatus());
         }
 
+        void ExecuteSignOutCommand()
+        {
+            if (IsBusy)
+                return;
+
+            if (NotLoggedIn)
+                return;
+
+            try
+            {
+                IsBusy = true;
+
+                identityService.Logout();
+
+                NotLoggedIn = true;
+                LoggedIn = false;
+                Info = notLoggedInInfo;
+            }
+            finally
+            {
+                IsBusy = false;
+            }
+        }
+
         async Task ExecuteSignInCommand()
         {
             if (IsBusy)
                 return;
 
-            //AuthenticationResult signInResult;
             try
             {
                 IsBusy = true;
 
-                //signInResult = await identityService.Login();
                 authResult = await identityService.Login();
             }
             finally
@@ -71,12 +95,14 @@ namespace Reviewer.Core
             {
                 LoggedIn = false;
                 NotLoggedIn = true;
+                Info = notLoggedInInfo;
                 UnsuccessfulSignIn?.Invoke(this, new EventArgs());
             }
             else
             {
                 LoggedIn = true;
                 NotLoggedIn = false;
+                Info = loggedInInfo.Replace("{user}", identityService.DisplayName);
 
                 await ExecuteRefreshCommand();
 

@@ -215,11 +215,7 @@ namespace Reviewer.Core
 
         async Task UploadVideo(MediaFile mediaFile)
         {
-            var videoConverter = DependencyService.Get<IVideoConversion>();
-            if (videoConverter == null)
-                return;
-
-            using (var mediaStream = await videoConverter.ConvertToMP4(mediaFile.Path))
+            using (var mediaStream = await ConvertToMP4(mediaFile))
             {
                 UploadProgress progressUpdater = new UploadProgress();
 
@@ -228,7 +224,18 @@ namespace Reviewer.Core
 
                 await Application.Current.MainPage.DisplayAlert("Video Upload", "We're processing your video! It'll be visible here as soon as we're done!", "OK");
             }
+        }
 
+        async Task<Stream> ConvertToMP4(MediaFile file)
+        {
+            if (file.Path.EndsWith("mp4", StringComparison.OrdinalIgnoreCase))
+                return file.GetStream();
+
+            var videoConverter = DependencyService.Get<IVideoConversion>();
+            if (videoConverter == null)
+                return null;
+
+            return await videoConverter.ConvertToMP4(file.Path);
         }
     }
 }
