@@ -36,6 +36,7 @@ namespace Reviewer.Core
             base.OnDisappearing();
 
             reviewList.ItemSelected -= ReviewList_ItemSelected;
+            addNewReview.Clicked -= AddNewReview_Clicked;
         }
 
         async void AddNewReview_Clicked(object sender, EventArgs e)
