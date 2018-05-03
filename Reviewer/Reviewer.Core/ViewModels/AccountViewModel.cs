@@ -32,7 +32,7 @@ namespace Reviewer.Core
         string notLoggedInInfo = "Sign in to unlock the wonderful world of reviews!";
         string loggedInInfo = "Hiya {user}! Here are your reviews so far!";
 
-        IAuthenticationResult authResult;
+        AuthenticationResult authResult;
 
         IIdentityService identityService;
 

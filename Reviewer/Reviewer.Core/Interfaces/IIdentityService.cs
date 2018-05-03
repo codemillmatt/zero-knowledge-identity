@@ -7,8 +7,8 @@ namespace Reviewer.Core
     {
         string DisplayName { get; set; }
 
-        Task<IAuthenticationResult> Login();
-        Task<IAuthenticationResult> GetCachedSignInToken();
+        Task<AuthenticationResult> Login();
+        Task<AuthenticationResult> GetCachedSignInToken();
         void Logout();
         UIParent UIParent { get; set; }
     }

@@ -37,20 +37,19 @@ namespace Reviewer.Core
         UIParent parent;
         public UIParent UIParent { get => parent; set => parent = value; }
 
-        public async Task<IAuthenticationResult> Login()
+        public async Task<AuthenticationResult> Login()
         {
-            IAuthenticationResult theResult = null;
             AuthenticationResult msalResult = null;
 
             // Running on Android - we need UIParent to be set to the main Activity
             if (UIParent == null && Device.RuntimePlatform == Device.Android)
-                return theResult;
+                return msalResult;
 
             // First check if the token happens to be cached - grab silently
-            theResult = await GetCachedSignInToken();
+            msalResult = await GetCachedSignInToken();
 
-            if (theResult != null)
-                return theResult;
+            if (msalResult != null)
+                return msalResult;
 
             // Token not in cache - call adb2c to acquire it
             try
@@ -90,15 +89,10 @@ namespace Reviewer.Core
                 System.Diagnostics.Debug.WriteLine(ex);
             }
 
-            return new AuthResult
-            {
-                AccessToken = msalResult.AccessToken,
-                UniqueId = msalResult.UniqueId,
-                User = msalResult.User
-            };
+            return msalResult;
         }
 
-        public async Task<IAuthenticationResult> GetCachedSignInToken()
+        public async Task<AuthenticationResult> GetCachedSignInToken()
         {
             try
             {
@@ -114,7 +108,7 @@ namespace Reviewer.Core
                     DisplayName = parsed["name"]?.ToString();
                 }
 
-                return new AuthResult { AccessToken = authResult.AccessToken, UniqueId = authResult.UniqueId, User = authResult.User };
+                return authResult;
             }
             catch (MsalUiRequiredException ex)
             {
