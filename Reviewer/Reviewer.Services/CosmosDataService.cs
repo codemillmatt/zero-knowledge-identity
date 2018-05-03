@@ -114,6 +114,12 @@ namespace Reviewer.Services
 
             var reviewUri = UriFactory.CreateDocumentUri(databaseName, reviewCollectionName, review.Id);
 
+            var existingDoc = (await client.ReadDocumentAsync<Review>(reviewUri)).Document;
+
+            // Since the update of the review from the client won't have any new videos in it, need to preserve
+            // any videos that have been added via the AMS functionality
+            review.Videos = existingDoc.Videos;
+
             await client.ReplaceDocumentAsync(reviewUri, review);
         }
     }

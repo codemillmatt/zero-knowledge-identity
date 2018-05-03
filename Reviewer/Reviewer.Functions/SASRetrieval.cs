@@ -3,6 +3,7 @@ using System.IO;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
+using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Extensions.Http;
@@ -18,6 +19,9 @@ namespace Reviewer.Functions
         public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "post")]StoragePermissionRequest input,
                     [Blob("review-photos", FileAccess.Read)]CloudBlobDirectory blobDirectory, TraceWriter log)
         {
+            if (!Thread.CurrentPrincipal.Identity.IsAuthenticated)
+                return new HttpResponseMessage(HttpStatusCode.Unauthorized);
+
             var permissions = SharedAccessBlobPermissions.Read; // default to read permissions
 
             // if permission was supplied, check if it is a possible value

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Reviewer.Functions.Models;
+using System.Linq;
 
 namespace Reviewer.Functions
 {
