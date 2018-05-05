@@ -31,8 +31,10 @@ namespace Reviewer.Functions
         private static CloudStorageAccount destinationStorageAccount = null;
 
         [FunctionName("AMSIngest")]
-        public static async Task Run([BlobTrigger("review-photos/{fileName}.mp4", Connection = "AzureWebJobsStorage")]CloudBlockBlob inputBlob,
-            string fileName, TraceWriter log)
+        public static async Task Run(
+            [BlobTrigger("review-photos/{fileName}.mp4", Connection = "AzureWebJobsStorage")]CloudBlockBlob inputBlob,
+            string fileName,
+            TraceWriter log)
         {
             try
             {

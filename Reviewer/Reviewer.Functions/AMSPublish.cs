@@ -34,7 +34,9 @@ namespace Reviewer.Functions
 
         [FunctionName("AMSPublish")]
         [return: Queue("review-videos")]
-        public static async Task<VideoQueueMessage> Run([HttpTrigger(authLevel: AuthorizationLevel.Function, methods:"post") ]HttpRequestMessage req, TraceWriter log)
+        public static async Task<VideoQueueMessage> Run(
+            [HttpTrigger(authLevel: AuthorizationLevel.Function, methods: "post")]HttpRequestMessage req,
+            TraceWriter log)
         {
             try
             {
@@ -63,7 +65,6 @@ namespace Reviewer.Functions
                     break;
                 }
 
-                //var asset = context.Assets.FirstOrDefault(a => a.Name == publishMsg.AssetName);
                 if (asset == null)
                 {
                     return null;
@@ -98,25 +99,6 @@ namespace Reviewer.Functions
             }
 
             return null;
-
-            #region Original
-
-            //dynamic data = JsonConvert.DeserializeObject(jsonContent);
-
-            //if (data.first == null || data.last == null)
-            //{
-            //    return req.CreateResponse(HttpStatusCode.BadRequest, new
-            //    {
-            //        error = "Please pass first/last properties in the input object"
-            //    });
-            //}
-
-            //return req.CreateResponse(HttpStatusCode.OK, new
-            //{
-            //    greeting = $"Hello {data.first} {data.last}!"
-            //});
-
-            #endregion
         }
     }
 }

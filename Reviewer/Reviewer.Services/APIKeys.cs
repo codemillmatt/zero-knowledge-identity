@@ -14,6 +14,8 @@ namespace Reviewer.Services
         public static readonly string StorageAccountName = "";
         public static readonly string StorageAccountUrlSuffix = "core.windows.net";
         public static readonly string PhotosContainerName = "";
-        public static readonly string VideoInjestContainerName = "";
+
+        public static readonly string AppCenterIOSKey = "";
+        public static readonly string AppCenterAndroidKey = "";
     }
 }
