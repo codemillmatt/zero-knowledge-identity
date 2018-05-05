@@ -16,8 +16,10 @@ namespace Reviewer.Functions
     public static class SASRetrieval
     {
         [FunctionName("SASRetrieval")]
-        public static HttpResponseMessage Run([HttpTrigger(AuthorizationLevel.Anonymous, "post")]StoragePermissionRequest input,
-                    [Blob("review-photos", FileAccess.Read)]CloudBlobDirectory blobDirectory, TraceWriter log)
+        public static HttpResponseMessage Run(
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post")]StoragePermissionRequest input,
+            [Blob("review-photos", FileAccess.Read)]CloudBlobDirectory blobDirectory, 
+            TraceWriter log)
         {
             if (!Thread.CurrentPrincipal.Identity.IsAuthenticated)
                 return new HttpResponseMessage(HttpStatusCode.Unauthorized);
