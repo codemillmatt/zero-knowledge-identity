@@ -40,7 +40,7 @@
                     WidthRequest="66" />
                 <Label Grid.Column="0"
                     HorizontalOptions="CenterAndExpand"
-                       VerticalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
                     WidthRequest="66"
                     HeightRequest="66"
                     TextColor="White"
@@ -48,7 +48,13 @@
                     FontSize="64"
                     FontAttributes="Bold"
                     HorizontalTextAlignment="Center"
-                    VerticalTextAlignment="Center"/>
+                    VerticalTextAlignment="Center">
+                    <Label.Margin>
+                        <OnPlatform x:TypeArguments="Thickness">
+                            <On Platform="Android" Value="0,-20,0,0" />
+                        </OnPlatform>
+                    </Label.Margin>
+                </Label>
 
                 <StackLayout Grid.Column="1"
                              VerticalOptions="Center"
