@@ -17,11 +17,10 @@ namespace Reviewer.Functions
         [FunctionName("WritePhotoInfoQueue")]
         [return: Queue("review-photos")]
         public static QueueMessage Run(
-            [HttpTrigger(AuthorizationLevel.Anonymous, "post")]QueueMessage req, 
-            [DocumentDB("BuildReviewer","Reviews", Id ="{reviewId}", ConnectionStringSetting ="Reviews_Cosmos")]Review review,
+            [HttpTrigger(AuthorizationLevel.Anonymous, "post")]QueueMessage req,
+            [DocumentDB("BuildReviewer", "Reviews", Id = "{reviewId}", ConnectionStringSetting = "Reviews_Cosmos")]Review review,
             TraceWriter log)
         {
-            log.Info("Starting the queue trigger");
             log.Info($"Review ID: {req.reviewId}, Photo Url: {req.photoUrl}");
 
             if (!Thread.CurrentPrincipal.Identity.IsAuthenticated)

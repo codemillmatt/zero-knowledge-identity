@@ -64,7 +64,6 @@ namespace Reviewer.Core
 
             if (Review.Photos != null)
             {
-                //thePhotos.AddRange(Review.Photos);
                 foreach (var photo in Review.Photos)
                 {
                     thePhotos.Add(ImageSource.FromUri(new Uri(photo)));

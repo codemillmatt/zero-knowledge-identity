@@ -1,22 +1,23 @@
 using System;
-using System.IO;
-using System.Linq;
+
 using System.Threading.Tasks;
 using Microsoft.Azure.WebJobs;
 using Microsoft.Azure.WebJobs.Host;
 using Microsoft.WindowsAzure.MediaServices.Client;
 using Microsoft.WindowsAzure.Storage;
-using Microsoft.WindowsAzure.Storage.Auth;
 using Microsoft.WindowsAzure.Storage.Blob;
-using Reviewer.Functions.Helpers;
 using Reviewer.Functions.Models;
 
 using System.Net.Http;
+using System.Linq;
+using Microsoft.WindowsAzure.Storage.Auth;
 
 namespace Reviewer.Functions
 {
     public static class AMSIngest
     {
+        #region Environment Variables
+
         static readonly string AADTenantDomain = Environment.GetEnvironmentVariable("AMSAADTenantDomain");
         static readonly string RESTAPIEndpoint = Environment.GetEnvironmentVariable("AMSRESTAPIEndpoint");
         static readonly string mediaServicesClientId = Environment.GetEnvironmentVariable("AMSClientId");
@@ -26,6 +27,8 @@ namespace Reviewer.Functions
         static readonly string storageAccountKey = Environment.GetEnvironmentVariable("MediaServicesStorageAccountKey");
 
         static readonly string webhookEndpoint = Environment.GetEnvironmentVariable("WebhookEndpoint");
+
+        #endregion
 
         private static CloudMediaContext context = null;
         private static CloudStorageAccount destinationStorageAccount = null;
@@ -51,15 +54,7 @@ namespace Reviewer.Functions
                 string reviewId = inputBlob.Metadata["reviewId"];
                 string assetName = inputBlob.Name;
 
-                AzureAdTokenCredentials tokenCredentials = new AzureAdTokenCredentials(AADTenantDomain,
-                               new AzureAdClientSymmetricKey(mediaServicesClientId, mediaServicesClientSecret),
-                               AzureEnvironments.AzureCloudEnvironment);
-
-                AzureAdTokenProvider tokenProvider = new AzureAdTokenProvider(tokenCredentials);
-
-                context = new CloudMediaContext(new Uri(RESTAPIEndpoint), tokenProvider);
-
-                StorageCredentials mediaServicesCredentials = new StorageCredentials(storageAccountName, storageAccountKey);
+                InitializeCloudMediaContext();
 
                 // 1. Copy BLOB into Input Asset
                 IAsset thumbAsset = await CreateAssetFromBlobAsync(inputBlob, $"thumb-{fileName}", log);
@@ -135,6 +130,8 @@ namespace Reviewer.Functions
             // Write to a queue
             log.Info("All done!!");
         }
+
+        #region Helper Functions
 
         public static async Task<IAsset> CreateAssetFromBlobAsync(CloudBlockBlob blob, string assetName, TraceWriter log)
         {
@@ -220,6 +217,18 @@ namespace Reviewer.Functions
             return processor;
         }
 
+        static void InitializeCloudMediaContext()
+        {
+            AzureAdTokenCredentials tokenCredentials = new AzureAdTokenCredentials(AADTenantDomain,
+                               new AzureAdClientSymmetricKey(mediaServicesClientId, mediaServicesClientSecret),
+                               AzureEnvironments.AzureCloudEnvironment);
+
+            AzureAdTokenProvider tokenProvider = new AzureAdTokenProvider(tokenCredentials);
+
+            context = new CloudMediaContext(new Uri(RESTAPIEndpoint), tokenProvider);
+        }
+
+        #endregion
 
     }
 }

@@ -18,6 +18,8 @@ namespace Reviewer.Functions
 {
     public static class AMSPublish
     {
+        #region Environment Variables
+
         static readonly string AADTenantDomain = Environment.GetEnvironmentVariable("AMSAADTenantDomain");
         static readonly string RESTAPIEndpoint = Environment.GetEnvironmentVariable("AMSRESTAPIEndpoint");
         static readonly string mediaServicesClientId = Environment.GetEnvironmentVariable("AMSClientId");
@@ -25,6 +27,8 @@ namespace Reviewer.Functions
 
         static readonly string storageAccountName = Environment.GetEnvironmentVariable("MediaServicesStorageAccountName");
         static readonly string storageAccountKey = Environment.GetEnvironmentVariable("MediaServicesStorageAccountKey");
+
+        #endregion
 
         private static CloudMediaContext context = null;
 
@@ -48,13 +52,7 @@ namespace Reviewer.Functions
 
                 var publishMsg = JsonConvert.DeserializeObject<VideoPublishMessage>(jsonContent);
 
-                AzureAdTokenCredentials tokenCredentials = new AzureAdTokenCredentials(AADTenantDomain,
-                                   new AzureAdClientSymmetricKey(mediaServicesClientId, mediaServicesClientSecret),
-                                   AzureEnvironments.AzureCloudEnvironment);
-
-                AzureAdTokenProvider tokenProvider = new AzureAdTokenProvider(tokenCredentials);
-
-                context = new CloudMediaContext(new Uri(RESTAPIEndpoint), tokenProvider);
+                InitializeCloudMediaContext();
 
                 IAsset asset = null;
                 foreach (var item in context.Assets)
@@ -99,6 +97,17 @@ namespace Reviewer.Functions
             }
 
             return null;
+        }
+
+        static void InitializeCloudMediaContext()
+        {
+            AzureAdTokenCredentials tokenCredentials = new AzureAdTokenCredentials(AADTenantDomain,
+                               new AzureAdClientSymmetricKey(mediaServicesClientId, mediaServicesClientSecret),
+                               AzureEnvironments.AzureCloudEnvironment);
+
+            AzureAdTokenProvider tokenProvider = new AzureAdTokenProvider(tokenCredentials);
+
+            context = new CloudMediaContext(new Uri(RESTAPIEndpoint), tokenProvider);
         }
     }
 }

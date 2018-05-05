@@ -16,9 +16,7 @@ namespace Reviewer.Functions
             [DocumentDB("BuildReviewer", "Reviews", Id = "id", ConnectionStringSetting = "Reviews_Cosmos")]out dynamic outputReview,
             TraceWriter log)
         {
-            log.Info("STARTING");
-
-            log.Info($"C# Queue trigger function processed with ReviewID: {myQueueItem.ReviewId}");
+            log.Info($"Processing with ReviewID: {myQueueItem.ReviewId}");
 
             if (review.Videos == null)
                 review.Videos = new List<Video>();
