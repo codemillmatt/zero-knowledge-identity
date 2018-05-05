@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using Xamarin.Forms;
 using Reviewer.SharedModels;
 using System.Threading.Tasks;
+using System.Linq;
 
 namespace Reviewer.Core
 {
@@ -52,10 +53,21 @@ namespace Reviewer.Core
             if (!(sender is HorizontalList horizontalList))
                 return;
 
-            if (!(horizontalList.SelectedItem is Video video))
+            if (horizontalList.SelectedItem is FileImageSource fileIS)
+            {
+                vm.TakePhotoCommand.Execute(null);
+                return;
+            }
+
+            if (!(horizontalList.SelectedItem is UriImageSource videoUrl))
                 return;
 
-            var playerPage = new NavigationPage(new VideoPlayerPage(video));
+            var foundVideo = vm.Review.Videos.FirstOrDefault(vid => vid.ThumbnailUrl == videoUrl.Uri.AbsoluteUri);
+
+            //if (!(horizontalList.SelectedItem is Video video))
+            //return;
+
+            var playerPage = new NavigationPage(new VideoPlayerPage(foundVideo));
 
             await Navigation.PushModalAsync(playerPage, true);
         }
@@ -64,6 +76,12 @@ namespace Reviewer.Core
         {
             if (!(sender is HorizontalList horizontalList))
                 return;
+
+            if (horizontalList.SelectedItem is FileImageSource fileImgSrc)
+            {
+                vm.TakePhotoCommand.Execute(null);
+                return;
+            }
 
             if (!(horizontalList.SelectedItem is UriImageSource photoUrl))
                 return;

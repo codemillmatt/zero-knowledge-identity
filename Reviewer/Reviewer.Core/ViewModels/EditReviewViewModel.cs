@@ -35,6 +35,9 @@ namespace Reviewer.Core
         List<ImageSource> photos;
         public List<ImageSource> Photos { get => photos; set => SetProperty(ref photos, value); }
 
+        List<ImageSource> videos;
+        public List<ImageSource> Videos { get => videos; set => SetProperty(ref videos, value); }
+
         public ICommand SaveCommand { get; }
 
         public event EventHandler SaveComplete;
@@ -75,6 +78,25 @@ namespace Reviewer.Core
             {
                 Review.Photos = new List<string>();
             }
+
+            Photos.Insert(0, ImageSource.FromFile("ic_camera_enhance_black"));
+
+            var theVideos = new List<ImageSource>();
+            if (Review.Videos != null)
+            {
+                foreach (var video in Review.Videos)
+                {
+                    theVideos.Add(ImageSource.FromUri(new Uri(video.ThumbnailUrl)));
+                }
+
+                Videos = theVideos;
+            }
+            else
+            {
+                Review.Videos = new List<Video>();
+            }
+
+            Videos.Insert(0, ImageSource.FromFile("ic_movie_black"));
         }
 
         public EditReviewViewModel(string businessId, string businessName) :

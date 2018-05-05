@@ -225,6 +225,16 @@
     <AndroidResource Include="Resources\mipmap-xhdpi\ic_eightbit.png" />
     <AndroidResource Include="Resources\mipmap-xxhdpi\ic_eightbit.png" />
     <AndroidResource Include="Resources\mipmap-xxxhdpi\ic_eightbit.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_movie_black.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_movie_black.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_movie_black.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_movie_black.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_movie_black.png" />
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_camera_enhance_black.png" />
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_camera_enhance_black.png" />
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_camera_enhance_black.png" />
+    <AndroidResource Include="Resources\drawable-mdpi\ic_camera_enhance_black.png" />
+    <AndroidResource Include="Resources\drawable-hdpi\ic_camera_enhance_black.png" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Reviewer.Core\Reviewer.Core.csproj">

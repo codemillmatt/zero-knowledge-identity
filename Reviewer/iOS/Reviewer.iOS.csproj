@@ -206,6 +206,12 @@
     <BundleResource Include="Resources\ic_bitcommunity%403x.png" />
     <BundleResource Include="Resources\ic_bitcommunity%402x.png" />
     <BundleResource Include="Resources\ic_bitcommunity.png" />
+    <BundleResource Include="Resources\ic_camera_enhance_black.png" />
+    <BundleResource Include="Resources\ic_camera_enhance_black%402x.png" />
+    <BundleResource Include="Resources\ic_camera_enhance_black%403x.png" />
+    <BundleResource Include="Resources\ic_movie_black.png" />
+    <BundleResource Include="Resources\ic_movie_black%402x.png" />
+    <BundleResource Include="Resources\ic_movie_black%403x.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\packages\Xamarin.Forms.2.5.1.444934\build\netstandard1.0\Xamarin.Forms.targets" Condition="Exists('..\packages\Xamarin.Forms.2.5.1.444934\build\netstandard1.0\Xamarin.Forms.targets')" />
